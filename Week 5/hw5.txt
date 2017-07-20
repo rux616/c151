@@ -1,0 +1,53 @@
+Exercise 1
+----------
+
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password:
+Last login: Thu Feb 20 21:11:59 2014 from 70.227.166.78
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ mkdir ./c151/week5/planets
+[djcassid@cs03 ~]$ cp /home/danav/public_html/teach/c151/planets/* ./c151/week5/planets/
+[djcassid@cs03 ~]$ cd ./c151/week5/planets
+[djcassid@cs03 planets]$ ls
+earth.cc  earth.h  main.cc  moon.cc  moon.h  sun.cc  sun.h
+[djcassid@cs03 planets]$ g++ earth.cc -c
+[djcassid@cs03 planets]$ g++ main.cc -c
+[djcassid@cs03 planets]$ g++ moon.cc -c
+[djcassid@cs03 planets]$ g++ sun.cc -c
+[djcassid@cs03 planets]$ ls
+earth.cc  earth.o  main.o   moon.h  sun.cc  sun.o
+earth.h   main.cc  moon.cc  moon.o  sun.h
+[djcassid@cs03 planets]$ g++ *.o -lm -o solar
+[djcassid@cs03 planets]$ ls
+earth.cc  earth.o  main.o   moon.h  solar   sun.h
+earth.h   main.cc  moon.cc  moon.o  sun.cc  sun.o
+[djcassid@cs03 planets]$
+
+
+
+Exercise 2
+----------
+1) This command compiles the file "abdce.c" into an object file and includes the path to some header files in /usr/include/mp3-2.1.  The file "abdce.o" will be the result.
+2) The second command links the object files "abcde.o", "codec.o", and "sound.o" into an executable file.  The l and L options specify other libraries to be linked.  The executable file "abcde" will result.

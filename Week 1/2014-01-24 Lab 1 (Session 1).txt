@@ -1,0 +1,1386 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.01.24 10:12:29 =~=~=~=~=~=~=~=~=~=~=~=
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password: 
+Last login: Fri Jan 24 10:10:40 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+]0;djcassid@cs03:~[?1034h[djcassid@cs03 ~]$ pwd[K[K[Kls
+[0m[01;34mc151[0m  [01;34mmail[0m
+[m]0;djcassid@cs03:~[djcassid@cs03 ~]$ cd c151
+]0;djcassid@cs03:~/c151[djcassid@cs03 c151]$ mkdir[K[K[K[K[Kls
+[0m[01;34mweek1[0m
+[m]0;djcassid@cs03:~/c151[djcassid@cs03 c151]$ cd [K[K[Kls week1
+lab0pico.txt
+]0;djcassid@cs03:~/c151[djcassid@cs03 c151]$ cd week1
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ cp /usrin[K[K/include//time.h [K[K[K[K[K[K[K[Ktime.h time.hmtime.hytime.h[C[C[C[C[C[C
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ls
+lab0pico.txt  mytime.h
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ pico mytime.h
+[?1049h[1;48r[1;1H[J[7m  UW PICO 5.07                                               New Buffer                                                 [27m[47;1H[K[48;1H[K[47;1H[7m^[27m[7mG[27m Get Help         [7m^[27m[7mO[27m WriteOut         [7m^[27m[7mR[27m Read File        [7m^[27m[7mY[27m Prev Pg          [7m^[27m[7mK[27m Cut Text         [7m^[27m[7mC[27m Cur Pos          [48;1H[7m^[27m[7mX[27m Exit             [7m^[27m[7mJ[27m Justify          [7m^[27m[7mW[27m Where is         [7m^[27m[7mV[27m Next Pg          [7m^[27m[7mU[27m UnCut Text       [7m^[27m[7mT[27m To Spell        [K[3;1H[46;1H                                                                                                                        [46;53H[7m[ Reading file ][27m[46;1H                                                                                                                        [46;52H[7m[ Read 421 lines ][27m[1;60H[7mFile: mytime.h[27m[3;1H/* Copyright (C) 1991-2003,2006,2009 Free Software Foundation, Inc.[4;4HThis file is part of the GNU C Library.[6;4HThe GNU C Library is free software; you can redistribute it and/or[7;4Hmodify it under the terms of the GNU Lesser General Public[8;4HLicense as published by the Free Software Foundation; either[9;4Hversion 2.1 of the License, or (at your option) any later version.[11;4HThe GNU C Library is distributed in the hope that it will be useful,[12;4Hbut WITHOUT ANY WARRANTY; without even the implied warranty of[13;4HMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU[14;4HLesser General Public License for more details.[16;4HYou should have received a copy of the GNU Lesser General Public[17;4HLicense along with the GNU C Library; if not, write to the Free[18;4HSoftware Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA[19;4H02111-1307 USA.  */[21;1H/*[22;2H*      ISO C99 Standard: 7.23 Date and time    <time.h>[23;2H*/[25;1H#ifndef _TIME_H[27;1H#if (! defined __need_time_t && !defined __need_clock_t && \[28;6H! defined __need_timespec)[29;1H# define _TIME_H        1[30;1H# include <features.h>[32;1H__BEGIN_DECLS[34;1H#endif[36;1H#ifdef  _TIME_H[37;1H/* Get size_t and NULL from <stddef.h>.  */[38;1H# define __need_size_t[39;1H# define __need_NULL[40;1H# include <stddef.h>[42;1H/* This defines CLOCKS_PER_SEC, which is the number of processor clock[43;4Hticks per second.  */[44;1H# include <bits/time.h>[3;1H[4;1H[5;1H[6;1H[7;1H[8;1H[9;1H[10;1H[11;1H[12;1H[13;1H[14;1H[15;1H[16;1H[17;1H[18;1H[19;1H[20;1H[21;1H[22;1H[23;1H[24;1H[25;1H[24;1H[23;1H[22;1H[46;1H                                                                                                                        [21;1H[20;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H[10;1H[9;1H[8;1H[7;1H[6;1H[5;1H[4;1H[3;1H[1;56H[7mFile: mytime.h                                         Modified[27m[3;1H[K[4;1H/* Copyright (C) 1991-2003,2006,2009 Free Software Foundation, Inc.[5;4HThis file is part of the GNU C Library.[6;4H[K[7;4HThe GNU C Library is free software; you can redistribute it and/or[8;4Hmodify it under the terms of the GNU Lesser General Public  [9;4HLicense as published by the Free Software Foundation; either[K[10;4Hversion 2.1 of the License, or (at your option) any later version.[11;4H[K[12;4HThe GNU C Library is distributed in the hope that it will be useful,[13;4Hbut WITHOUT ANY WARRANTY; without even the implied warranty of   [14;4HMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU[15;4HLesser General Public License for more details.[16;4H[K[17;4HYou should have received a copy of the GNU Lesser General Public[18;4HLicense along with the GNU C Library; if not, write to the Free  [19;4HSoftware Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA[20;4H02111-1307 USA.  */[21;1H  [22;1H/*[K[23;3H      ISO C99 Standard: 7.23 Date and time    <time.h>[24;2H*/[25;1H[K[26;1H#ifndef _TIME_H[27;1H[K[28;1H#if (! defined __need_time_t && !defined __need_clock_t && \[29;1H     ! defined __need_timespec)[30;3Hdefine _TIME_H        1[31;1H# include <features.h>[32;1H[K[33;1H__BEGIN_DECLS[34;1H[K[35;1H#endif[36;1H[K[37;1H#ifdef  _TIME_H[K[38;1H/* Get size_t and NULL from <stddef.h>.  */[39;17Hsize_t[40;3Hdefine __need_NULL[41;1H# include <stddef.h>[42;1H[K[43;1H/* This defines CLOCKS_PER_SEC, which is the number of processor clock[44;1H   ticks per second.  */[45;1H# include <bits/time.h>[4;1H[K[5;1H/* Copyright (C) 1991-2003,2006,2009 Free Software Foundation, Inc.[6;4HThis file is part of the GNU C Library.[7;4H[K[8;4HThe GNU C Library is free software; you can redistribute it and/or[9;4Hmodify it under the terms of the GNU Lesser General Public  [10;4HLicense as published by the Free Software Foundation; either[K[11;4Hversion 2.1 of the License, or (at your option) any later version.[12;4H[K[13;4HThe GNU C Library is distributed in the hope that it will be useful,[14;4Hbut WITHOUT ANY WARRANTY; without even the implied warranty of   [15;4HMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU[16;4HLesser General Public License for more details.[17;4H[K[18;4HYou should have received a copy of the GNU Lesser General Public[19;4HLicense along with the GNU C Library; if not, write to the Free  [20;4HSoftware Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA[21;4H02111-1307 USA.  */[22;1H  [23;1H/*[K[24;3H      ISO C99 Standard: 7.23 Date and time    <time.h>[25;2H*/[26;1H[K[27;1H#ifndef _TIME_H[28;1H[K[29;1H#if (! defined __need_time_t && !defined __need_clock_t && \[30;1H     ! defined __need_timespec)[31;3Hdefine _TIME_H        1[32;1H# include <features.h>[33;1H[K[34;1H__BEGIN_DECLS[35;1H[K[36;1H#endif[37;1H[K[38;1H#ifdef  _TIME_H[K[39;1H/* Get size_t and NULL from <stddef.h>.  */[40;17Hsize_t[41;3Hdefine __need_NULL[42;1H# include <stddef.h>[43;1H[K[44;1H/* This defines CLOCKS_PER_SEC, which is the number of processor clock[45;1H   ticks per second.  */[5;1H[4;1H[3;1H//[3;4HDan[3;8HCassidy[46;1H                                                                                                                        [46;1H[7mFile Name to write :                                                                                                    [46;22H[27m[47;22H[7mT[27m  To Files                                                                                        [48;2H[7mC[27m Cancel           [7mT[27m[7mA[27m[7mB[27m Complete                                                                                       [K[7m[46;22Hmytime.h                                                                                           [46;30H[27m[46;1H                                                                                                                        [46;54H[7m[ Writing... ][27m[46;1H                                                                                                                        [46;51H[7m[ Wrote 423 lines ][27m[1;56H[7m    File: mytime.h                                             [27m[47;1H[K[48;1H[K[47;1H[7m^[27m[7mG[27m Get Help         [7m^[27m[7mO[27m WriteOut         [7m^[27m[7mR[27m Read File        [7m^[27m[7mY[27m Prev Pg          [7m^[27m[7mK[27m Cut Text         [7m^[27m[7mC[27m Cur Pos          [48;1H[7m^[27m[7mX[27m Exit             [7m^[27m[7mJ[27m Justify          [7m^[27m[7mW[27m Where is         [7m^[27m[7mV[27m Next Pg          [7m^[27m[7mU[27m UnCut Text       [7m^[27m[7mT[27m To Spell        [K[3;15H[47;1H[K[48;1H[K[?1049l]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ls /usr/bin/*vm[K[Kcmd
+[0m[01;36m/usr/bin/ipmicmd[0m  [01;32m/usr/bin/ksystraycmd[0m  [01;32m/usr/bin/openipmicmd[0m  [01;32m/usr/bin/sopranocmd[0m                 [01;32m/usr/bin/trace-cmd[0m
+[01;32m/usr/bin/kjscmd[0m   [01;32m/usr/bin/modulecmd[0m    [01;32m/usr/bin/pacmd[0m        [01;36m/usr/bin/system-config-network-cmd[0m
+[m]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ls /usr/bin/*cmd[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfind /usr -name "*cmd"
+/usr/share/gdm/gdb-cmd
+/usr/share/trace-cmd
+/usr/share/NetworkManager/gdb-cmd
+/usr/share/texmf/tex/latex/patchcmd
+/usr/share/doc/doxygen-1.6.1/examples/structcmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/include/config/auto.conf.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.lex.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.genksyms.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.parse.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.kallsyms.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.unifdef.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.conf.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.conf.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.pnmtologo.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.sumversion.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.mod-extract.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.modpost.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.empty.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.file2alias.o.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.modpost.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.docproc.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.fixdep.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.hash.cmd
+/usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.conmakehash.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/include/config/auto.conf.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.lex.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.genksyms.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.parse.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.kallsyms.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.unifdef.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.conf.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.conf.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.pnmtologo.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.sumversion.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.mod-extract.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.modpost.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.empty.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.file2alias.o.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.modpost.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.docproc.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.fixdep.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.hash.cmd
+/usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.conmakehash.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/include/config/auto.conf.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.lex.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.genksyms.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.parse.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.kallsyms.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.unifdef.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.conf.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.conf.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.pnmtologo.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.sumversion.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.mod-extract.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.modpost.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.empty.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.file2alias.o.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.modpost.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.docproc.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.fixdep.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.hash.cmd
+/usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.conmakehash.cmd
+find: `/usr/lib64/audit': Permission denied
+/usr/lib64/R/bin/Rcmd
+/usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/envset.cmd
+/usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/runrc.cmd
+/usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/antenv.cmd
+/usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/ant.cmd
+/usr/sbin/system-config-network-cmd
+/usr/sbin/bccmd
+/usr/bin/openipmicmd
+/usr/bin/pacmd
+/usr/bin/ipmicmd
+/usr/bin/trace-cmd
+/usr/bin/system-config-network-cmd
+/usr/bin/kjscmd
+/usr/bin/sopranocmd
+/usr/bin/ksystraycmd
+/usr/bin/modulecmd
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ find /usr -name "*cmd"[6Pls /usr/bin/*cmdfind /usr -name "*cmd"[1@l[1@s[1@ [1@-[1@l[1@ [1@`
+> `
+
+find: `/usr/lib64/audit': Permission denied
+lrwxrwxrwx. 1 root root     11 May 14  2013 [0m[01;36m/usr/bin/ipmicmd[0m -> [01;32mopenipmicmd[0m
+-rwxr-xr-x. 1 root root 107616 Jun 11  2013 [01;32m/usr/bin/kjscmd[0m
+-rwxr-xr-x. 1 root root 124968 Aug 24  2012 [01;32m/usr/bin/ksystraycmd[0m
+-rwxr-xr-x. 1 root root 129272 May 14  2013 [01;32m/usr/bin/modulecmd[0m
+-rwxr-xr-x. 1 root root  23960 Dec 11  2012 [01;32m/usr/bin/openipmicmd[0m
+-rwxr-xr-x. 1 root root  20896 Jul  3  2012 [01;32m/usr/bin/pacmd[0m
+-rwxr-xr-x. 1 root root 143616 Dec  8  2009 [01;32m/usr/bin/sopranocmd[0m
+lrwxrwxrwx. 1 root root     13 May 14  2013 [01;36m/usr/bin/system-config-network-cmd[0m -> [01;32mconsolehelper[0m
+-rwxr-xr-x. 1 root root 182896 Dec 13  2012 [01;32m/usr/bin/trace-cmd[0m
+-rw-r--r--. 1 root root   2764 Jan 19  2011 /usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/ant.cmd
+-rw-r--r--. 1 root root   3312 Jan 19  2011 /usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/antenv.cmd
+-rw-r--r--. 1 root root   4184 Jan 19  2011 /usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/envset.cmd
+-rw-r--r--. 1 root root   1757 Jan 19  2011 /usr/lib64/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/bin/runrc.cmd
+-rwxr-xr-x. 1 root root   1373 Oct 15 20:20 [01;32m/usr/lib64/R/bin/Rcmd[0m
+-rwxr-xr-x. 1 root root 109472 Jun 30  2010 [01;32m/usr/sbin/bccmd[0m
+lrwxrwxrwx. 1 root root     45 May 14  2013 [01;36m/usr/sbin/system-config-network-cmd[0m -> [01;32m../share/system-config-network/netconf_cmd.py[0m
+-rw-r--r--. 1 root root     30 Sep 26 10:52 /usr/share/gdm/gdb-cmd
+-rw-r--r--. 1 root root     30 Oct 23 10:17 /usr/share/NetworkManager/gdb-cmd
+-rw-r--r--. 1 root root  15303 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/include/config/auto.conf.cmd
+-rw-r--r--. 1 root root   2266 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.docproc.cmd
+-rw-r--r--. 1 root root   2711 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.fixdep.cmd
+-rw-r--r--. 1 root root   1423 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/basic/.hash.cmd
+-rw-r--r--. 1 root root   1485 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.conmakehash.cmd
+-rw-r--r--. 1 root root    145 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.genksyms.cmd
+-rw-r--r--. 1 root root   1715 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+-rw-r--r--. 1 root root   2227 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.lex.o.cmd
+-rw-r--r--. 1 root root   1024 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/genksyms/.parse.o.cmd
+-rw-r--r--. 1 root root   1430 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.kallsyms.cmd
+-rw-r--r--. 1 root root    110 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.conf.cmd
+-rw-r--r--. 1 root root   2158 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.conf.o.cmd
+-rw-r--r--. 1 root root   1806 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+-rw-r--r--. 1 root root   3157 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+-rw-r--r--. 1 root root    111 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+-rw-r--r--. 1 root root   1768 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.empty.o.cmd
+-rw-r--r--. 1 root root   2011 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.file2alias.o.cmd
+-rw-r--r--. 1 root root   1556 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+-rw-r--r--. 1 root root   2455 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.mod-extract.cmd
+-rw-r--r--. 1 root root    129 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.modpost.cmd
+-rw-r--r--. 1 root root   2308 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.modpost.o.cmd
+-rw-r--r--. 1 root root   2780 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/mod/.sumversion.o.cmd
+-rw-r--r--. 1 root root   1789 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.pnmtologo.cmd
+-rw-r--r--. 1 root root   2088 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+-rw-r--r--. 1 root root   1743 Nov 24 09:36 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+-rw-r--r--. 1 root root   1631 Nov 24 09:38 /usr/src/kernels/2.6.32-431.1.2.el6.x86_64/scripts/.unifdef.cmd
+-rw-r--r--. 1 root root  15303 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/include/config/auto.conf.cmd
+-rw-r--r--. 1 root root   2266 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.docproc.cmd
+-rw-r--r--. 1 root root   2711 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.fixdep.cmd
+-rw-r--r--. 1 root root   1423 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/basic/.hash.cmd
+-rw-r--r--. 1 root root   1485 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.conmakehash.cmd
+-rw-r--r--. 1 root root    145 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.genksyms.cmd
+-rw-r--r--. 1 root root   1715 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+-rw-r--r--. 1 root root   2227 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.lex.o.cmd
+-rw-r--r--. 1 root root   1024 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/genksyms/.parse.o.cmd
+-rw-r--r--. 1 root root   1430 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.kallsyms.cmd
+-rw-r--r--. 1 root root    110 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.conf.cmd
+-rw-r--r--. 1 root root   2158 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.conf.o.cmd
+-rw-r--r--. 1 root root   1806 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+-rw-r--r--. 1 root root   3157 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+-rw-r--r--. 1 root root    111 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+-rw-r--r--. 1 root root   1768 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.empty.o.cmd
+-rw-r--r--. 1 root root   2011 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.file2alias.o.cmd
+-rw-r--r--. 1 root root   1556 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+-rw-r--r--. 1 root root   2455 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.mod-extract.cmd
+-rw-r--r--. 1 root root    129 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.modpost.cmd
+-rw-r--r--. 1 root root   2308 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.modpost.o.cmd
+-rw-r--r--. 1 root root   2780 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/mod/.sumversion.o.cmd
+-rw-r--r--. 1 root root   1789 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.pnmtologo.cmd
+-rw-r--r--. 1 root root   2088 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+-rw-r--r--. 1 root root   1743 Dec 13 06:55 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+-rw-r--r--. 1 root root   1631 Dec 13 06:58 /usr/src/kernels/2.6.32-431.3.1.el6.x86_64/scripts/.unifdef.cmd
+-rw-r--r--. 1 root root  15299 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/include/config/auto.conf.cmd
+-rw-r--r--. 1 root root   2266 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.docproc.cmd
+-rw-r--r--. 1 root root   2711 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.fixdep.cmd
+-rw-r--r--. 1 root root   1423 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/basic/.hash.cmd
+-rw-r--r--. 1 root root   1485 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.conmakehash.cmd
+-rw-r--r--. 1 root root    145 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.genksyms.cmd
+-rw-r--r--. 1 root root   1715 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.genksyms.o.cmd
+-rw-r--r--. 1 root root   2227 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.lex.o.cmd
+-rw-r--r--. 1 root root   1024 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/genksyms/.parse.o.cmd
+-rw-r--r--. 1 root root   1430 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.kallsyms.cmd
+-rw-r--r--. 1 root root    110 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.conf.cmd
+-rw-r--r--. 1 root root   2158 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.conf.o.cmd
+-rw-r--r--. 1 root root   1806 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.kxgettext.o.cmd
+-rw-r--r--. 1 root root   3157 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/kconfig/.zconf.tab.o.cmd
+-rw-r--r--. 1 root root    111 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.elfconfig.h.cmd
+-rw-r--r--. 1 root root   1736 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.empty.o.cmd
+-rw-r--r--. 1 root root   2011 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.file2alias.o.cmd
+-rw-r--r--. 1 root root   1556 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.mk_elfconfig.cmd
+-rw-r--r--. 1 root root   2455 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.mod-extract.cmd
+-rw-r--r--. 1 root root    129 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.modpost.cmd
+-rw-r--r--. 1 root root   2308 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.modpost.o.cmd
+-rw-r--r--. 1 root root   2780 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/mod/.sumversion.o.cmd
+-rw-r--r--. 1 root root   1789 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.pnmtologo.cmd
+-rw-r--r--. 1 root root   2088 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/selinux/genheaders/.genheaders.cmd
+-rw-r--r--. 1 root root   1743 Nov 10 22:19 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/selinux/mdp/.mdp.cmd
+-rw-r--r--. 1 root root   1631 Nov 10 22:20 /usr/src/kernels/2.6.32-431.el6.x86_64/scripts/.unifdef.cmd
+
+/usr/share/doc/doxygen-1.6.1/examples/structcmd:
+total 4
+drwxr-xr-x. 3 root root 4096 May 14  2013 [01;34mhtml[0m
+
+/usr/share/texmf/tex/latex/patchcmd:
+total 4
+-rw-r--r--. 1 root root 3536 Jan 12  2006 patchcmd.sty
+
+/usr/share/trace-cmd:
+total 4
+drwxr-xr-x. 2 root root 4096 May 14  2013 [01;34mplugins[0m
+[m]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ 
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ls -l `find /usr -name "*cmd"
+`[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@/[1@s[1@y[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"g"l"."h"
+find: `/usr/sys': No such file or directory
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ find /usr/sys -name "gl.h"[1P[1P[1P[1P
+/usr/include/GL/gl.h
+/usr/i686-pc-mingw32/sys-root/mingw/include/GL/gl.h
+find: `/usr/lib64/audit': Permission denied
+[K[?1l>[?1049l]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ man locatelocate /usr "gl.h"[1P"gl.h"[1P"gl.h"[1P"gl.h"[1P"gl.h"[1P"gl.h"[1Pgl.h"[C[C[C[C[C[C[C[C[K
+/usr/i686-pc-mingw32/sys-root/mingw/include/GL/gl.h
+/usr/include/GL/gl.h
+/usr/include/Qt/qgl.h
+/usr/include/QtOpenGL/qgl.h
+/usr/include/SDL/SDL_opengl.h
+/usr/lib64/R/library/MASS/html/fgl.html
+/usr/lib64/R/library/base/html/gl.html
+/usr/share/doc/PyQt4-devel-4.6.2/html/qgl.html
+/usr/share/doc/PyQt4-devel-4.6.2/html/qtopengl.html
+/usr/share/doc/SDL-devel-1.2.14/html/guidevideoopengl.html
+/usr/share/doc/python-docs-2.6.6/html/library/gl.html
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps
+  PID TTY          TIME CMD
+12512 pts/0    00:00:00 bash
+13819 pts/0    00:00:00 ps
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps -Al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0     1     0  0  80   0 -  5883 poll_s ?        00:00:02 init
+1 S     0     2     0  0  80   0 -     0 kthrea ?        00:00:01 kthreadd
+1 S     0     3     2  0 -40   - -     0 migrat ?        00:00:02 migration/0
+1 S     0     4     2  0  80   0 -     0 ksofti ?        00:00:02 ksoftirqd/0
+1 S     0     5     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/0
+5 S     0     6     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/0
+1 S     0     7     2  0 -40   - -     0 migrat ?        00:00:01 migration/1
+1 S     0     8     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/1
+1 S     0     9     2  0  80   0 -     0 ksofti ?        00:00:01 ksoftirqd/1
+5 S     0    10     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/1
+1 S     0    11     2  0  80   0 -     0 worker ?        00:00:20 events/0
+1 S     0    12     2  0  80   0 -     0 worker ?        00:00:20 events/1
+1 S     0    13     2  0  80   0 -     0 worker ?        00:00:00 cgroup
+1 S     0    14     2  0  80   0 -     0 worker ?        00:00:00 khelper
+1 S     0    15     2  0  80   0 -     0 worker ?        00:00:00 netns
+1 S     0    16     2  0  80   0 -     0 async_ ?        00:00:00 async/mgr
+1 S     0    17     2  0  80   0 -     0 worker ?        00:00:00 pm
+1 S     0    18     2  0  80   0 -     0 bdi_sy ?        00:00:01 sync_supers
+1 S     0    19     2  0  80   0 -     0 bdi_fo ?        00:00:01 bdi-default
+1 S     0    20     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/0
+1 S     0    21     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/1
+1 S     0    22     2  0  80   0 -     0 worker ?        00:00:05 kblockd/0
+1 S     0    23     2  0  80   0 -     0 worker ?        00:00:00 kblockd/1
+1 S     0    24     2  0  80   0 -     0 worker ?        00:00:00 kacpid
+1 S     0    25     2  0  80   0 -     0 worker ?        00:00:00 kacpi_notify
+1 S     0    26     2  0  80   0 -     0 worker ?        00:00:00 kacpi_hotplug
+1 S     0    27     2  0  80   0 -     0 worker ?        00:00:00 ata_aux
+1 S     0    28     2  0  80   0 -     0 worker ?        00:00:47 ata_sff/0
+1 S     0    29     2  0  80   0 -     0 worker ?        00:00:38 ata_sff/1
+1 S     0    30     2  0  80   0 -     0 worker ?        00:00:00 ksuspend_usbd
+5 S     0    31     2  0  80   0 -     0 hub_th ?        00:00:00 khubd
+1 S     0    32     2  0  80   0 -     0 serio_ ?        00:00:00 kseriod
+1 S     0    33     2  0  80   0 -     0 worker ?        00:00:00 md/0
+1 S     0    34     2  0  80   0 -     0 worker ?        00:00:00 md/1
+1 S     0    35     2  0  80   0 -     0 worker ?        00:00:00 md_misc/0
+1 S     0    36     2  0  80   0 -     0 worker ?        00:00:00 md_misc/1
+1 S     0    37     2  0  80   0 -     0 worker ?        00:00:00 linkwatch
+1 S     0    38     2  0  80   0 -     0 watchd ?        00:00:00 khungtaskd
+1 S     0    39     2  0  80   0 -     0 kswapd ?        00:00:00 kswapd0
+1 S     0    40     2  0  85   5 -     0 ksm_sc ?        00:00:00 ksmd
+1 S     0    41     2  0  99  19 -     0 khugep ?        00:00:03 khugepaged
+1 S     0    42     2  0  80   0 -     0 worker ?        00:00:00 aio/0
+1 S     0    43     2  0  80   0 -     0 worker ?        00:00:00 aio/1
+1 S     0    44     2  0  80   0 -     0 worker ?        00:00:00 crypto/0
+1 S     0    45     2  0  80   0 -     0 worker ?        00:00:00 crypto/1
+1 S     0    50     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/0
+1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+1 S     0  1352     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workque
+1 S     0  1371     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+1 S     0  1375     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+1 S     0  1377     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+1 S     0  1379     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_threa
+1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/0
+1 S     0  1382     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/1
+5 S     0  1385     1  0  80   0 -  2091 poll_s ?        00:00:11 fcoemon
+5 S    81  1397     1  0  80   0 - 10759 poll_s ?        00:00:00 dbus-daemon
+5 S     0  1408     1  0  80   0 - 20782 poll_s ?        00:00:02 NetworkManager
+4 S     0  1414     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+5 S    29  1427     1  0  80   0 -  6880 poll_s ?        00:00:00 rpc.statd
+1 S     0  1474     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+4 S     0  1508     1  0  80   0 - 47368 ep_pol ?        00:00:00 cupsd
+5 S     0  1509     2  0  80   0 -     0 worker ?        00:00:01 rpciod/0
+5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+1 S     0  1512     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+1 S     0  1513     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+1 S     0  1538     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+5 S    68  1547     1  0  80   0 - 10758 poll_s ?        00:00:04 hald
+0 S     0  1548  1547  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+0 S     0  1588  1548  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inpu
+0 S     0  1589  1548  0  80   0 -  5611 poll_s ?        00:03:03 hald-addon-stor
+4 S    68  1592  1548  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acpi
+1 S     0  1603     1  0  80   0 - 50405 ep_pol ?        00:00:20 sssd
+4 S     0  1604  1603  0  80   0 - 58473 ep_pol ?        00:00:17 sssd_be
+4 S     0  1605  1603  0  80   0 - 50832 ep_pol ?        00:00:09 sssd_nss
+4 S     0  1606  1603  0  80   0 - 48415 ep_pol ?        00:00:05 sssd_pam
+1 S     0  1628     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+5 S     0  1645     1  0  80   0 - 97508 rt_sig ?        00:00:03 automount
+1 S     0  1678     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+5 S     0  1690     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+1 S     0  1698     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+5 S    38  1706     1  0  80   0 -  8723 poll_s ?        00:00:02 ntpd
+4 S     0  1782     1  0  80   0 - 21363 ep_pol ?        00:00:03 master
+4 S    89  1791  1782  0  80   0 - 21427 ep_pol ?        00:00:01 qmgr
+1 S     0  1806     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+0 S     0  1814     1  0  80   0 - 27050 inotif ?        00:00:00 abrt-dump-oops
+1 S     0  1828     1  0  80   0 - 27115 wait   ?        00:00:18 ksmtuned
+1 S     0  1837     1  0  80   0 - 29323 hrtime ?        00:00:11 crond
+5 S     0  1848     1  0  80   0 -  5385 hrtime ?        00:00:00 atd
+1 S     0  1858     1  0  80   0 - 25231 hrtime ?        00:00:00 rhnsd
+1 S     0  1877     1  0  80   0 - 24644 poll_s ?        00:00:17 miniserv.pl
+4 S     0  1880     1  0  80   0 - 33484 poll_s ?        00:00:00 gdm-binary
+4 S     0  1886     1  0  80   0 -  1016 n_tty_ tty2     00:00:00 mingetty
+4 S     0  1888     1  0  80   0 -  1016 n_tty_ tty3     00:00:00 mingetty
+4 S     0  1890     1  0  80   0 -  1016 n_tty_ tty4     00:00:00 mingetty
+4 S     0  1892     1  0  80   0 -  1016 n_tty_ tty5     00:00:00 mingetty
+4 S     0  1894     1  0  80   0 -  1016 n_tty_ tty6     00:00:00 mingetty
+5 S     0  1901   399  0  78  -2 -  3143 poll_s ?        00:00:27 udevd
+5 S     0  1902   399  0  78  -2 -  3141 poll_s ?        00:00:00 udevd
+4 S     0  1952  1880  0  80   0 - 42217 poll_s ?        00:00:00 gdm-simple-slav
+4 S     0  1955  1952  0  80   0 - 34359 poll_s tty1     00:00:54 Xorg
+4 S     0  1969     1  0  80   0 - 259087 poll_s ?       00:00:00 console-kit-dae
+1 S    42  2039     1  0  80   0 -  5010 poll_s ?        00:00:00 dbus-launch
+1 S    42  2040     1  0  80   0 -  8988 poll_s ?        00:00:00 dbus-daemon
+4 S    42  2042  1952  0  80   0 - 67293 poll_s ?        00:00:00 gnome-session
+4 S     0  2046     1  0  80   0 - 12469 poll_s ?        00:00:00 devkit-power-da
+0 S    42  2050     1  0  80   0 - 33307 poll_s ?        00:00:02 gconfd-2
+0 S    42  2066  2042  0  80   0 - 30099 poll_s ?        00:00:02 at-spi-registry
+1 S    42  2068     1  0  80   0 - 92445 poll_s ?        00:09:20 gnome-settings-
+0 S    42  2070     1  0  80   0 - 89626 poll_s ?        00:00:00 bonobo-activati
+0 S    42  2077     1  0  80   0 - 33792 poll_s ?        00:00:00 gvfsd
+0 S    42  2078  2042  0  80   0 - 75927 poll_s ?        00:00:03 metacity
+0 S    42  2079  2042  0  80   0 - 68461 poll_s ?        00:00:07 gnome-power-man
+0 S    42  2080  2042  0  80   0 - 62106 poll_s ?        00:00:00 polkit-gnome-au
+0 S    42  2083  2042  0  80   0 - 101044 poll_s ?       00:00:15 gdm-simple-gree
+4 S     0  2085     1  0  80   0 - 17157 poll_s ?        00:00:00 polkitd
+1 S    42  2094     1  0  69 -11 - 106936 poll_s ?       00:00:00 pulseaudio
+4 S   499  2096     1  0  81   1 - 42114 poll_s ?        00:00:05 rtkit-daemon
+4 S     0  2101  1952  0  80   0 - 45426 poll_s ?        00:00:00 gdm-session-wor
+4 S    89 11527  1782  0  80   0 - 21383 ep_pol ?        00:00:00 pickup
+4 S     0 12508  1690  0  80   0 - 29586 unix_s ?        00:00:00 sshd
+5 S  2123 12511 12508  0  80   0 - 29625 ?      ?        00:00:01 sshd
+0 S  2123 12512 12511  0  80   0 - 29807 wait   pts/0    00:00:00 bash
+4 S     0 12551  1690  0  80   0 - 29586 unix_s ?        00:00:00 sshd
+5 S  2123 12555 12551  0  80   0 - 29586 poll_s ?        00:00:00 sshd
+0 S  2123 12556 12555  0  80   0 - 29807 wait   pts/1    00:00:00 bash
+1 S     0 13608     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:0
+1 S     0 13707     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:4
+1 S     0 13750     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-8:0
+0 S     0 13815  1828  0  80   0 - 25226 hrtime ?        00:00:00 sleep
+0 S  2123 13817 12556  0  80   0 -  6482 poll_s pts/1    00:00:00 top
+0 R  2123 13820 12512  0  80   0 - 27034 -      pts/0    00:00:00 ps
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps -Al | grep top[K[K[Ktop
+0 S  2123 13817 12556  0  80   0 -  6482 poll_s pts/1    00:00:00 top
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ kill -s[K[K138171[K
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ kill 13817ps -Al | grep top[K | grep top
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps -Al | less
+[?1049h[?1h=F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0     1     0  0  80   0 -  5883 poll_s ?        00:00:02 init
+1 S     0     2     0  0  80   0 -     0 kthrea ?        00:00:01 kthreadd
+1 S     0     3     2  0 -40   - -     0 migrat ?        00:00:02 migration/0
+1 S     0     4     2  0  80   0 -     0 ksofti ?        00:00:02 ksoftirqd/0
+1 S     0     5     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/0
+5 S     0     6     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/0
+1 S     0     7     2  0 -40   - -     0 migrat ?        00:00:01 migration/1
+1 S     0     8     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/1
+1 S     0     9     2  0  80   0 -     0 ksofti ?        00:00:01 ksoftirqd/1
+5 S     0    10     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/1
+1 S     0    11     2  0  80   0 -     0 worker ?        00:00:20 events/0
+1 R     0    12     2  0  80   0 -     0 ?      ?        00:00:20 events/1
+1 S     0    13     2  0  80   0 -     0 worker ?        00:00:00 cgroup
+1 S     0    14     2  0  80   0 -     0 worker ?        00:00:00 khelper
+1 S     0    15     2  0  80   0 -     0 worker ?        00:00:00 netns
+1 S     0    16     2  0  80   0 -     0 async_ ?        00:00:00 async/mgr
+1 S     0    17     2  0  80   0 -     0 worker ?        00:00:00 pm
+1 S     0    18     2  0  80   0 -     0 bdi_sy ?        00:00:01 sync_supers
+1 S     0    19     2  0  80   0 -     0 bdi_fo ?        00:00:01 bdi-default
+1 S     0    20     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/0
+1 S     0    21     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/1
+1 S     0    22     2  0  80   0 -     0 worker ?        00:00:05 kblockd/0
+1 S     0    23     2  0  80   0 -     0 worker ?        00:00:00 kblockd/1
+1 S     0    24     2  0  80   0 -     0 worker ?        00:00:00 kacpid
+1 S     0    25     2  0  80   0 -     0 worker ?        00:00:00 kacpi_notify
+1 S     0    26     2  0  80   0 -     0 worker ?        00:00:00 kacpi_hotplug
+1 S     0    27     2  0  80   0 -     0 worker ?        00:00:00 ata_aux
+1 S     0    28     2  0  80   0 -     0 worker ?        00:00:47 ata_sff/0
+1 S     0    29     2  0  80   0 -     0 worker ?        00:00:38 ata_sff/1
+1 S     0    30     2  0  80   0 -     0 worker ?        00:00:00 ksuspend_usbd
+5 S     0    31     2  0  80   0 -     0 hub_th ?        00:00:00 khubd
+1 S     0    32     2  0  80   0 -     0 serio_ ?        00:00:00 kseriod
+1 S     0    33     2  0  80   0 -     0 worker ?        00:00:00 md/0
+1 S     0    34     2  0  80   0 -     0 worker ?        00:00:00 md/1
+1 S     0    35     2  0  80   0 -     0 worker ?        00:00:00 md_misc/0
+1 S     0    36     2  0  80   0 -     0 worker ?        00:00:00 md_misc/1
+1 S     0    37     2  0  80   0 -     0 worker ?        00:00:00 linkwatch
+1 S     0    38     2  0  80   0 -     0 watchd ?        00:00:00 khungtaskd
+1 S     0    39     2  0  80   0 -     0 kswapd ?        00:00:00 kswapd0
+1 S     0    40     2  0  85   5 -     0 ksm_sc ?        00:00:00 ksmd
+1 S     0    41     2  0  99  19 -     0 khugep ?        00:00:03 khugepaged
+1 S     0    42     2  0  80   0 -     0 worker ?        00:00:00 aio/0
+1 S     0    43     2  0  80   0 -     0 worker ?        00:00:00 aio/1
+1 S     0    44     2  0  80   0 -     0 worker ?        00:00:00 crypto/0
+1 S     0    45     2  0  80   0 -     0 worker ?        00:00:00 crypto/1
+1 S     0    50     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/0
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+:[K[K [KESCESC[KOO[KBB[K1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+:[K[K [KESCESC[KOO[KBB[K1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+:[K[K [KESCESC[KOO[KBB[K1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+:[K[K [KESCESC[KOO[KBB[K1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+:[K[K [KESCESC[KOO[KBB[K1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+:[K[K [KESCESC[KOO[KBB[K1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+:[K[K [KESCESC[KOO[KBB[K1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+:[K[K [KESCESC[KOO[KBB[K1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+:[K[K [KESCESC[KOO[KBB[K1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+:[K[K [KESCESC[KOO[KBB[K1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+:[K[K [KESCESC[KOO[KBB[K5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1352     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workque
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1371     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1375     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1377     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1379     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_threa
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1382     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/1
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1385     1  0  80   0 -  2091 poll_s ?        00:00:11 fcoemon
+:[K[K [KESCESC[KOO[KBB[K5 S    81  1397     1  0  80   0 - 10759 poll_s ?        00:00:00 dbus-daemon
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1408     1  0  80   0 - 20782 poll_s ?        00:00:02 NetworkManager
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1414     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+:[K[K [KESCESC[KOO[KBB[K5 S    29  1427     1  0  80   0 -  6880 poll_s ?        00:00:00 rpc.statd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1474     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1508     1  0  80   0 - 47368 ep_pol ?        00:00:00 cupsd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1509     2  0  80   0 -     0 worker ?        00:00:01 rpciod/0
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1512     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1513     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1538     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+:[K[K [KESCESC[KOO[KBB[K5 S    68  1547     1  0  80   0 - 10758 poll_s ?        00:00:04 hald
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1548  1547  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1588  1548  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inpu
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1589  1548  0  80   0 -  5611 poll_s ?        00:03:03 hald-addon-stor
+:[K[K [KESCESC[KOO[KBB[K4 S    68  1592  1548  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acpi
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1603     1  0  80   0 - 50405 ep_pol ?        00:00:20 sssd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1604  1603  0  80   0 - 58473 ep_pol ?        00:00:17 sssd_be
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1605  1603  0  80   0 - 50832 ep_pol ?        00:00:09 sssd_nss
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1606  1603  0  80   0 - 48415 ep_pol ?        00:00:05 sssd_pam
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1628     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1645     1  0  80   0 - 97508 rt_sig ?        00:00:03 automount
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1678     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1690     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1698     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+:[K[K [KESCESC[KOO[KBB[K5 S    38  1706     1  0  80   0 -  8723 poll_s ?        00:00:02 ntpd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1782     1  0  80   0 - 21363 ep_pol ?        00:00:03 master
+:[K[K [KESCESC[KOO[KBB[K4 S    89  1791  1782  0  80   0 - 21427 ep_pol ?        00:00:01 qmgr
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1806     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1814     1  0  80   0 - 27050 inotif ?        00:00:00 abrt-dump-oops
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1828     1  0  80   0 - 27115 wait   ?        00:00:18 ksmtuned
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1837     1  0  80   0 - 29323 hrtime ?        00:00:11 crond
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1848     1  0  80   0 -  5385 hrtime ?        00:00:00 atd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1858     1  0  80   0 - 25231 hrtime ?        00:00:00 rhnsd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1877     1  0  80   0 - 24644 poll_s ?        00:00:17 miniserv.pl
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1880     1  0  80   0 - 33484 poll_s ?        00:00:00 gdm-binary
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1886     1  0  80   0 -  1016 n_tty_ tty2     00:00:00 mingetty
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1888     1  0  80   0 -  1016 n_tty_ tty3     00:00:00 mingetty
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1890     1  0  80   0 -  1016 n_tty_ tty4     00:00:00 mingetty
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1892     1  0  80   0 -  1016 n_tty_ tty5     00:00:00 mingetty
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1894     1  0  80   0 -  1016 n_tty_ tty6     00:00:00 mingetty
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1901   399  0  78  -2 -  3143 poll_s ?        00:00:27 udevd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1902   399  0  78  -2 -  3141 poll_s ?        00:00:00 udevd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1952  1880  0  80   0 - 42217 poll_s ?        00:00:00 gdm-simple-slav
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1955  1952  0  80   0 - 34359 poll_s tty1     00:00:54 Xorg
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1969     1  0  80   0 - 259087 poll_s ?       00:00:00 console-kit-dae
+:[K[K [KESCESC[KOO[KBB[K1 S    42  2039     1  0  80   0 -  5010 poll_s ?        00:00:00 dbus-launch
+:[K[K [KESCESC[KOO[KBB[K1 S    42  2040     1  0  80   0 -  8988 poll_s ?        00:00:00 dbus-daemon
+:[K[K [KESCESC[KOO[KBB[K4 S    42  2042  1952  0  80   0 - 67293 poll_s ?        00:00:00 gnome-session
+:[K[K [KESCESC[KOO[KBB[K4 S     0  2046     1  0  80   0 - 12469 poll_s ?        00:00:00 devkit-power-da
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2050     1  0  80   0 - 33307 poll_s ?        00:00:02 gconfd-2
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2066  2042  0  80   0 - 30099 poll_s ?        00:00:02 at-spi-registry
+:[K[K [KESCESC[KOO[KBB[K1 S    42  2068     1  0  80   0 - 92445 poll_s ?        00:09:20 gnome-settings-
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2070     1  0  80   0 - 89626 poll_s ?        00:00:00 bonobo-activati
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2077     1  0  80   0 - 33792 poll_s ?        00:00:00 gvfsd
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2078  2042  0  80   0 - 75927 poll_s ?        00:00:03 metacity
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2079  2042  0  80   0 - 68461 poll_s ?        00:00:07 gnome-power-man
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2080  2042  0  80   0 - 62106 poll_s ?        00:00:00 polkit-gnome-au
+:[K[K [KESCESC[KOO[KBB[K0 S    42  2083  2042  0  80   0 - 101044 poll_s ?       00:00:15 gdm-simple-gree
+:[K[K [KESCESC[KOO[KBB[K4 S     0  2085     1  0  80   0 - 17157 poll_s ?        00:00:00 polkitd
+:[K[K [KESCESC[KOO[KBB[K1 S    42  2094     1  0  69 -11 - 106936 poll_s ?       00:00:00 pulseaudio
+:[K[K [KESCESC[KOO[KBB[K4 S   499  2096     1  0  81   1 - 42114 poll_s ?        00:00:05 rtkit-daemon
+:[K[K [KESCESC[KOO[KBB[K4 S     0  2101  1952  0  80   0 - 45426 poll_s ?        00:00:00 gdm-session-wor
+:[K[K [KESCESC[KOO[KBB[K4 S    89 11527  1782  0  80   0 - 21383 ep_pol ?        00:00:00 pickup
+:[K[K [KESCESC[KOO[KBB[K4 S     0 12508  1690  0  80   0 - 29586 unix_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K5 S  2123 12511 12508  0  80   0 - 29625 poll_s ?        00:00:01 sshd
+:[K[K [KESCESC[KOO[KBB[K0 S  2123 12512 12511  0  80   0 - 29807 wait   pts/0    00:00:00 bash
+:[K[K [KESCESC[KOO[KBB[K4 S     0 12551  1690  0  80   0 - 29586 unix_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K5 S  2123 12555 12551  0  80   0 - 29586 poll_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K0 S  2123 12556 12555  0  80   0 - 29807 n_tty_ pts/1    00:00:00 bash
+:[K[K [KESCESC[KOO[KBB[K1 S     0 13608     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:0
+:[K[K [KESCESC[KOO[KBB[K1 S     0 13707     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:4
+:[K[K [KESCESC[KOO[KBB[K1 S     0 13750     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-8:0
+:[K[K [KESCESC[KOO[KBB[K0 S     0 13842  1828  0  80   0 - 25226 hrtime ?        00:00:00 sleep
+:[K[K [KESCESC[KOO[KBB[K0 R  2123 13843 12512  0  80   0 - 27034 -      pts/0    00:00:00 ps
+:[K[K [KESCESC[KOO[KBB[K0 S  2123 13844 12512  0  80   0 - 26361 n_tty_ pts/0    00:00:00 less
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1806     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S    89  1791  1782  0  80   0 - 21427 ep_pol ?        00:00:01 qmgr
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1782     1  0  80   0 - 21363 ep_pol ?        00:00:03 master
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    38  1706     1  0  80   0 -  8723 poll_s ?        00:00:02 ntpd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1698     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1690     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1678     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1645     1  0  80   0 - 97508 rt_sig ?        00:00:03 automount
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1628     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1606  1603  0  80   0 - 48415 ep_pol ?        00:00:05 sssd_pam
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1605  1603  0  80   0 - 50832 ep_pol ?        00:00:09 sssd_nss
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1604  1603  0  80   0 - 58473 ep_pol ?        00:00:17 sssd_be
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1603     1  0  80   0 - 50405 ep_pol ?        00:00:20 sssd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S    68  1592  1548  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acpi
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM0 S     0  1589  1548  0  80   0 -  5611 poll_s ?        00:03:03 hald-addon-stor
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM0 S     0  1588  1548  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inpu
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM0 S     0  1548  1547  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    68  1547     1  0  80   0 - 10758 poll_s ?        00:00:04 hald
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1538     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1513     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1512     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1509     2  0  80   0 -     0 worker ?        00:00:01 rpciod/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1508     1  0  80   0 - 47368 ep_pol ?        00:00:00 cupsd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1474     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    29  1427     1  0  80   0 -  6880 poll_s ?        00:00:00 rpc.statd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0  1414     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1408     1  0  80   0 - 20782 poll_s ?        00:00:02 NetworkManager
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    81  1397     1  0  80   0 - 10759 poll_s ?        00:00:00 dbus-daemon
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1385     1  0  80   0 -  2091 poll_s ?        00:00:11 fcoemon
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1382     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_threa
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1379     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1377     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1375     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1371     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workque
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1352     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    50     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    45     2  0  80   0 -     0 worker ?        00:00:00 crypto/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    44     2  0  80   0 -     0 worker ?        00:00:00 crypto/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    43     2  0  80   0 -     0 worker ?        00:00:00 aio/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    42     2  0  80   0 -     0 worker ?        00:00:00 aio/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    41     2  0  99  19 -     0 khugep ?        00:00:03 khugepaged
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    40     2  0  85   5 -     0 ksm_sc ?        00:00:00 ksmd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    39     2  0  80   0 -     0 kswapd ?        00:00:00 kswapd0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    38     2  0  80   0 -     0 watchd ?        00:00:00 khungtaskd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    37     2  0  80   0 -     0 worker ?        00:00:00 linkwatch
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    36     2  0  80   0 -     0 worker ?        00:00:00 md_misc/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    35     2  0  80   0 -     0 worker ?        00:00:00 md_misc/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    34     2  0  80   0 -     0 worker ?        00:00:00 md/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    33     2  0  80   0 -     0 worker ?        00:00:00 md/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    32     2  0  80   0 -     0 serio_ ?        00:00:00 kseriod
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0    31     2  0  80   0 -     0 hub_th ?        00:00:00 khubd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    30     2  0  80   0 -     0 worker ?        00:00:00 ksuspend_usbd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    29     2  0  80   0 -     0 worker ?        00:00:38 ata_sff/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    28     2  0  80   0 -     0 worker ?        00:00:47 ata_sff/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    27     2  0  80   0 -     0 worker ?        00:00:00 ata_aux
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    26     2  0  80   0 -     0 worker ?        00:00:00 kacpi_hotplug
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    25     2  0  80   0 -     0 worker ?        00:00:00 kacpi_notify
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    24     2  0  80   0 -     0 worker ?        00:00:00 kacpid
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    23     2  0  80   0 -     0 worker ?        00:00:00 kblockd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    22     2  0  80   0 -     0 worker ?        00:00:05 kblockd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    21     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    20     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    19     2  0  80   0 -     0 bdi_fo ?        00:00:01 bdi-default
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    18     2  0  80   0 -     0 bdi_sy ?        00:00:01 sync_supers
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    17     2  0  80   0 -     0 worker ?        00:00:00 pm
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    16     2  0  80   0 -     0 async_ ?        00:00:00 async/mgr
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    15     2  0  80   0 -     0 worker ?        00:00:00 netns
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    14     2  0  80   0 -     0 worker ?        00:00:00 khelper
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    13     2  0  80   0 -     0 worker ?        00:00:00 cgroup
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 R     0    12     2  0  80   0 -     0 ?      ?        00:00:20 events/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    11     2  0  80   0 -     0 worker ?        00:00:20 events/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0    10     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     9     2  0  80   0 -     0 ksofti ?        00:00:01 ksoftirqd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     8     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     7     2  0 -40   - -     0 migrat ?        00:00:01 migration/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0     6     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     5     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     4     2  0  80   0 -     0 ksofti ?        00:00:02 ksoftirqd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     3     2  0 -40   - -     0 migrat ?        00:00:02 migration/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     2     0  0  80   0 -     0 kthrea ?        00:00:01 kthreadd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0     1     0  0  80   0 -  5883 poll_s ?        00:00:02 init
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMF S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+:[K[K [KESCESC[KOO[KBB[K1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+:[K[K [KESCESC[KOO[KBB[K1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+:[K[K [KESCESC[KOO[KBB[K1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+:[K[K [KESCESC[KOO[KBB[K1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+:[K[K [KESCESC[KOO[KBB[K1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+:[K[K [KESCESC[KOO[KBB[K1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+:[K[K [KESCESC[KOO[KBB[K1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+:[K[K [KESCESC[KOO[KBB[K1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+:[K[K [KESCESC[KOO[KBB[K1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+:[K[K [KESCESC[KOO[KBB[K1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+:[K[K [KESCESC[KOO[KBB[K5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1352     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workque
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1371     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1375     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1377     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1379     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_threa
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1382     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/1
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1385     1  0  80   0 -  2091 poll_s ?        00:00:11 fcoemon
+:[K[K [KESCESC[KOO[KBB[K5 S    81  1397     1  0  80   0 - 10759 poll_s ?        00:00:00 dbus-daemon
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1408     1  0  80   0 - 20782 poll_s ?        00:00:02 NetworkManager
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1414     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+:[K[K [KESCESC[KOO[KBB[K5 S    29  1427     1  0  80   0 -  6880 poll_s ?        00:00:00 rpc.statd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1474     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1508     1  0  80   0 - 47368 ep_pol ?        00:00:00 cupsd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1509     2  0  80   0 -     0 worker ?        00:00:01 rpciod/0
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1512     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1513     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1538     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+:[K[K [KESCESC[KOO[KBB[K5 S    68  1547     1  0  80   0 - 10758 poll_s ?        00:00:04 hald
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1548  1547  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1588  1548  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inpu
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1589  1548  0  80   0 -  5611 poll_s ?        00:03:03 hald-addon-stor
+:[K[K [KESCESC[KOO[KBB[K4 S    68  1592  1548  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acpi
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1603     1  0  80   0 - 50405 ep_pol ?        00:00:20 sssd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1604  1603  0  80   0 - 58473 ep_pol ?        00:00:17 sssd_be
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1605  1603  0  80   0 - 50832 ep_pol ?        00:00:09 sssd_nss
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1606  1603  0  80   0 - 48415 ep_pol ?        00:00:05 sssd_pam
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1628     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1645     1  0  80   0 - 97508 rt_sig ?        00:00:03 automount
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1678     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1690     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1698     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+:[K[K [KESCESC[KOO[KBB[K5 S    38  1706     1  0  80   0 -  8723 poll_s ?        00:00:02 ntpd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1782     1  0  80   0 - 21363 ep_pol ?        00:00:03 master
+:[K[K [KESCESC[KOO[KBB[K4 S    89  1791  1782  0  80   0 - 21427 ep_pol ?        00:00:01 qmgr
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1806     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1814     1  0  80   0 - 27050 inotif ?        00:00:00 abrt-dump-oops
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1828     1  0  80   0 - 27115 wait   ?        00:00:18 ksmtuned
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1837     1  0  80   0 - 29323 hrtime ?        00:00:11 crond
+:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    50     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    45     2  0  80   0 -     0 worker ?        00:00:00 crypto/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    44     2  0  80   0 -     0 worker ?        00:00:00 crypto/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    43     2  0  80   0 -     0 worker ?        00:00:00 aio/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    42     2  0  80   0 -     0 worker ?        00:00:00 aio/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    41     2  0  99  19 -     0 khugep ?        00:00:03 khugepaged
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    40     2  0  85   5 -     0 ksm_sc ?        00:00:00 ksmd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    39     2  0  80   0 -     0 kswapd ?        00:00:00 kswapd0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    38     2  0  80   0 -     0 watchd ?        00:00:00 khungtaskd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    37     2  0  80   0 -     0 worker ?        00:00:00 linkwatch
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    36     2  0  80   0 -     0 worker ?        00:00:00 md_misc/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    35     2  0  80   0 -     0 worker ?        00:00:00 md_misc/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    34     2  0  80   0 -     0 worker ?        00:00:00 md/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    33     2  0  80   0 -     0 worker ?        00:00:00 md/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    32     2  0  80   0 -     0 serio_ ?        00:00:00 kseriod
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0    31     2  0  80   0 -     0 hub_th ?        00:00:00 khubd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    30     2  0  80   0 -     0 worker ?        00:00:00 ksuspend_usbd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    29     2  0  80   0 -     0 worker ?        00:00:38 ata_sff/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    28     2  0  80   0 -     0 worker ?        00:00:47 ata_sff/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    27     2  0  80   0 -     0 worker ?        00:00:00 ata_aux
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    26     2  0  80   0 -     0 worker ?        00:00:00 kacpi_hotplug
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    25     2  0  80   0 -     0 worker ?        00:00:00 kacpi_notify
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    24     2  0  80   0 -     0 worker ?        00:00:00 kacpid
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    23     2  0  80   0 -     0 worker ?        00:00:00 kblockd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    22     2  0  80   0 -     0 worker ?        00:00:05 kblockd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    21     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    20     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    19     2  0  80   0 -     0 bdi_fo ?        00:00:01 bdi-default
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    18     2  0  80   0 -     0 bdi_sy ?        00:00:01 sync_supers
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    17     2  0  80   0 -     0 worker ?        00:00:00 pm
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    16     2  0  80   0 -     0 async_ ?        00:00:00 async/mgr
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    15     2  0  80   0 -     0 worker ?        00:00:00 netns
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    14     2  0  80   0 -     0 worker ?        00:00:00 khelper
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    13     2  0  80   0 -     0 worker ?        00:00:00 cgroup
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 R     0    12     2  0  80   0 -     0 ?      ?        00:00:20 events/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0    11     2  0  80   0 -     0 worker ?        00:00:20 events/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0    10     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     9     2  0  80   0 -     0 ksofti ?        00:00:01 ksoftirqd/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     8     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     7     2  0 -40   - -     0 migrat ?        00:00:01 migration/1
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM5 S     0     6     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     5     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     4     2  0  80   0 -     0 ksofti ?        00:00:02 ksoftirqd/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     3     2  0 -40   - -     0 migrat ?        00:00:02 migration/0
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM1 S     0     2     0  0  80   0 -     0 kthrea ?        00:00:01 kthreadd
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM4 S     0     1     0  0  80   0 -  5883 poll_s ?        00:00:02 init
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMF S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+:[K[K [KESCESC[KOO[KBB[K1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+:[K[K [KESCESC[KOO[KBB[K1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+:[K[K [KESCESC[KOO[KBB[K1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+:[K[K [KESCESC[KOO[KBB[K1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd000
+:[K[K [KESCESC[KOO[KBB[K1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:02:05 kslowd001
+:[K[K [KESCESC[KOO[KBB[K1 S     0   189     2  0  80   0 -     0 scsi_e ?        00:02:37 scsi_eh_0
+:[K[K [KESCESC[KOO[KBB[K1 S     0   190     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+:[K[K [KESCESC[KOO[KBB[K1 S     0   193     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+:[K[K [KESCESC[KOO[KBB[K1 S     0   194     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+:[K[K [KESCESC[KOO[KBB[K1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-0-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K5 S     0   399     1  0  76  -4 -  2812 poll_s ?        00:00:22 udevd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   781     2  0  80   0 -     0 worker ?        00:00:02 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   782     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   783     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+:[K[K [KESCESC[KOO[KBB[K1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   858     2  0  80   0 -     0 kjourn ?        00:00:07 jbd2/dm-2-8
+:[K[K [KESCESC[KOO[KBB[K1 S     0   859     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwrit
+:[K[K [KESCESC[KOO[KBB[K1 S     0   906     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+:[K[K [KESCESC[KOO[KBB[K1 S     0   928     2  0  80   0 -     0 bdi_wr ?        00:00:05 flush-253:2
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1241     1  0  76  -4 - 23294 ep_pol ?        00:00:01 auditd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1259     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1266     1  0  80   0 - 62272 poll_s ?        00:00:01 rsyslogd
+:[K[K [KESCESC[KOO[KBB[K5 S    32  1314     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1326     1  0  80   0 -  1144 poll_s ?        00:00:02 mdadm
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1336     1  0  80   0 -  3396 poll_s ?        00:00:31 lldpad
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1351     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1352     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workque
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1371     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1375     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1377     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1379     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_threa
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/0
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1382     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/1
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1385     1  0  80   0 -  2091 poll_s ?        00:00:11 fcoemon
+:[K[K [KESCESC[KOO[KBB[K5 S    81  1397     1  0  80   0 - 10759 poll_s ?        00:00:00 dbus-daemon
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1408     1  0  80   0 - 20782 poll_s ?        00:00:02 NetworkManager
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1414     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+:[K[K [KESCESC[KOO[KBB[K5 S    29  1427     1  0  80   0 -  6880 poll_s ?        00:00:00 rpc.statd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1474     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1508     1  0  80   0 - 47368 ep_pol ?        00:00:00 cupsd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1509     2  0  80   0 -     0 worker ?        00:00:01 rpciod/0
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1512     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1513     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1538     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+:[K[K [KESCESC[KOO[KBB[K5 S    68  1547     1  0  80   0 - 10758 poll_s ?        00:00:04 hald
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1548  1547  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1588  1548  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inpu
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1589  1548  0  80   0 -  5611 poll_s ?        00:03:03 hald-addon-stor
+:[K[K [KESCESC[KOO[KBB[K4 S    68  1592  1548  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acpi
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1603     1  0  80   0 - 50405 ep_pol ?        00:00:20 sssd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1604  1603  0  80   0 - 58473 ep_pol ?        00:00:17 sssd_be
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1605  1603  0  80   0 - 50832 ep_pol ?        00:00:09 sssd_nss
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1606  1603  0  80   0 - 48415 ep_pol ?        00:00:05 sssd_pam
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1628     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1645     1  0  80   0 - 97508 rt_sig ?        00:00:03 automount
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1678     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1690     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1698     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+:[K[K [KESCESC[KOO[KBB[K5 S    38  1706     1  0  80   0 -  8723 poll_s ?        00:00:02 ntpd
+:[K[K [KESCESC[KOO[KBB[K4 S     0  1782     1  0  80   0 - 21363 ep_pol ?        00:00:03 master
+:[K[K [KESCESC[KOO[KBB[K4 S    89  1791  1782  0  80   0 - 21427 ep_pol ?        00:00:01 qmgr
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1806     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+:[K[K [KESCESC[KOO[KBB[K0 S     0  1814     1  0  80   0 - 27050 inotif ?        00:00:00 abrt-dump-oops
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1828     1  0  80   0 - 27115 wait   ?        00:00:18 ksmtuned
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1837     1  0  80   0 - 29323 hrtime ?        00:00:11 crond
+:[K[K [KESCESC[KOO[KBB[K5 S     0  1848     1  0  80   0 -  5385 hrtime ?        00:00:00 atd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1858     1  0  80   0 - 25231 hrtime ?        00:00:00 rhnsd
+:[K[K [KESCESC[KOO[KBB[K1 S     0  1877     1  0  80   0 - 24644 poll_s ?        00:00:17 miniserv.pl
+:[K[K[?1l>[?1049l]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps -Al | less[Kecho "SSHD PID = 1601[K3"
+SSHD PID = 1603
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ echo "SSHID[K[KD PPID = 1"
+SSHD PPID = 1
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ emacs
+[?1049h[?1049h[?12;25h[?1h=[H[2J[47d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental)--------------------------------------------------------------------[0m[39;49m[27m
+[A[H[?12l[?25h[?12;25h[H[2J[48d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?1049h[?12;25h[?1h=[48;1H[?25lLoading /usr/share/emacs/site-lisp/site-start.d/auctex.el (source)...[K[H
+[?12l[?25h[?12;25h[48;70H[?25ldone[H
+[?12l[?25h[?12;25h[48;49H[?25lfocus-init.el (source)...[H
+[?12l[?25h[?12;25h[48;74H[?25ldone[H
+[?12l[?25h[?12;25h[48;49H[?25lgnuplot-init.el (source)...[K[H
+[?12l[?25h[?12;25h[48;76H[?25ldone[H
+[?12l[?25h[?12;25h[48;49H[?25lphp-mode-init.el (source)...[K[H
+[?12l[?25h[?12;25h[48;77H[?25ldone[H
+[?12l[?25h[?12;25h[48;50H[?25lo-mode-init.el (source)...[K[H
+[?12l[?25h[?12;25h[48;76H[?25ldone[H
+[?12l[?25h[?12;25h[48;50H[?25lreview-latex.el (source)...[K[H
+[?12l[?25h[?12;25h[48;77H[?25ldone[H
+[?12l[?25h[?12;25h[48;49H[?25lrpm-spec-mode-init.el (source)...[H
+[?12l[?25h[?12;25h[48;82H[?25ldone[H
+[?12l[?25h[?12;25h[48;52H[?25ldev-init.el (source)...[K[H
+[?12l[?25h[?12;25h[48;75H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[48d[?25lLoading /usr/share/emacs/site-lisp/site-start.d/rpmdev-init.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction)---------------------------------------------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[48d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[48d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                    [0m[39;49m[27m
+[A
+Welcome to GNU Emacs, one component of the GNU/Linux operating system.[K
+[K
+Get help           C-h  (Hold down CTRL and press h)[K
+[4mEmacs manual[0m       C-h r        [4mBrowse manuals[0m     C-h i[K
+[4mEmacs tutorial[0m     C-h t        Undo changes       C-x u[K
+[4mBuy manuals[0m        C-h C-m      Exit Emacs         C-x C-c[K
+[4mActivate menubar[0m   M-`[K
+(`C-' means use the CTRL key.  `M-' means use the Meta (or Alt) key.[K
+If you have no Meta key, you may instead type ESC followed by the character.)[K
+Useful tasks:[K
+[4mVisit New File[0m                  [4mOpen Home Directory[0m[K
+[4mCustomize Startup[0m               [4mOpen *scratch* buffer[0m[K
+[K
+GNU Emacs 23.1.1 (x86_64-redhat-linux-gnu, GTK+ Version 2.18.9)[K
+ of 2013-05-07 on x86-022.build.eng.bos.redhat.com[K
+Copyright (C) 2009 Free Software Foundation, Inc.[K
+[K
+GNU Emacs comes with ABSOLUTELY NO WARRANTY; type C-h C-w for [4mfull details[0m.[K
+Emacs is Free Software--Free as in Freedom--so you can redistribute copies[K
+of Emacs and modify it; type C-h C-c to see [4mthe conditions[0m.[K
+Type C-h C-o for information on [4mgetting the latest version[0m.[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:%%--F1  [0m[39;49m[27m[7m[1m*GNU Emacs* [0m[39;49m[27m[7m   All L1     (Fundamental)--------------------------------------------------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[48d[K[2d[48d[?25lC-h (Type ? for further options)[H
+[?12l[?25h[?12;25h[48;33H[?25l-[H
+[?12l[?25h[?12;25h[48;33H[?25l r[H
+[?12l[?25h[?12;25h[48d[?25luncompressing emacs.gz...[K[H
+[?12l[?25h[?12;25h[48;26H[?25ldone[H
+[?12l[?25h[?12;25h[48;20H[?25l-1.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;20H[?25l.gz...[K[H
+[?12l[?25h[?12;25h[48;26H[?25ldone[H
+[?12l[?25h[?12;25h[48;20H[?25l-1.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;20H[?25l.gz...[K[H
+[?12l[?25h[?12;25h[48;26H[?25ldone[H
+[?12l[?25h[?12;25h[48;20H[?25l-1.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l2.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l3.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l4.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l5.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l6.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l7.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l8.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l2.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l3.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l4.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l5.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l6.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l7.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48;21H[?25l8.gz...[K[H
+[?12l[?25h[?12;25h[48;28H[?25ldone[H
+[?12l[?25h[?12;25h[48d[K[2d[48d[K[H[?25l[7mFile Edit Options Buffers Tools Info Help                                                                               [0m[39;49m[27m
+[A
+[4mNext: [0m[4m[34mDistrib[0m[39;49m[4m,  Prev: [0m[4m[34m(dir)[0m[39;49m[4m,  Up: [0m[4m[34m(dir)[0m[39;49m[4m                                                                                 [0m
+[A
+[1m[31m(emacs)Top[0m[39;49m[K
+[K
+[1m[32mThe Emacs Editor[0m[39;49m[K
+****************[K
+[K
+Emacs is the extensible, customizable, self-documenting real-time[K
+display editor.  This Info file describes how to edit with Emacs and[K
+some of how to customize it; it corresponds to GNU Emacs version[K
+23.1.[K
+[K
+   To learn more about the Info documentation system, type `h', to[K
+visit a programmed instruction sequence for the Info commands.[K
+[K
+   For information on extending Emacs, see [4m[34mEmacs Lisp[0m[39;49m(elisp).[K
+[K
+   This is the Sixteenth edition of the `GNU Emacs Manual',[K
+updated for Emacs version 23.1.[K
+[K
+   Copyright (C) 1985, 1986, 1987, 1993, 1994, 1995, 1996, 1997, 1998,[K
+1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free[K
+Software Foundation, Inc.[K
+[K
+     Permission is granted to copy, distribute and/or modify this[K
+     document under the terms of the GNU Free Documentation License,[K
+     Version 1.3 or any later version published by the Free Software[K
+     Foundation; with the Invariant Sections being "The GNU Manifesto,"[K
+     "Distribution" and "GNU GENERAL PUBLIC LICENSE," with the[K
+     Front-Cover texts being "A GNU Manual," and with the Back-Cover[K
+     Texts as in (a) below.  A copy of the license is included in the[K
+     section entitled "GNU Free Documentation License."[K
+[K
+     (a) The FSF's Back-Cover Text is: "You have the freedom to copy and[K
+     modify this GNU manual.  Buying copies from the FSF supports it in[K
+     developing GNU and promoting software freedom."[K
+[K
+[1m[4m* Menu:[0m[K
+[K
+* [4m[34mDistrib[0m[39;49m               How to get the latest Emacs distribution.[K
+* [4m[34mIntro[0m[39;49m                 An introduction to Emacs concepts.[K
+[31m*[39;49m [4m[34mGlossary[0m[39;49m              Terms used in this manual.[K
+[K
+[1m[4mIndexes (each index contains a large menu)[0m[K
+* [4m[34mKey Index[0m[39;49m             An item for each standard Emacs key sequence.[K
+* [4m[34mOption Index[0m[39;49m          An item for every command-line option.[K
+[7m-UU-:%%--F1  [0m[39;49m[27m[7m[1m*info*[0m[39;49m[27m[7m (emacs) [0m[39;49m[27m[7m[1mTop[0m[39;49m[27m[7m   Top L3     (Info Narrow)--------------------------------------------------------------[0m[39;49m[27m
+[A[4d[?12l[?25h[?12;25h[47;40H[?25l[7m4[0m[39;49m[27m[5;1H[?12l[?25h[?12;25h[47;40H[?25l[7m5[0m[39;49m[27m[6;1H[?12l[?25h[?12;25h[47;40H[?25l[7m6[0m[39;49m[27m[7;1H[?12l[?25h[?12;25h[47;40H[?25l[7m7[0m[39;49m[27m[8;1H[?12l[?25h[?12;25h[47;40H[?25l[7m8[0m[39;49m[27m[9;1H[?12l[?25h[?12;25h[47;40H[?25l[7m9[0m[39;49m[27m[10;1H[?12l[?25h[?12;25h[47;40H[?25l[7m10[0m[39;49m[27m[11;1H[?12l[?25h[?12;25h[47;41H[?25l[7m1[0m[39;49m[27m[12;1H[?12l[?25h[?12;25h[47;41H[?25l[7m2[0m[39;49m[27m[13;1H[?12l[?25h[?12;25h[47;41H[?25l[7m3[0m[39;49m[27m[14;1H[?12l[?25h[?12;25h[47;41H[?25l[7m4[0m[39;49m[27m[15;1H[?12l[?25h[?12;25h[47;41H[?25l[7m5[0m[39;49m[27m[16;1H[?12l[?25h[?12;25h[47;41H[?25l[7m6[0m[39;49m[27m[17;1H[?12l[?25h[?12;25h[47;41H[?25l[7m7[0m[39;49m[27m[18;1H[?12l[?25h[?12;25h[47;41H[?25l[7m8[0m[39;49m[27m[19;1H[?12l[?25h[?12;25h[47;41H[?25l[7m9[0m[39;49m[27m[20;1H[?12l[?25h[?12;25h[47;40H[?25l[7m20[0m[39;49m[27m[21;1H[?12l[?25h[?12;25h[47;41H[?25l[7m1[0m[39;49m[27m[22;1H[?12l[?25h[?12;25h[47;41H[?25l[7m2[0m[39;49m[27m[23;1H[?12l[?25h[?12;25h[47;41H[?25l[7m3[0m[39;49m[27m[24;1H[?12l[?25h[?12;25h[47;41H[?25l[7m4[0m[39;49m[27m[25;1H[?12l[?25h[?12;25h[47;41H[?25l[7m5[0m[39;49m[27m[26;1H[?12l[?25h[?12;25h[47;41H[?25l[7m6[0m[39;49m[27m[27;1H[?12l[?25h[?12;25h[47;41H[?25l[7m7[0m[39;49m[27m[28;1H[?12l[?25h[?12;25h[47;41H[?25l[7m8[0m[39;49m[27m[29;1H[?12l[?25h[?12;25h[47;41H[?25l[7m9[0m[39;49m[27m[30;1H[?12l[?25h[?12;25h[47;40H[?25l[7m30[0m[39;49m[27m[31;1H[?12l[?25h[?12;25h[47;41H[?25l[7m1[0m[39;49m[27m[32;1H[?12l[?25h[?12;25h[47;41H[?25l[7m2[0m[39;49m[27m[33;1H[?12l[?25h[?12;25h[47;41H[?25l[7m3[0m[39;49m[27m[34;1H[?12l[?25h[?12;25h[47;41H[?25l[7m4[0m[39;49m[27m[35;1H[?12l[?25h[?12;25h[47;41H[?25l[7m5[0m[39;49m[27m[36;1H[?12l[?25h[?12;25h[47;41H[?25l[7m6[0m[39;49m[27m[37;1H[?12l[?25h[?12;25h[47;41H[?25l[7m7[0m[39;49m[27m[38;1H[?12l[?25h[?12;25h[47;41H[?25l[7m8[0m[39;49m[27m[39;1H[?12l[?25h[?12;25h[47;41H[?25l[7m9[0m[39;49m[27m[40;1H[?12l[?25h[?12;25h[47;40H[?25l[7m40[0m[39;49m[27m[41;1H[?12l[?25h[?12;25h[47;41H[?25l[7m1[0m[39;49m[27m[42;1H[?12l[?25h[?12;25h[47;41H[?25l[7m2[0m[39;49m[27m[43;1H[?12l[?25h[?12;25h[47;41H[?25l[7m3[0m[39;49m[27m[44;1H[?12l[?25h[?12;25h[47;41H[?25l[7m4[0m[39;49m[27m[45;1H[?12l[?25h[?12;25h
+
+					[?25l[7m5[0m[39;49m[27m[A[?12l[?25h[?12;25h[1;46r[3;1H[22M[1;48r[25;1H[?25l[31m*[39;49m [4m[34mCommand Index[0m[39;49m         An item for each command name.[K
+* [4m[34mVariable Index[0m[39;49m        An item for each documented variable.[K
+* [4m[34mConcept Index[0m[39;49m         An item for each concept.[K
+[K
+[31m*[39;49m [4m[34mAcknowledgments[0m[39;49m       Major contributors to GNU Emacs.[K
+[K
+[1m[4mImportant General Concepts[0m[K
+* [4m[34mScreen[0m[39;49m                How to interpret what you see on the screen.[K
+* [4m[34mUser Input[0m[39;49m            Kinds of input events (characters, buttons,[K
+                          function keys).[K
+* [4m[34mKeys[0m[39;49m                  Key sequences: what you type to request one[K
+                          editing action.[K
+* [4m[34mCommands[0m[39;49m              Named functions run by key sequences to do editing.[K
+* [4m[34mEntering Emacs[0m[39;49m        Starting Emacs from the shell.[K
+* [4m[34mExiting[0m[39;49m               Stopping or killing Emacs.[K
+[K
+[1m[4mFundamental Editing Commands[0m[K
+* [4m[34mBasic[0m[39;49m                 The most basic editing commands.[K
+* [4m[34mMinibuffer[0m[39;49m            Entering arguments that are prompted for.[K
+* [4m[34mM-x[0m[39;49m                   Invoking commands by their names.[K
+* [4m[34mHelp[0m[39;49m                  Commands for asking Emacs about its commands.[K
+[K[47;35H[7m 2% L46[0m[39;49m[27m[25;1H[?12l[?25h[?12;25h[47;41H[?25l[7m7[0m[39;49m[27m[26;1H[?12l[?25h[?12;25h[47;41H[?25l[7m6[0m[39;49m[27m[25;1H[?12l[?25h[?12;25h[1;46r[3;1H[22L[1;48r[3;1H[?25l[1m[31m(emacs)Top[0m[39;49m[K
+[K
+[1m[32mThe Emacs Editor[0m[39;49m[K
+****************[K
+[K
+Emacs is the extensible, customizable, self-documenting real-time[K
+display editor.  This Info file describes how to edit with Emacs and[K
+some of how to customize it; it corresponds to GNU Emacs version[K
+23.1.[K
+[K
+   To learn more about the Info documentation system, type `h', to[K
+visit a programmed instruction sequence for the Info commands.[K
+[K
+   For information on extending Emacs, see [4m[34mEmacs Lisp[0m[39;49m(elisp).[K
+[K
+   This is the Sixteenth edition of the `GNU Emacs Manual',[K
+updated for Emacs version 23.1.[K
+[K
+   Copyright (C) 1985, 1986, 1987, 1993, 1994, 1995, 1996, 1997, 1998,[K
+1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free[K
+Software Foundation, Inc.[K
+[K[47;36H[7m1% L45[0m[39;49m[27m[A[?12l[?25h[?12;25h[3d[?25l* [4m[34mKey Index[0m[39;49m             An item for each standard Emacs key sequence.
+* [4m[34mOption Index[0m[39;49m          An item for every command-line option.
+[31m*[39;49m [4m[34mCommand Index[0m[39;49m         An item for each command name.
+[C [4m[34mVariable Index[0m[39;49m        An item for each documented variable.
+* [4m[34mConcept Index[0m[39;49m         An item for each concept.
+[K
+[31m*[39;49m [4m[34mAcknowledgments[0m[39;49m       Major contributors to GNU Emacs.[K
+[K
+[1m[4mImportant General Concepts[0m
+* [4m[34mScreen[0m[39;49m                How to interpret what you see on the screen.
+* [4m[34mUser Input[0m[39;49m            Kinds of input events (characters, buttons,
+                          function keys).[K
+* [4m[34mKeys[0m[39;49m                  Key sequences: what you type to request one[16;4H                       editing action.[K
+* [4m[34mCommands[0m[39;49m              Named functions run by key sequences to do editing.
+* [4m[34mEntering Emacs[0m[39;49m        Starting Emacs from the shell.[K
+* [4m[34mExiting[0m[39;49m               Stopping or killing Emacs.
+
+[1m[4mFundamental Editing Commands[0m[K
+* [4m[34mBasic[0m[39;49m                 The most basic editing commands.[K
+* [4m[34mMinibuffer[0m[39;49m            Entering arguments that are prompted for.
+* [4m[34mM-x[0m[39;49m                   Invoking commands by their names.
+* [4m[34mHelp[0m[39;49m                  Commands for asking Emacs about its commands.
+[K
+[1m[4mImportant Text-Changing Commands[0m[K
+* [4m[34mMark[0m[39;49m                  The mark: how to delimit a ``region'' of text.[K
+* [4m[34mKilling[0m[39;49m               Killing (cutting) text.[K
+* [4m[34mYanking[0m[39;49m               Recovering killed text.  Moving text. (Pasting.)
+* [4m[34mAccumulating Text[0m[39;49m     Other ways of copying text.[K
+* [4m[34mRectangles[0m[39;49m            Operating on the text inside a rectangle on the screen.
+* [4m[34mCUA Bindings[0m[39;49m          Using C-x, C-c, C-v for copy[34;6H                     and paste, with enhanced rectangle support.[K
+* [4m[34mRegisters[0m[39;49m             Saving a text string or a location in the buffer.
+* [4m[34mDisplay[0m[39;49m               Controlling what text is displayed.
+* [4m[34mSearch[0m[39;49m                Finding or replacing occurrences of a string.
+* [4m[34mFixit[0m[39;49m                 Commands especially useful for fixing typos.
+* [4m[34mKeyboard Macros[0m[39;49m       A keyboard macro records a sequence of
+                          keystrokes to be replayed with a single command.
+[K
+[1m[4mMajor Structures of Emacs[0m[K
+* [4m[34mFiles[0m[39;49m                 All about handling files.
+* [4m[34mBuffers[0m[39;49m               Multiple buffers; editing several files at once.[45;3H[4m[34mWindows[0m[39;49m               Viewing two pieces of text at once.[K[46;3H[4m[34mFrames[0m[39;49m                Running the same Emacs session in multiple X windows.[47;36H[7m4[0m[39;49m[27m[4;1H[?12l[?25h[?12;25h[3;3H[?25l[4m[34mWindows[0m[39;49m               Viewing two pieces of text at once.[K[4;3H[4m[34mFrames[0m[39;49m                Running the same Emacs session in multiple X windows.
+* [4m[34mInternational[0m[39;49m         Using non-ASCII character sets.
+[K
+[1m[4mAdvanced Features[0m[K
+* [4m[34mMajor Modes[0m[39;49m           Text mode vs. Lisp mode vs. C mode...
+* [4m[34mIndentation[0m[39;49m           Editing the white space at the beginnings of lines.
+* [4m[34mText[0m[39;49m                  Commands and modes for editing English.
+* [4m[34mPrograms[0m[39;49m              Commands and modes for editing programs.[12;3H[4m[34mBuilding[0m[39;49m              Compiling, running and debugging programs.[K[13;3H[4m[34mMaintaining[0m[39;49m           Features for maintaining large programs.[K
+* [4m[34mAbbrevs[0m[39;49m               How to define text abbreviations to reduce
+                          the number of characters you must type.[K
+[K[17;3H[4m[34mPicture Mode[0m[39;49m          Editing pictures made up of characters using[K
+                          the quarter-plane screen model.[19;3H[4m[34mSending Mail[0m[39;49m          Sending mail in Emacs.[K
+* [4m[34mRmail[0m[39;49m                 Reading mail in Emacs.
+* [4m[34mDired[0m[39;49m                 You can ``edit'' a directory to manage files in it.[22;3H[4m[34mCalendar/Diary[0m[39;49m        The calendar and diary facilities.[23;3H[4m[34mDocument View[0m[39;49m         Viewing PDF, PS and DVI files.[K[24;3H[4m[34mGnus[0m[39;49m                  How to read netnews with Emacs.[K[25;3H[4m[34mShell[0m[39;49m                 Executing shell commands from Emacs.[K
+* [4m[34mEmacs Server[0m[39;49m          Using Emacs as an editing server for `mail', etc.
+* [4m[34mPrinting[0m[39;49m              Printing hardcopies of buffers or regions.[28;3H[4m[34mSorting[0m[39;49m               Sorting lines, paragraphs or pages within Emacs.[29;3H[4m[34mNarrowing[0m[39;49m             Restricting display and editing to a portion
+                          of the buffer.[K[31;3H[4m[34mTwo-Column[0m[39;49m            Splitting apart columns to edit them
+                          in side-by-side windows.[K[33;3H[4m[34mEditing Binary Files[0m[39;49m  Using Hexl mode to edit binary files.
+* [4m[34mSaving Emacs Sessions[0m[39;49m  Saving Emacs state from one session to the next.[35;5H[4m[34mcursive Edit[0m[39;49m        A command can allow you to do editing[K
+                          "within the command".  This is called a
+                          "recursive editing level".[K[38;3H[4m[34mEmulation[0m[39;49m             Emulating some other editors with Emacs.[K[39;3H[4m[34mHyperlinking[0m[39;49m          Following links in buffers.[K
+* [4m[34mDissociated Press[0m[39;49m     Dissociating text for fun.[K
+* [4m[34mAmusements[0m[39;49m            Various games and hacks.
+* [4m[34mCustomization[0m[39;49m         Modifying the behavior of Emacs.
+[K
+[1m[4mRecovery from Problems[0m[K[45;3H[4m[34mQuitting[0m[39;49m              Quitting and aborting.[K[46;3H[4m[34mLossage[0m[39;49m               What to do if Emacs is hung or malfunctioning.[K[47;36H[7m8% L86[0m[39;49m[27m[H
+
+[?12l[?25h[?12;25h[48d[K[?1l>[?12l[?25h[?1049l[39;49m
+[1]+  Stopped                 emacs
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ ps
+  PID TTY          TIME CMD
+12512 pts/0    00:00:00 bash
+13939 pts/0    00:00:00 emacs
+14002 pts/0    00:00:00 ps
+]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ fg
+emacs
+[?1049h[?1049h[?12;25h[?1h=[48;1H[K[H[?25l[7mFile Edit Options Buffers Tools Info Help                                                                               [0m[39;49m[27m
+[A
+[4mNext: [0m[4m[34mDistrib[0m[39;49m[4m,  Prev: [0m[4m[34m(dir)[0m[39;49m[4m,  Up: [0m[4m[34m(dir)[0m[39;49m[4m                                                                                 [0m
+[A
+* [4m[34mWindows[0m[39;49m               Viewing two pieces of text at once.[K
+* [4m[34mFrames[0m[39;49m                Running the same Emacs session in multiple X windows.[K
+* [4m[34mInternational[0m[39;49m         Using non-ASCII character sets.[K
+[K
+[1m[4mAdvanced Features[0m[K
+* [4m[34mMajor Modes[0m[39;49m           Text mode vs. Lisp mode vs. C mode...[K
+* [4m[34mIndentation[0m[39;49m           Editing the white space at the beginnings of lines.[K
+* [4m[34mText[0m[39;49m                  Commands and modes for editing English.[K
+* [4m[34mPrograms[0m[39;49m              Commands and modes for editing programs.[K
+* [4m[34mBuilding[0m[39;49m              Compiling, running and debugging programs.[K
+* [4m[34mMaintaining[0m[39;49m           Features for maintaining large programs.[K
+* [4m[34mAbbrevs[0m[39;49m               How to define text abbreviations to reduce[K
+                          the number of characters you must type.[K
+[K
+* [4m[34mPicture Mode[0m[39;49m          Editing pictures made up of characters using[K
+                          the quarter-plane screen model.[K
+* [4m[34mSending Mail[0m[39;49m          Sending mail in Emacs.[K
+* [4m[34mRmail[0m[39;49m                 Reading mail in Emacs.[K
+* [4m[34mDired[0m[39;49m                 You can ``edit'' a directory to manage files in it.[K
+* [4m[34mCalendar/Diary[0m[39;49m        The calendar and diary facilities.[K
+* [4m[34mDocument View[0m[39;49m         Viewing PDF, PS and DVI files.[K
+* [4m[34mGnus[0m[39;49m                  How to read netnews with Emacs.[K
+* [4m[34mShell[0m[39;49m                 Executing shell commands from Emacs.[K
+* [4m[34mEmacs Server[0m[39;49m          Using Emacs as an editing server for `mail', etc.[K
+* [4m[34mPrinting[0m[39;49m              Printing hardcopies of buffers or regions.[K
+* [4m[34mSorting[0m[39;49m               Sorting lines, paragraphs or pages within Emacs.[K
+* [4m[34mNarrowing[0m[39;49m             Restricting display and editing to a portion[K
+                          of the buffer.[K
+* [4m[34mTwo-Column[0m[39;49m            Splitting apart columns to edit them[K
+                          in side-by-side windows.[K
+* [4m[34mEditing Binary Files[0m[39;49m  Using Hexl mode to edit binary files.[K
+* [4m[34mSaving Emacs Sessions[0m[39;49m  Saving Emacs state from one session to the next.[K
+* [4m[34mRecursive Edit[0m[39;49m        A command can allow you to do editing[K
+                          "within the command".  This is called a[K
+                          "recursive editing level".[K
+* [4m[34mEmulation[0m[39;49m             Emulating some other editors with Emacs.[K
+* [4m[34mHyperlinking[0m[39;49m          Following links in buffers.[K
+* [4m[34mDissociated Press[0m[39;49m     Dissociating text for fun.[K
+* [4m[34mAmusements[0m[39;49m            Various games and hacks.[K
+* [4m[34mCustomization[0m[39;49m         Modifying the behavior of Emacs.[K
+[K
+[1m[4mRecovery from Problems[0m[K
+* [4m[34mQuitting[0m[39;49m              Quitting and aborting.[K
+* [4m[34mLossage[0m[39;49m               What to do if Emacs is hung or malfunctioning.[K
+[7m-UU-:%%--F1  [0m[39;49m[27m[7m[1m*info*[0m[39;49m[27m[7m (emacs) [0m[39;49m[27m[7m[1mTop[0m[39;49m[27m[7m    8% L86    (Info Narrow)--------------------------------------------------------------[0m[39;49m[27m
+[A[3d[?12l[?25h[?12;25h[48d[?25l(No files need saving)[H
+
+[?12l[?25h[?12;25h[48d[K[?1l>[?12l[?25h[?1049l[39;49m]0;djcassid@cs03:~/c151/week1[djcassid@cs03 week1]$ exit
+logout
+
+PID for sshd is 1603
+PPID for sshd is 1

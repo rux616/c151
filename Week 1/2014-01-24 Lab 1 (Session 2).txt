@@ -1,0 +1,1771 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.01.24 10:13:23 =~=~=~=~=~=~=~=~=~=~=~=
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password: 
+Last login: Fri Jan 24 10:12:36 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+]0;djcassid@cs03:~[?1034h[djcassid@cs03 ~]$ top
+[H[2J(B[mtop - 11:03:14 up 6 days, 19:20,  2 users,  load average: 0.02, 0.05, 0.16(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.8%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 98.9%(B[m[39;49mid,(B[m[39;49m(B[m  0.1%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894224k (B[m[39;49mused,(B[m[39;49m(B[m  1310488k (B[m[39;49mfree,(B[m[39;49m(B[m   350204k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147192k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25924 1248  888 R  1.5  0.0   0:00.20 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:17 up 6 days, 19:20,  2 users,  load average: 0.02, 0.05, 0.16(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894224k (B[m[39;49mused,(B[m[39;49m(B[m  1310488k (B[m[39;49mfree,(B[m[39;49m(B[m   350204k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1955 root      20   0  166m  11m 6676 S  0.3  0.4   0:54.37 Xorg                                                       (B[m[39;49m
+(B[m 2068 gdm       20   0  361m  16m 9760 S  0.3  0.5   9:20.61 gnome-settings-                                            (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.21 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:20 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.16(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 98.7%(B[m[39;49mid,(B[m[39;49m(B[m  1.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894348k (B[m[39;49mused,(B[m[39;49m(B[m  1310364k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147256k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m  119 root      15  -5     0    0    0 S  0.3  0.0   2:05.29 kslowd001                                                  (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.22 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:23 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.16(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894348k (B[m[39;49mused,(B[m[39;49m(B[m  1310364k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.23 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:26 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894348k (B[m[39;49mused,(B[m[39;49m(B[m  1310364k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1589 root      20   0 22444 1096  924 S  0.3  0.0   3:03.82 hald-addon-stor                                            (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.24 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:29 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894348k (B[m[39;49mused,(B[m[39;49m(B[m  1310364k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.25 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:32 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894472k (B[m[39;49mused,(B[m[39;49m(B[m  1310240k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.26 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:35 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.2%(B[m[39;49mid,(B[m[39;49m(B[m  0.7%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894472k (B[m[39;49mused,(B[m[39;49m(B[m  1310240k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.27 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:38 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.3%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894596k (B[m[39;49mused,(B[m[39;49m(B[m  1310116k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1547 haldaemo  20   0 43032 5296 4364 S  0.3  0.2   0:04.60 hald                                                       (B[m[39;49m
+(B[m12511 djcassid  20   0  115m 2324 1140 S  0.3  0.1   0:01.89 sshd                                                       (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.55 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:41 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.2%(B[m[39;49mid,(B[m[39;49m(B[m  0.7%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894596k (B[m[39;49mused,(B[m[39;49m(B[m  1310116k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1706 ntp       20   0 34892 2164 1540 S  0.3  0.1   0:02.37 ntpd                                                       (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.28 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:44 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894596k (B[m[39;49mused,(B[m[39;49m(B[m  1310116k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.7  0.0   0:00.30 top                                                        (B[m[39;49m
+(B[m  189 root      20   0     0    0    0 S  0.3  0.0   2:37.34 scsi_eh_0                                                  (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:47 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.5%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894844k (B[m[39;49mused,(B[m[39;49m(B[m  1309868k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m   28 root      20   0     0    0    0 S  0.3  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m 1336 root      20   0 13584  736  576 S  0.3  0.0   0:31.10 lldpad                                                     (B[m[39;49m
+(B[m12511 djcassid  20   0  115m 2324 1140 S  0.3  0.1   0:01.90 sshd                                                       (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:50 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894844k (B[m[39;49mused,(B[m[39;49m(B[m  1309868k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.31 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.52 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:03:53 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894844k (B[m[39;49mused,(B[m[39;49m(B[m  1309868k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.32 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:56 up 6 days, 19:20,  2 users,  load average: 0.01, 0.05, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.7%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.2%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894984k (B[m[39;49mused,(B[m[39;49m(B[m  1309728k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m   12 root      20   0     0    0    0 S  0.3  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.33 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.42 events/0                                                   (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:03:59 up 6 days, 19:20,  2 users,  load average: 0.01, 0.04, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894984k (B[m[39;49mused,(B[m[39;49m(B[m  1309728k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m  119 root      15  -5     0    0    0 S  0.3  0.0   2:05.30 kslowd001                                                  (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.34 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m[6;1H[K[H(B[mtop - 11:04:02 up 6 days, 19:21,  2 users,  load average: 0.01, 0.04, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.5%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.3%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895108k (B[m[39;49mused,(B[m[39;49m(B[m  1309604k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1589 root      20   0 22444 1096  924 S  0.3  0.0   3:03.83 hald-addon-stor                                            (B[m[39;49m
+(B[m 1837 root      20   0  114m 1352  736 S  0.3  0.0   0:11.44 crond                                                      (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:05 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895100k (B[m[39;49mused,(B[m[39;49m(B[m  1309612k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.7  0.0   0:00.36 top                                                        (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.3  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   41 root      39  19     0    0    0 S  0.3  0.0   0:03.62 khugepaged                                                 (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:08 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895092k (B[m[39;49mused,(B[m[39;49m(B[m  1309620k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m  118 root      15  -5     0    0    0 S  0.3  0.0   2:05.29 kslowd000                                                  (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:04:11 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.15(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895092k (B[m[39;49mused,(B[m[39;49m(B[m  1309620k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.37 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:14 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m100.0%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895092k (B[m[39;49mused,(B[m[39;49m(B[m  1309620k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.38 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:17 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1895092k (B[m[39;49mused,(B[m[39;49m(B[m  1309620k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.39 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:20 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894968k (B[m[39;49mused,(B[m[39;49m(B[m  1309744k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m  189 root      20   0     0    0    0 S  0.3  0.0   2:37.35 scsi_eh_0                                                  (B[m[39;49m
+(B[m 1877 root      20   0 98576  20m 1608 S  0.3  0.7   0:17.75 miniserv.pl                                                (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.40 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m[6;1H[K[H(B[mtop - 11:04:23 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894968k (B[m[39;49mused,(B[m[39;49m(B[m  1309744k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.41 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[H(B[mtop - 11:04:26 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.2%(B[m[39;49mus,(B[m[39;49m(B[m  0.0%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894968k (B[m[39;49mused,(B[m[39;49m(B[m  1309744k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.42 top                                                        (B[m[39;49m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6;1H[K[H(B[mtop - 11:04:29 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.3%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.7%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894968k (B[m[39;49mused,(B[m[39;49m(B[m  1309744k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m12555 djcassid  20   0  115m 2152 1136 S  0.3  0.1   0:00.02 sshd                                                       (B[m[39;49m
+(B[m(B[m13817 djcassid  20   0 25928 1356  992 R  0.3  0.0   0:00.43 top                                                        (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m[6;1H[K[H(B[mtop - 11:04:32 up 6 days, 19:21,  2 users,  load average: 0.00, 0.04, 0.14(B[m[39;49m[K
+Tasks:(B[m[39;49m(B[m 170 (B[m[39;49mtotal,(B[m[39;49m(B[m   1 (B[m[39;49mrunning,(B[m[39;49m(B[m 169 (B[m[39;49msleeping,(B[m[39;49m(B[m   0 (B[m[39;49mstopped,(B[m[39;49m(B[m   0 (B[m[39;49mzombie(B[m[39;49m[K
+Cpu(s):(B[m[39;49m(B[m  0.0%(B[m[39;49mus,(B[m[39;49m(B[m  0.2%(B[m[39;49msy,(B[m[39;49m(B[m  0.0%(B[m[39;49mni,(B[m[39;49m(B[m 99.8%(B[m[39;49mid,(B[m[39;49m(B[m  0.0%(B[m[39;49mwa,(B[m[39;49m(B[m  0.0%(B[m[39;49mhi,(B[m[39;49m(B[m  0.0%(B[m[39;49msi,(B[m[39;49m(B[m  0.0%(B[m[39;49mst(B[m[39;49m[K
+Mem: (B[m[39;49m(B[m  3204712k (B[m[39;49mtotal,(B[m[39;49m(B[m  1894968k (B[m[39;49mused,(B[m[39;49m(B[m  1309744k (B[m[39;49mfree,(B[m[39;49m(B[m   350212k (B[m[39;49mbuffers(B[m[39;49m[K
+Swap:(B[m[39;49m(B[m  8388600k (B[m[39;49mtotal,(B[m[39;49m(B[m        0k (B[m[39;49mused,(B[m[39;49m(B[m  8388600k (B[m[39;49mfree,(B[m[39;49m(B[m  1147260k (B[m[39;49mcached(B[m[39;49m[K
+[6;1H
+[7m  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                    (B[m[39;49m[K
+(B[m 1589 root      20   0 22444 1096  924 S  0.3  0.0   3:03.84 hald-addon-stor                                            (B[m[39;49m
+(B[m    1 root      20   0 23532 1568 1244 S  0.0  0.0   0:02.89 init                                                       (B[m[39;49m
+(B[m    2 root      20   0     0    0    0 S  0.0  0.0   0:01.77 kthreadd                                                   (B[m[39;49m
+(B[m    3 root      RT   0     0    0    0 S  0.0  0.0   0:02.29 migration/0                                                (B[m[39;49m
+(B[m    4 root      20   0     0    0    0 S  0.0  0.0   0:02.59 ksoftirqd/0                                                (B[m[39;49m
+(B[m    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0                                                (B[m[39;49m
+(B[m    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.61 watchdog/0                                                 (B[m[39;49m
+(B[m    7 root      RT   0     0    0    0 S  0.0  0.0   0:01.19 migration/1                                                (B[m[39;49m
+(B[m    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1                                                (B[m[39;49m
+(B[m    9 root      20   0     0    0    0 S  0.0  0.0   0:01.51 ksoftirqd/1                                                (B[m[39;49m
+(B[m   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.55 watchdog/1                                                 (B[m[39;49m
+(B[m   11 root      20   0     0    0    0 S  0.0  0.0   0:20.43 events/0                                                   (B[m[39;49m
+(B[m   12 root      20   0     0    0    0 S  0.0  0.0   0:20.53 events/1                                                   (B[m[39;49m
+(B[m   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup                                                     (B[m[39;49m
+(B[m   14 root      20   0     0    0    0 S  0.0  0.0   0:00.01 khelper                                                    (B[m[39;49m
+(B[m   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns                                                      (B[m[39;49m
+(B[m   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr                                                  (B[m[39;49m
+(B[m   17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 pm                                                         (B[m[39;49m
+(B[m   18 root      20   0     0    0    0 S  0.0  0.0   0:01.25 sync_supers                                                (B[m[39;49m
+(B[m   19 root      20   0     0    0    0 S  0.0  0.0   0:01.61 bdi-default                                                (B[m[39;49m
+(B[m   20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/0                                              (B[m[39;49m
+(B[m   21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kintegrityd/1                                              (B[m[39;49m
+(B[m   22 root      20   0     0    0    0 S  0.0  0.0   0:05.30 kblockd/0                                                  (B[m[39;49m
+(B[m   23 root      20   0     0    0    0 S  0.0  0.0   0:00.57 kblockd/1                                                  (B[m[39;49m
+(B[m   24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpid                                                     (B[m[39;49m
+(B[m   25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_notify                                               (B[m[39;49m
+(B[m   26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kacpi_hotplug                                              (B[m[39;49m
+(B[m   27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ata_aux                                                    (B[m[39;49m
+(B[m   28 root      20   0     0    0    0 S  0.0  0.0   0:47.56 ata_sff/0                                                  (B[m[39;49m
+(B[m   29 root      20   0     0    0    0 S  0.0  0.0   0:38.33 ata_sff/1                                                  (B[m[39;49m
+(B[m   30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 ksuspend_usbd                                              (B[m[39;49m
+(B[m   31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khubd                                                      (B[m[39;49m
+(B[m   32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kseriod                                                    (B[m[39;49m
+(B[m   33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/0                                                       (B[m[39;49m
+(B[m   34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md/1                                                       (B[m[39;49m
+(B[m   35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/0                                                  (B[m[39;49m
+(B[m   36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 md_misc/1                                                  (B[m[39;49m
+(B[m   37 root      20   0     0    0    0 S  0.0  0.0   0:00.15 linkwatch                                                  (B[m[39;49m
+(B[m   38 root      20   0     0    0    0 S  0.0  0.0   0:00.20 khungtaskd                                                 (B[m[39;49m
+(B[m   39 root      20   0     0    0    0 S  0.0  0.0   0:00.00 kswapd0                                                    (B[m[39;49m
+(B[m   40 root      25   5     0    0    0 S  0.0  0.0   0:00.00 ksmd                                                       (B[m[39;49m[6;1H[K[49;1H[?12l[?25h
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ man fg
+[?1049h[?1h=BASH_BUILTINS(1)                                              BASH_BUILTINS(1)
+
+[1mNAME[0m
+       bash, :, ., [, alias, bg, bind, break, builtin, caller, cd, command, compgen, complete, compopt, con-
+       tinue, declare, dirs, disown, echo, enable, eval, exec, exit, export, false, fc, fg,  getopts,  hash,
+       help,  history,  jobs,  kill,  let, local, logout, mapfile, popd, printf, pushd, pwd, read, readonly,
+       return, set, shift, shopt, source, suspend, test, times, trap, true, type,  typeset,  ulimit,  umask,
+       unalias, unset, wait - bash built-in commands, see [1mbash[0m(1)
+
+[1mBASH[0m [1mBUILTIN[0m [1mCOMMANDS[0m
+       Unless otherwise noted, each builtin command documented in this section as accepting options preceded
+       by [1m-[0m accepts [1m--[0m to signify the end of the options.  The [1m:[0m, [1mtrue[0m, [1mfalse[0m,  and  [1mtest[0m  builtins  do  not
+       accept  options  and  do  not  treat [1m--[0m specially.  The [1mexit[0m, [1mlogout[0m, [1mbreak[0m, [1mcontinue[0m, [1mlet[0m, and [1mshift[0m
+       builtins accept and process arguments beginning with [1m-[0m without requiring  [1m--[0m.   Other  builtins  that
+       accept  arguments  but are not specified as accepting options interpret arguments beginning with [1m-[0m as
+       invalid options and require [1m--[0m to prevent this interpretation.
+       [1m:[0m [[4marguments[24m]
+              No effect; the command does nothing beyond expanding [4marguments[24m and  performing  any  specified
+              redirections.  A zero exit code is returned.
+
+        [1m.[0m  [4mfilename[24m [[4marguments[24m]
+       [1msource[0m [4mfilename[24m [[4marguments[24m]
+              Read  and  execute commands from [4mfilename[24m in the current shell environment and return the exit
+              status of the last command executed from [4mfilename[24m.  If [4mfilename[24m does not contain a slash, file
+              names  in  [1mPATH[0m  are used to find the directory containing [4mfilename[24m.  The file searched for in
+              [1mPATH[0m need not be executable.  When [1mbash[0m is  not  in  [4mposix[24m  [4mmode[24m,  the  current  directory  is
+              searched  if  no file is found in [1mPATH[0m.  If the [1msourcepath[0m option to the [1mshopt[0m builtin command
+              is turned off, the [1mPATH[0m is not searched.  If any [4marguments[24m are supplied, they become the posi-
+              tional  parameters  when  [4mfilename[24m  is  executed.   Otherwise  the  positional  parameters are
+              unchanged.  The return status is the status of the last command exited within the script (0 if
+              no commands are executed), and false if [4mfilename[24m is not found or cannot be read.
+
+       [1malias[0m [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
+              [1mAlias[0m  with  no  arguments  or with the [1m-p[0m option prints the list of aliases in the form [1malias[0m
+              [4mname[24m=[4mvalue[24m on standard output.  When arguments are supplied, an alias is defined for each [4mname[24m
+              whose [4mvalue[24m is given.  A trailing space in  [4mvalue[24m causes the next word to be checked for alias
+              substitution when the alias is expanded.  For each [4mname[24m in the  argument  list  for  which  no
+              [4mvalue[24m  is  supplied,  the name and value of the alias is printed.  [1mAlias[0m returns true unless a
+              [4mname[24m is given for which no alias has been defined.
+
+       [1mbg[0m [[4mjobspec[24m ...]
+              Resume each suspended job [4mjobspec[24m in the background, as if it had been  started  with  [1m&[0m.   If
+              [4mjobspec[24m  is  not present, the shell’s notion of the [4mcurrent[24m [4mjob[24m is used.  [1mbg[0m [4mjobspec[24m returns 0
+              unless run when job control is disabled or, when run with job control enabled,  any  specified
+              [4mjobspec[24m was not found or was started without job control.
+
+       [1mbind[0m [[1m-m[0m [4mkeymap[24m] [[1m-lpsvPSV[0m]
+:[K[K [KESCESC[K[[[K66[K~~[K       [1mbind[0m [[1m-m[0m [4mkeymap[24m] [[1m-q[0m [4mfunction[24m] [[1m-u[0m [4mfunction[24m] [[1m-r[0m [4mkeyseq[24m]
+       [1mbind[0m [[1m-m[0m [4mkeymap[24m] [1m-f[0m [4mfilename[24m
+       [1mbind[0m [[1m-m[0m [4mkeymap[24m] [1m-x[0m [4mkeyseq[24m:[4mshell-command[24m
+       [1mbind[0m [[1m-m[0m [4mkeymap[24m] [4mkeyseq[24m:[4mfunction-name[24m
+       [1mbind[0m [4mreadline-command[24m
+              Display current [1mreadline[0m key and function bindings, bind a key sequence to a [1mreadline[0m function
+              or macro, or set a [1mreadline[0m variable.  Each non-option argument  is  a  command  as  it  would
+              appear  in  [4m.inputrc[24m, but each binding or command must be passed as a separate argument; e.g.,
+              ’"\C-x\C-r": re-read-init-file’.  Options, if supplied, have the following meanings:
+              [1m-m[0m [4mkeymap[24m
+                     Use [4mkeymap[24m as the keymap to be affected by the subsequent bindings.  Acceptable  [4mkeymap[24m
+                     names  are  [4memacs,[24m [4memacs-standard,[24m [4memacs-meta,[24m [4memacs-ctlx,[24m [4mvi,[24m [4mvi-move,[24m [4mvi-command[24m, and
+                     [4mvi-insert[24m.  [4mvi[24m is equivalent to [4mvi-command[24m; [4memacs[24m is equivalent to [4memacs-standard[24m.
+              [1m-l[0m     List the names of all [1mreadline[0m functions.
+              [1m-p[0m     Display [1mreadline[0m function names and bindings in such a way that they can be re-read.
+              [1m-P[0m     List current [1mreadline[0m function names and bindings.
+              [1m-s[0m     Display [1mreadline[0m key sequences bound to macros and the strings they output  in  such  a
+                     way that they can be re-read.
+              [1m-S[0m     Display [1mreadline[0m key sequences bound to macros and the strings they output.
+              [1m-v[0m     Display [1mreadline[0m variable names and values in such a way that they can be re-read.
+              [1m-V[0m     List current [1mreadline[0m variable names and values.
+              [1m-f[0m [4mfilename[24m
+                     Read key bindings from [4mfilename[24m.
+              [1m-q[0m [4mfunction[24m
+                     Query about which keys invoke the named [4mfunction[24m.
+              [1m-u[0m [4mfunction[24m
+                     Unbind all keys bound to the named [4mfunction[24m.
+              [1m-r[0m [4mkeyseq[24m
+                     Remove any current binding for [4mkeyseq[24m.
+              [1m-x[0m [4mkeyseq[24m[1m:[0m[4mshell-command[24m
+                     Cause  [4mshell-command[24m  to be executed whenever [4mkeyseq[24m is entered.  When [4mshell-command[24m is
+                     executed, the shell sets the [1mREADLINE_LINE[0m variable to the  contents  of  the  [1mreadline[0m
+                     line  buffer  and  the [1mREADLINE_POINT[0m variable to the current location of the insertion
+                     point.  If the executed command changes the value of [1mREADLINE_LINE[0m  or  [1mREADLINE_POINT[0m,
+                     those new values will be reflected in the editing state.
+
+              The return value is 0 unless an unrecognized option is given or an error occurred.
+
+       [1mbreak[0m [[4mn[24m]
+              Exit  from  within a [1mfor[0m, [1mwhile[0m, [1muntil[0m, or [1mselect[0m loop.  If [4mn[24m is specified, break [4mn[24m levels.  [4mn[24m
+              must be ≥ 1.  If [4mn[24m is greater than the number of enclosing  loops,  all  enclosing  loops  are
+              exited.  The return value is non-zero when [4mn[24m is ≤ 0; Otherwise, [1mbreak[0m returns 0 value.
+
+       [1mbuiltin[0m [4mshell-builtin[24m [[4marguments[24m]
+              Execute  the  specified shell builtin, passing it [4marguments[24m, and return its exit status.  This
+              is useful when defining a function whose name is the same as a shell  builtin,  retaining  the
+              functionality  of  the builtin within the function.  The [1mcd[0m builtin is commonly redefined this
+:[K[K [KESCESC[K[[[K66[K~~[K              way.  The return status is false if [4mshell-builtin[24m is not a shell builtin command.
+
+       [1mcaller[0m [[4mexpr[24m]
+              Returns the context of any active subroutine call (a shell function or a script executed  with
+              the  [1m.[0m  or [1msource[0m builtins.  Without [4mexpr[24m, [1mcaller[0m displays the line number and source filename
+              of the current subroutine call.  If a non-negative integer is supplied as  [4mexpr[24m,  [1mcaller[0m  dis-
+              plays  the line number, subroutine name, and source file corresponding to that position in the
+              current execution call stack.  This extra information may be used, for  example,  to  print  a
+              stack  trace.   The  current  frame is frame 0.  The return value is 0 unless the shell is not
+              executing a subroutine call or [4mexpr[24m does not correspond to a valid position in the call stack.
+
+       [1mcd[0m [[1m-L|-P[0m] [[4mdir[24m]
+              Change  the  current  directory  to  [4mdir[24m.  The variable [1mHOME[0m is the default [4mdir[24m.  The variable
+              [1mCDPATH[0m defines the search path for the directory containing [4mdir[24m.  Alternative directory  names
+              in  [1mCDPATH[0m  are  separated by a colon (:).  A null directory name in [1mCDPATH[0m is the same as the
+              current directory, i.e., ‘‘[1m.[0m’’.  If [4mdir[24m begins with a slash (/), then [1mCDPATH[0m is not used.  The
+              [1m-P[0m  option  says  to  use the physical directory structure instead of following symbolic links
+              (see also the [1m-P[0m option to the [1mset[0m builtin command); the [1m-L[0m option forces symbolic links to be
+              followed.   An  argument  of  [1m-[0m  is equivalent to [1m$OLDPWD[0m.  If a non-empty directory name from
+              [1mCDPATH[0m is used, or if [1m-[0m is the first argument, and the directory  change  is  successful,  the
+              absolute  pathname of the new working directory is written to the standard output.  The return
+              value is true if the directory was successfully changed; false otherwise.
+
+       [1mcommand[0m [[1m-pVv[0m] [4mcommand[24m [[4marg[24m ...]
+              Run [4mcommand[24m with [4margs[24m suppressing the normal shell function lookup. Only builtin  commands  or
+              commands found in the [1mPATH[0m are executed.  If the [1m-p[0m option is given, the search for [4mcommand[24m is
+              performed using a default value for [1mPATH[0m that is guaranteed to find all of the standard utili-
+              ties.  If either the [1m-V[0m or [1m-v[0m option is supplied, a description of [4mcommand[24m is printed.  The [1m-v[0m
+              option causes a single word indicating the command or file name used to invoke [4mcommand[24m  to  be
+              displayed;  the [1m-V[0m option produces a more verbose description.  If the [1m-V[0m or [1m-v[0m option is sup-
+              plied, the exit status is 0 if [4mcommand[24m was found, and 1 if not.  If neither option is supplied
+              and an error occurred or [4mcommand[24m cannot be found, the exit status is 127.  Otherwise, the exit
+              status of the [1mcommand[0m builtin is the exit status of [4mcommand[24m.
+
+       [1mcompgen[0m [[4moption[24m] [[4mword[24m]
+              Generate possible completion matches for [4mword[24m according to  the  [4moption[24ms,  which  may  be  any
+              option accepted by the [1mcomplete[0m builtin with the exception of [1m-p[0m and [1m-r[0m, and write the matches
+              to the standard output.  When using the [1m-F[0m or [1m-C[0m options, the various shell variables  set  by
+              the programmable completion facilities, while available, will not have useful values.
+
+              The  matches will be generated in the same way as if the programmable completion code had gen-
+              erated them directly from a completion specification with the same flags.  If [4mword[24m  is  speci-
+              fied, only those completions matching [4mword[24m will be displayed.
+
+              The return value is true unless an invalid option is supplied, or no matches were generated.
+
+       [1mcomplete[0m  [[1m-abcdefgjksuv[0m] [[1m-o[0m [4mcomp-option[24m] [[1m-DE[0m] [[1m-A[0m [4maction[24m] [[1m-G[0m [4mglobpat[24m] [[1m-W[0m [4mwordlist[24m] [[1m-F[0m [4mfunction[24m]
+:[K[K [KESCESC[K[[[K66[K~~[K       [[1m-C[0m [4mcommand[24m]
+              [[1m-X[0m [4mfilterpat[24m] [[1m-P[0m [4mprefix[24m] [[1m-S[0m [4msuffix[24m] [4mname[24m [[4mname[24m [4m...[24m]
+       [1mcomplete[0m [1m-pr[0m [[1m-DE[0m] [[4mname[24m ...]
+              Specify  how  arguments to each [4mname[24m should be completed.  If the [1m-p[0m option is supplied, or if
+              no options are supplied, existing completion specifications are printed in a way  that  allows
+              them  to  be reused as input.  The [1m-r[0m option removes a completion specification for each [4mname[24m,
+              or, if no [4mname[24ms are supplied, all completion specifications.  The [1m-D[0m option indicates that the
+              remaining  options  and  actions  should apply to the ‘‘default’’ command completion; that is,
+              completion attempted on a command for which no completion has previously been defined.  The [1m-E[0m
+              option indicates that the remaining options and actions should apply to ‘‘empty’’ command com-
+              pletion; that is, completion attempted on a blank line.
+
+              The process of applying these completion specifications when word completion is  attempted  is
+              described above under [1mProgrammable[0m [1mCompletion[0m.
+
+              Other options, if specified, have the following meanings.  The arguments to the [1m-G[0m, [1m-W[0m, and [1m-X[0m
+              options (and, if necessary, the [1m-P[0m and [1m-S[0m options) should  be  quoted  to  protect  them  from
+              expansion before the [1mcomplete[0m builtin is invoked.
+              [1m-o[0m [4mcomp-option[24m
+                      The  [4mcomp-option[24m controls several aspects of the compspec’s behavior beyond the simple
+                      generation of completions.  [4mcomp-option[24m may be one of:
+                      [1mbashdefault[0m
+                              Perform the rest of the default [1mbash[0m completions if the compspec generates  no
+                              matches.
+                      [1mdefault[0m Use  readline’s  default  filename  completion  if  the  compspec generates no
+                              matches.
+                      [1mdirnames[0m
+                              Perform directory name completion if the compspec generates no matches.
+                      [1mfilenames[0m
+                              Tell readline that the compspec generates filenames, so  it  can  perform  any
+                              filename-specific  processing (like adding a slash to directory names, quoting
+                              special characters, or suppressing trailing spaces).  Intended to be used with
+                              shell functions.
+                      [1mnospace[0m Tell  readline  not  to append a space (the default) to words completed at the
+                              end of the line.
+                      [1mplusdirs[0m
+                              After any matches defined by the compspec are generated, directory  name  com-
+                              pletion  is  attempted  and  any matches are added to the results of the other
+                              actions.
+              [1m-A[0m [4maction[24m
+                      The [4maction[24m may be one of the following to generate a list of possible completions:
+                      [1malias[0m   Alias names.  May also be specified as [1m-a[0m.
+                      [1marrayvar[0m
+                              Array variable names.
+                      [1mbinding[0m [1mReadline[0m key binding names.
+                      [1mbuiltin[0m Names of shell builtin commands.  May also be specified as [1m-b[0m.
+                      [1mcommand[0m Command names.  May also be specified as [1m-c[0m.
+:[K[K [KESCESC[K[[[K66[K~~[K                      [1mdirectory[0m
+                              Directory names.  May also be specified as [1m-d[0m.
+                      [1mdisabled[0m
+                              Names of disabled shell builtins.
+                      [1menabled[0m Names of enabled shell builtins.
+                      [1mexport[0m  Names of exported shell variables.  May also be specified as [1m-e[0m.
+                      [1mfile[0m    File names.  May also be specified as [1m-f[0m.
+                      [1mfunction[0m
+                              Names of shell functions.
+                      [1mgroup[0m   Group names.  May also be specified as [1m-g[0m.
+                      [1mhelptopic[0m
+                              Help topics as accepted by the [1mhelp[0m builtin.
+                      [1mhostname[0m
+                              Hostnames, as taken from the file specified by the [1mHOSTFILE[0m shell variable.
+                      [1mjob[0m     Job names, if job control is active.  May also be specified as [1m-j[0m.
+                      [1mkeyword[0m Shell reserved words.  May also be specified as [1m-k[0m.
+                      [1mrunning[0m Names of running jobs, if job control is active.
+                      [1mservice[0m Service names.  May also be specified as [1m-s[0m.
+                      [1msetopt[0m  Valid arguments for the [1m-o[0m option to the [1mset[0m builtin.
+                      [1mshopt[0m   Shell option names as accepted by the [1mshopt[0m builtin.
+                      [1msignal[0m  Signal names.
+                      [1mstopped[0m Names of stopped jobs, if job control is active.
+                      [1muser[0m    User names.  May also be specified as [1m-u[0m.
+                      [1mvariable[0m
+                              Names of all shell variables.  May also be specified as [1m-v[0m.
+              [1m-G[0m [4mglobpat[24m
+                      The pathname expansion pattern [4mglobpat[24m is expanded to generate  the  possible  comple-
+                      tions.
+              [1m-W[0m [4mwordlist[24m
+                      The  [4mwordlist[24m is split using the characters in the [1mIFS[0m special variable as delimiters,
+                      and each resultant word is expanded.  The possible completions are the members of  the
+                      resultant list which match the word being completed.
+              [1m-C[0m [4mcommand[24m
+                      [4mcommand[24m  is executed in a subshell environment, and its output is used as the possible
+                      completions.
+              [1m-F[0m [4mfunction[24m
+                      The shell function [4mfunction[24m is executed in the current  shell  environment.   When  it
+                      finishes, the possible completions are retrieved from the value of the [1mCOMPREPLY[0m array
+                      variable.
+              [1m-X[0m [4mfilterpat[24m
+                      [4mfilterpat[24m is a pattern as used for pathname expansion.  It is applied to the  list  of
+                      possible  completions  generated by the preceding options and arguments, and each com-
+                      pletion matching [4mfilterpat[24m is removed from the list.  A leading [1m![0m in [4mfilterpat[24m negates
+                      the pattern; in this case, any completion not matching [4mfilterpat[24m is removed.
+              [1m-P[0m [4mprefix[24m
+                      [4mprefix[24m  is  added at the beginning of each possible completion after all other options
+                      have been applied.
+:[K[K [KESCESC[K[[[K66[K~~[K              [1m-S[0m [4msuffix[24m
+                      [4msuffix[24m is appended to each possible completion  after  all  other  options  have  been
+                      applied.
+
+              The  return  value is true unless an invalid option is supplied, an option other than [1m-p[0m or [1m-r[0m
+              is supplied without a [4mname[24m argument, an attempt is made to remove a  completion  specification
+              for  a [4mname[24m for which no specification exists, or an error occurs adding a completion specifi-
+              cation.
+
+       [1mcompopt[0m [[1m-o[0m [4moption[24m] [[1m-DE[0m] [[1m+o[0m [4moption[24m] [[4mname[24m]
+              Modify completion options for each [4mname[24m according to the [4moption[24ms, or for the  currently-execu-
+              tion  completion  if  no  [4mname[24ms are supplied.  If no [4moption[24ms are given, display the completion
+              options for each [4mname[24m or the current completion.  The possible  values  of  [4moption[24m  are  those
+              valid  for  the  [1mcomplete[0m builtin described above.  The [1m-D[0m option indicates that the remaining
+              options should apply to the ‘‘default’’ command completion; that is, completion attempted on a
+              command for which no completion has previously been defined.  The [1m-E[0m option indicates that the
+              remaining options should apply to ‘‘empty’’ command completion; that is, completion  attempted
+              on a blank line.
+
+       The  return  value  is  true  unless  an invalid option is supplied, an attempt is made to modify the
+       options for a [4mname[24m for which no completion specification exists, or an output error occurs.
+
+       [1mcontinue[0m [[4mn[24m]
+              Resume the next iteration of the enclosing [1mfor[0m, [1mwhile[0m, [1muntil[0m, or [1mselect[0m loop.  If [4mn[24m is  speci-
+              fied,  resume  at  the [4mn[24mth enclosing loop.  [4mn[24m must be ≥ 1.  If [4mn[24m is greater than the number of
+              enclosing loops, the last enclosing loop (the ‘‘top-level’’ loop) is resumed.   When  [1mcontinue[0m
+              is  executed  inside  of loop, the return value is non-zero when [4mn[24m is ≤ 0; Otherwise, [1mcontinue[0m
+              returns 0 value. When [1mcontinue[0m is executed outside of loop, the return value is 0.
+
+       [1mdeclare[0m [[1m-aAfFilrtux[0m] [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
+       [1mtypeset[0m [[1m-aAfFilrtux[0m] [[1m-p[0m] [[4mname[24m[=[4mvalue[24m] ...]
+              Declare variables and/or give them attributes.  If no [4mname[24ms are given then display the  values
+              of  variables.  The [1m-p[0m option will display the attributes and values of each [4mname[24m.  When [1m-p[0m is
+              used with [4mname[24m arguments, additional options are ignored.  When [1m-p[0m is  supplied  without  [4mname[24m
+              arguments,  it  will  display the attributes and values of all variables having the attributes
+              specified by the additional options.  If no other options are supplied with [1m-p[0m,  [1mdeclare[0m  will
+              display  the  attributes  and  values of all shell variables.  The [1m-f[0m option will restrict the
+              display to shell functions.  The [1m-F[0m option inhibits the display of function definitions;  only
+              the  function  name and attributes are printed.  If the [1mextdebug[0m shell option is enabled using
+              [1mshopt[0m, the source file name and line number where the function is  defined  are  displayed  as
+              well.   The  [1m-F[0m  option  implies  [1m-f[0m.  The following options can be used to restrict output to
+              variables with the specified attribute or to give variables attributes:
+              [1m-a[0m     Each [4mname[24m is an indexed array variable (see [1mArrays[0m above).
+              [1m-A[0m     Each [4mname[24m is an associative array variable (see [1mArrays[0m above).
+              [1m-f[0m     Use function names only.
+              [1m-i[0m     The variable is treated as an integer; arithmetic evaluation (see [1mARITHMETIC[0m [1mEVALUATION[0m
+                     above) is performed when the variable is assigned a value.
+:[K[K [KESCESC[K[[[K66[K~~[K              [1m-l[0m     When  the  variable  is  assigned  a  value, all upper-case characters are converted to
+                     lower-case.  The upper-case attribute is disabled.
+              [1m-r[0m     Make [4mname[24ms readonly.  These names cannot then be assigned values by subsequent  assign-
+                     ment statements or unset.
+              [1m-t[0m     Give  each  [4mname[24m  the  [4mtrace[24m  attribute.  Traced functions inherit the [1mDEBUG[0m and [1mRETURN[0m
+                     traps from the calling shell.  The trace attribute has no  special  meaning  for  vari-
+                     ables.
+              [1m-u[0m     When  the  variable  is  assigned  a  value, all lower-case characters are converted to
+                     upper-case.  The lower-case attribute is disabled.
+              [1m-x[0m     Mark [4mname[24ms for export to subsequent commands via the environment.
+
+              Using ‘+’ instead of ‘-’ turns off the attribute instead, with the exceptions that [1m+a[0m may  not
+              be used to destroy an array variable and [1m+r[0m will not remove the readonly attribute.  When used
+              in a function, makes each [4mname[24m local, as with the [1mlocal[0m command.  If a variable name  is  fol-
+              lowed  by  =[4mvalue[24m, the value of the variable is set to [4mvalue[24m.  The return value is 0 unless an
+              invalid option is encountered, an attempt is made to define a function using  ‘‘-f  foo=bar’’,
+              an  attempt  is  made to assign a value to a readonly variable, an attempt is made to assign a
+              value to an array variable without using the compound assignment syntax  (see  [1mArrays[0m  above),
+              one  of  the [4mnames[24m is not a valid shell variable name, an attempt is made to turn off readonly
+              status for a readonly variable, an attempt is made to turn off array status for an array vari-
+              able, or an attempt is made to display a non-existent function with [1m-f[0m.
+
+       [1mdirs[0m [1m[+[0m[4mn[24m[1m][0m [1m[-[0m[4mn[24m[1m][0m [1m[-cplv][0m
+              Without  options,  displays the list of currently remembered directories.  The default display
+              is on a single line with directory names separated by spaces.  Directories are  added  to  the
+              list with the [1mpushd[0m command; the [1mpopd[0m command removes entries from the list.
+              [1m+[0m[4mn[24m     Displays  the  [4mn[24mth  entry counting from the left of the list shown by [1mdirs[0m when invoked
+                     without options, starting with zero.
+              [1m-[0m[4mn[24m     Displays the [4mn[24mth entry counting from the right of the list shown by [1mdirs[0m  when  invoked
+                     without options, starting with zero.
+              [1m-c[0m     Clears the directory stack by deleting all of the entries.
+              [1m-l[0m     Produces  a  longer listing; the default listing format uses a tilde to denote the home
+                     directory.
+              [1m-p[0m     Print the directory stack with one entry per line.
+              [1m-v[0m     Print the directory stack with one entry per line, prefixing each entry with its  index
+                     in the stack.
+
+              The  return value is 0 unless an invalid option is supplied or [4mn[24m indexes beyond the end of the
+              directory stack.
+
+       [1mdisown[0m [[1m-ar[0m] [[1m-h[0m] [[4mjobspec[24m ...]
+              Without options, each [4mjobspec[24m is removed from the table of active jobs.   If  [4mjobspec[24m  is  not
+              present, and neither [1m-a[0m nor [1m-r[0m is supplied, the shell’s notion of the [4mcurrent[24m [4mjob[24m is used.  If
+              the [1m-h[0m option is given, each [4mjobspec[24m is not removed from the table,  but  is  marked  so  that
+              [1mSIGHUP[0m  is  not sent to the job if the shell receives a [1mSIGHUP[0m.  If no [4mjobspec[24m is present, and
+              neither the [1m-a[0m nor the [1m-r[0m option is supplied, the [4mcurrent[24m [4mjob[24m is used.  If no [4mjobspec[24m is  sup-
+              plied,  the  [1m-a[0m option means to remove or mark all jobs; the [1m-r[0m option without a [4mjobspec[24m argu-
+:[K[K [KESCESC[K[[[K66[K~~[K              ment restricts operation to running jobs.  The return value is 0 unless  a  [4mjobspec[24m  does  not
+              specify a valid job.
+
+       [1mecho[0m [[1m-neE[0m] [[4marg[24m ...]
+              Output  the  [4marg[24ms, separated by spaces, followed by a newline.  The return status is always 0.
+              If [1m-n[0m is specified, the trailing newline is suppressed.  If the [1m-e[0m option is given,  interpre-
+              tation  of  the following backslash-escaped characters is enabled.  The [1m-E[0m option disables the
+              interpretation of these escape characters, even on  systems  where  they  are  interpreted  by
+              default.   The  [1mxpg_echo[0m shell option may be used to dynamically determine whether or not [1mecho[0m
+              expands these escape characters by default.  [1mecho[0m does not interpret [1m--[0m to  mean  the  end  of
+              options.  [1mecho[0m interprets the following escape sequences:
+              [1m\a[0m     alert (bell)
+              [1m\b[0m     backspace
+              [1m\c[0m     suppress further output
+              [1m\e[0m     an escape character
+              [1m\f[0m     form feed
+              [1m\n[0m     new line
+              [1m\r[0m     carriage return
+              [1m\t[0m     horizontal tab
+              [1m\v[0m     vertical tab
+              [1m\\[0m     backslash
+              [1m\0[0m[4mnnn[24m  the eight-bit character whose value is the octal value [4mnnn[24m (zero to three octal digits)
+              [1m\x[0m[4mHH[24m   the eight-bit character whose value is the hexadecimal value [4mHH[24m (one or two hex digits)
+
+       [1menable[0m [[1m-a[0m] [[1m-dnps[0m] [[1m-f[0m [4mfilename[24m] [[4mname[24m ...]
+              Enable  and  disable  builtin shell commands.  Disabling a builtin allows a disk command which
+              has the same name as a shell builtin to be executed without specifying a full  pathname,  even
+              though  the  shell  normally  searches for builtins before disk commands.  If [1m-n[0m is used, each
+              [4mname[24m is disabled; otherwise, [4mnames[24m are enabled.  For example, to use the [1mtest[0m binary found via
+              the [1mPATH[0m instead of the shell builtin version, run ‘‘enable -n test’’.  The [1m-f[0m option means to
+              load the new builtin command [4mname[24m from shared object [4mfilename[24m, on systems that support dynamic
+              loading.  The [1m-d[0m option will delete a builtin previously loaded with [1m-f[0m.  If no [4mname[24m arguments
+              are given, or if the [1m-p[0m option is supplied, a list of shell  builtins  is  printed.   With  no
+              other  option  arguments, the list consists of all enabled shell builtins.  If [1m-n[0m is supplied,
+              only disabled builtins are printed.   If  [1m-a[0m  is  supplied,  the  list  printed  includes  all
+              builtins, with an indication of whether or not each is enabled.  If [1m-s[0m is supplied, the output
+              is restricted to the POSIX [4mspecial[24m builtins.  The return value is 0 unless a  [4mname[24m  is  not  a
+              shell builtin or there is an error loading a new builtin from a shared object.
+
+       [1meval[0m [[4marg[24m ...]
+              The  [4marg[24ms are read and concatenated together into a single command.  This command is then read
+              and executed by the shell, and its exit status is returned as the value of [1meval[0m.  If there are
+              no [4margs[24m, or only null arguments, [1meval[0m returns 0.
+
+       [1mexec[0m [[1m-cl[0m] [[1m-a[0m [4mname[24m] [[4mcommand[24m [[4marguments[24m]]
+              If  [4mcommand[24m  is  specified,  it replaces the shell.  No new process is created.  The [4marguments[24m
+              become the arguments to [4mcommand[24m.  If the [1m-l[0m option is supplied, the shell places a dash at the
+:[K[K [KESCESC[K[[[K66[K~~[K              beginning  of  the  zeroth  argument  passed  to [4mcommand[24m.  This is what [4mlogin[24m(1) does.  The [1m-c[0m
+              option causes [4mcommand[24m to be executed with an empty environment.  If [1m-a[0m is supplied, the  shell
+              passes [4mname[24m as the zeroth argument to the executed command.  If [4mcommand[24m cannot be executed for
+              some reason, a non-interactive shell exits, unless the shell option [1mexecfail[0m  is  enabled,  in
+              which  case  it  returns  failure.  An interactive shell returns failure if the file cannot be
+              executed.  If [4mcommand[24m is not specified, any redirections take effect in the current shell, and
+              the return status is 0.  If there is a redirection error, the return status is 1.
+
+       [1mexit[0m [[4mn[24m]
+              Cause  the  shell to exit with a status of [4mn[24m.  If [4mn[24m is omitted, the exit status is that of the
+              last command executed.  A trap on [1mEXIT[0m is executed before the shell terminates.
+
+       [1mexport[0m [[1m-fn[0m] [[4mname[24m[=[4mword[24m]] ...
+       [1mexport[0m [1m-p[0m
+              The supplied [4mnames[24m are marked for automatic export to the environment of subsequently executed
+              commands.  If the [1m-f[0m option is given, the [4mnames[24m refer to functions.  If no [4mnames[24m are given, or
+              if the [1m-p[0m option is supplied, a list of all names that are exported in this shell is  printed.
+              The  [1m-n[0m option causes the export property to be removed from each [4mname[24m.  If a variable name is
+              followed by =[4mword[24m, the value of the variable is set to [4mword[24m.  [1mexport[0m returns an exit status of
+              0  unless  an  invalid  option  is encountered, one of the [4mnames[24m is not a valid shell variable
+              name, or [1m-f[0m is supplied with a [4mname[24m that is not a function.
+
+       [1mfc[0m [[1m-e[0m [4mename[24m] [[1m-lnr[0m] [[4mfirst[24m] [[4mlast[24m]
+       [1mfc[0m [1m-s[0m [[4mpat[24m=[4mrep[24m] [[4mcmd[24m]
+              Fix Command.  In the first form, a range of commands from [4mfirst[24m to [4mlast[24m is selected  from  the
+              history  list.  [4mFirst[24m and [4mlast[24m may be specified as a string (to locate the last command begin-
+              ning with that string) or as a number (an index into the history list, where a negative number
+              is  used as an offset from the current command number).  If [4mlast[24m is not specified it is set to
+              the current command for listing (so that ‘‘fc -l -10’’ prints the last  10  commands)  and  to
+              [4mfirst[24m  otherwise.  If [4mfirst[24m is not specified it is set to the previous command for editing and
+              -16 for listing.
+
+              The [1m-n[0m option suppresses the command numbers when listing.  The [1m-r[0m option reverses  the  order
+              of the commands.  If the [1m-l[0m option is given, the commands are listed on standard output.  Oth-
+              erwise, the editor given by [4mename[24m is invoked on a file containing those commands.  If [4mename[24m is
+              not  given, the value of the [1mFCEDIT[0m variable is used, and the value of [1mEDITOR[0m if [1mFCEDIT[0m is not
+              set.  If neither variable is set, is used.  When editing is complete, the edited commands  are
+              echoed and executed.
+
+              In  the  second form, [4mcommand[24m is re-executed after each instance of [4mpat[24m is replaced by [4mrep[24m.  A
+              useful alias to use with this is ‘‘r="fc -s"’’, so that typing ‘‘r cc’’ runs the last  command
+              beginning with ‘‘cc’’ and typing ‘‘r’’ re-executes the last command.
+
+              If  the  first  form is used, the return value is 0 unless an invalid option is encountered or
+              [4mfirst[24m or [4mlast[24m specify history lines out of range.  If the [1m-e[0m option is  supplied,  the  return
+              value  is the value of the last command executed or failure if an error occurs with the tempo-
+              rary file of commands.  If the second form is used, the return status is that of  the  command
+:[K[K [KESCESC[K[[[K66[K~~[K              re-executed,  unless [4mcmd[24m does not specify a valid history line, in which case [1mfc[0m returns fail-
+              ure.
+
+       [1mfg[0m [[4mjobspec[24m]
+              Resume [4mjobspec[24m in the foreground, and make it the current job.  If [4mjobspec[24m is not present, the
+              shell’s  notion  of  the  [4mcurrent[24m [4mjob[24m is used.  The return value is that of the command placed
+              into the foreground, or failure if run when job control is disabled or, when run with job con-
+              trol  enabled,  if  [4mjobspec[24m  does  not specify a valid job or [4mjobspec[24m specifies a job that was
+              started without job control.
+
+       [1mgetopts[0m [4moptstring[24m [4mname[24m [[4margs[24m]
+              [1mgetopts[0m is used by shell procedures to parse positional parameters.   [4moptstring[24m  contains  the
+              option  characters  to  be  recognized;  if  a character is followed by a colon, the option is
+              expected to have an argument, which should be separated from it by white space.  The colon and
+              question  mark  characters  may  not  be  used as option characters.  Each time it is invoked,
+              [1mgetopts[0m places the next option in the shell variable [4mname[24m, initializing [4mname[24m if  it  does  not
+              exist, and the index of the next argument to be processed into the variable [1mOPTIND[0m.  [1mOPTIND[0m is
+              initialized to 1 each time the shell or a shell script is invoked.  When an option requires an
+              argument,  [1mgetopts[0m  places  that  argument into the variable [1mOPTARG[0m.  The shell does not reset
+              [1mOPTIND[0m automatically; it must be manually reset between multiple calls to [1mgetopts[0m  within  the
+              same shell invocation if a new set of parameters is to be used.
+
+              When  the  end of options is encountered, [1mgetopts[0m exits with a return value greater than zero.
+              [1mOPTIND[0m is set to the index of the first non-option argument, and [1mname[0m is set to ?.
+
+              [1mgetopts[0m normally parses the positional parameters, but if more arguments are  given  in  [4margs[24m,
+              [1mgetopts[0m parses those instead.
+
+              [1mgetopts[0m can report errors in two ways.  If the first character of [4moptstring[24m is a colon, [4msilent[24m
+              error reporting is used.  In normal operation diagnostic messages  are  printed  when  invalid
+              options  or  missing option arguments are encountered.  If the variable [1mOPTERR[0m is set to 0, no
+              error messages will be displayed, even if the first character of [4moptstring[24m is not a colon.
+
+              If an invalid option is seen, [1mgetopts[0m places ? into [4mname[24m and, if not silent, prints  an  error
+              message  and  unsets  [1mOPTARG[0m.   If  [1mgetopts[0m is silent, the option character found is placed in
+              [1mOPTARG[0m and no diagnostic message is printed.
+
+              If a required argument is not found, and [1mgetopts[0m is not silent, a question mark ([1m?[0m) is  placed
+              in  [4mname[24m,  [1mOPTARG[0m is unset, and a diagnostic message is printed.  If [1mgetopts[0m is silent, then a
+              colon ([1m:[0m) is placed in [4mname[24m and [1mOPTARG[0m is set to the option character found.
+
+              [1mgetopts[0m returns true if an option, specified or unspecified, is found.  It  returns  false  if
+              the end of options is encountered or an error occurs.
+
+       [1mhash[0m [[1m-lr[0m] [[1m-p[0m [4mfilename[24m] [[1m-dt[0m] [[4mname[24m]
+              For each [4mname[24m, the full file name of the command is determined by searching the directories in
+              [1m$PATH[0m and remembered.  If the [1m-p[0m option is supplied, no path search is performed, and [4mfilename[24m
+:[K[K[?1l>[?1049l]0;djcassid@cs03:~[djcassid@cs03 ~]$ wxit[1Pxitexit
+logout

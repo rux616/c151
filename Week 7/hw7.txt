@@ -1,0 +1,28 @@
+[djcassid@cs03 week7]$ vi hw7.sh
+[djcassid@cs03 week7]$ chmod u+x hw7.sh
+[djcassid@cs03 week7]$ hw7.sh ~/c151/week2
+rm: cannot remove `/home/djcassid/c151/week2/*~': No such file or directory
+
+rm: cannot remove `/home/djcassid/c151/week2/core.*': No such file or directory
+
+emacs backup files and core files have been deleted in the folder '/home/djcassid/c151/week2'
+
+penguin.jpg  speed busters.pdf
+
+There are are 2 positional parameters.
+The first positional parameter ($0) is ./hw7.sh.
+This is the command used to execute the script.
+The second positional paremeter ($1) is /home/djcassid/c151/week2.
+This is the argument used in the previous several commands to specify the directory where to run the various commands.
+
+This is my signature:
+Dan Cassidy
+Student, IUSB
+Computer Science Program
+
+  PID TTY          TIME CMD
+11256 pts/0    00:00:00 bash
+11635 pts/0    00:00:00 dbus-launch
+13108 pts/0    00:00:00 hw7.sh
+13113 pts/0    00:00:00 ps
+[djcassid@cs03 week7]$

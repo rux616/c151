@@ -1,0 +1,29 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.01.15 19:36:33 =~=~=~=~=~=~=~=~=~=~=~=
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password: 
+Last login: Wed Jan 15 17:07:36 2014 from cs175.cs.iusb.edu
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+]0;djcassid@cs03:~[?1034h[djcassid@cs03 ~]$ exit
+logout

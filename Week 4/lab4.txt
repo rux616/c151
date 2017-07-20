@@ -1,0 +1,12 @@
+emacs -bg black -fg green
+Monday, September 1, 2014: Labor Day
+Monday, September 22, 2014: Autumnal Equinox 10:29pm (EDT)
+Thursday, September 25, 2014: Rosh HaShanah 5775
+Saturday, October 4, 2014: Yom Kippur
+Thursday, October 9, 2014: Sukkot
+Monday, October 13, 2014: Columbus Day
+Thursday, October 16, 2014: Shemini Atzeret
+Friday, October 17, 2014: Simchat Torah
+Monday, October 20, 2014: Birth of the Bab
+Saturday, October 25, 2014: Islamic New Year 1436
+Friday, October 31, 2014: Halloween

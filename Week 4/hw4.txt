@@ -1,0 +1,5 @@
+a. CTRL-9 CTRL-n moves the cursor down 9 lines.
+b. You would hit META-x then type 'checkdoc-ispell-comments' then hit ENTER.
+c. No, it contains a block of the text killed by the last few commands.
+d. It moves forward and kills (cuts) to the end of the sentence.
+e. You use the command META-y to cycle back through the previously killed text.

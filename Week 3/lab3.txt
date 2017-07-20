@@ -1,0 +1,152 @@
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password:
+Last login: Sun Feb  9 11:16:41 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ cd c151
+[djcassid@cs03 c151]$ mkdir week3
+[djcassid@cs03 c151]$ cd week3
+[djcassid@cs03 week3]$ cp /home/danav/c1/clipart.tar.gz clipart.tar.gz
+[djcassid@cs03 week3]$ tar tfz clipart.tar.gz
+clipart_cartoon_design06.gif
+clipart_cartoon_design12.gif
+clipart_funny_cartoon.jpg
+[djcassid@cs03 week3]$ tar xfz clipart.tar.gz
+[djcassid@cs03 week3]$ ls
+clipart_cartoon_design06.gif  clipart_funny_cartoon.jpg
+clipart_cartoon_design12.gif  clipart.tar.gz
+[djcassid@cs03 week3]$ display clipart_cartoon_design06.gif
+[djcassid@cs03 week3]$ display clipart_cartoon_design12.gif
+[djcassid@cs03 week3]$ display clipart_funny_cartoon.jpg
+[djcassid@cs03 week3]$ ls /bin/kw*
+ls: cannot access /bin/kw*: No such file or directory
+[djcassid@cs03 week3]$ cd /bin
+[djcassid@cs03 bin]$ ls kw*
+ls: cannot access kw*: No such file or directory
+[djcassid@cs03 bin]$ ls kw
+ls: cannot access kw: No such file or directory
+[djcassid@cs03 bin]$ ls
+alsaunmute            domainname          lsblk            sed
+arch                  dumpkeys            lscgroup         setfont
+awk                   echo                lssubsys         setserial
+basename              ed                  mail             sh
+bash                  egrep               mailx            sleep
+cat                   env                 mkdir            sort
+cgclassify            ex                  mknod            stty
+cgcreate              false               mktemp           su
+cgdelete              fgrep               more             sync
+cgexec                find                mount            tar
+cgget                 findmnt             mountpoint       taskset
+cgset                 fusermount          mv               tcsh
+cgsnapshot            gawk                nano             touch
+chgrp                 gettext             netstat          tracepath
+chmod                 grep                nice             tracepath6
+chown                 gtar                nisdomainname    traceroute
+cp                    gunzip              ping             traceroute6
+cpio                  gzip                ping6            true
+csh                   hostname            plymouth         ulockmgr_server
+cut                   ipcalc              ps               umount
+dash                  iptables-xml        pwd              uname
+date                  iptables-xml-1.4.7  raw              unicode_start
+dbus-cleanup-sockets  kbd_mode            readlink         unicode_stop
+dbus-daemon           keyctl              red              unlink
+dbus-monitor          kill                redhat_lsb_init  usleep
+dbus-send             link                rm               vi
+dbus-uuidgen          ln                  rmdir            view
+dd                    loadkeys            rnano            ypdomainname
+df                    logger              rpm              zcat
+dmesg                 login               rvi
+dnsdomainname         ls                  rview
+[djcassid@cs03 bin]$ cd ~/c151/week3
+[djcassid@cs03 week3]$ echo No files starting with kw in /bin directory
+No files starting with kw in /bin directory
+[djcassid@cs03 week3]$ echo Using files that start with ch instead
+Using files that start with ch instead
+[djcassid@cs03 week3]$ tar cf binch.tar /bin/ch*
+tar: Removing leading `/' from member names
+[djcassid@cs03 week3]$ tar tf binch.tar
+bin/chgrp
+bin/chmod
+bin/chown
+[djcassid@cs03 week3]$ ls -l
+total 464
+-rw-rw-r--. 1 djcassid djcassid 174080 Feb  9 11:30 binch.tar
+-rwxr-xr-x. 1 djcassid djcassid  41908 Sep  5  2012 clipart_cartoon_design06.gif
+-rwxr-xr-x. 1 djcassid djcassid  71687 Sep  5  2012 clipart_cartoon_design12.gif
+-rwxr-xr-x. 1 djcassid djcassid  25227 Sep  5  2012 clipart_funny_cartoon.jpg
+-rw-r--r--. 1 djcassid djcassid 137633 Feb  9 11:22 clipart.tar.gz
+[djcassid@cs03 week3]$ gzip binch.tar
+[djcassid@cs03 week3]$ ls -l
+total 372
+-rw-rw-r--. 1 djcassid djcassid  77933 Feb  9 11:30 binch.tar.gz
+-rwxr-xr-x. 1 djcassid djcassid  41908 Sep  5  2012 clipart_cartoon_design06.gif
+-rwxr-xr-x. 1 djcassid djcassid  71687 Sep  5  2012 clipart_cartoon_design12.gif
+-rwxr-xr-x. 1 djcassid djcassid  25227 Sep  5  2012 clipart_funny_cartoon.jpg
+-rw-r--r--. 1 djcassid djcassid 137633 Feb  9 11:22 clipart.tar.gz
+[djcassid@cs03 week3]$ cp /home/danav/temp/c151/icing.jpg ~/c151/week3/icing.jpg
+[djcassid@cs03 week3]$ display icing.jpg
+[djcassid@cs03 week3]$ ls -l
+total 428
+-rw-rw-r--. 1 djcassid djcassid  77933 Feb  9 11:30 binch.tar.gz
+-rwxr-xr-x. 1 djcassid djcassid  41908 Sep  5  2012 clipart_cartoon_design06.gif
+-rwxr-xr-x. 1 djcassid djcassid  71687 Sep  5  2012 clipart_cartoon_design12.gif
+-rwxr-xr-x. 1 djcassid djcassid  25227 Sep  5  2012 clipart_funny_cartoon.jpg
+-rw-r--r--. 1 djcassid djcassid 137633 Feb  9 11:22 clipart.tar.gz
+-rw-r--r--. 1 djcassid djcassid  49413 Feb  9 11:32 icing.jpg
+[djcassid@cs03 week3]$ chmod a+r icing.jpg
+[djcassid@cs03 week3]$ ls -l
+total 428
+-rw-rw-r--. 1 djcassid djcassid  77933 Feb  9 11:30 binch.tar.gz
+-rwxr-xr-x. 1 djcassid djcassid  41908 Sep  5  2012 clipart_cartoon_design06.gif
+-rwxr-xr-x. 1 djcassid djcassid  71687 Sep  5  2012 clipart_cartoon_design12.gif
+-rwxr-xr-x. 1 djcassid djcassid  25227 Sep  5  2012 clipart_funny_cartoon.jpg
+-rw-r--r--. 1 djcassid djcassid 137633 Feb  9 11:22 clipart.tar.gz
+-rw-r--r--. 1 djcassid djcassid  49413 Feb  9 11:32 icing.jpg
+[djcassid@cs03 week3]$ chmod ugo+x .
+[djcassid@cs03 week3]$ chmod ugo+x ..
+[djcassid@cs03 week3]$ cd ..
+[djcassid@cs03 c151]$ ls -l
+total 12
+drwxrwxr-x. 3 djcassid djcassid 4096 Jan 24 11:36 week1
+drwxrwxr-x. 2 djcassid djcassid 4096 Feb  2 12:29 week2
+drwxrwxr-x. 2 djcassid djcassid 4096 Feb  9 11:32 week3
+[djcassid@cs03 c151]$ cd ..
+[djcassid@cs03 ~]$ ls -l
+total 8
+drwxrwxr-x. 5 djcassid djcassid 4096 Feb  9 11:21 c151
+lrwxrwxrwx. 1 djcassid djcassid    9 Feb  2 12:33 docs -> Documents
+drwx------. 2 djcassid djcassid 4096 Jan 15 17:19 mail
+[djcassid@cs03 ~]$ cd c151/week3
+[djcassid@cs03 week3]$ ln -s /home/danav/temp/c151/icing.jpg ice.jpg
+[djcassid@cs03 week3]$ ls -l
+total 428
+-rw-rw-r--. 1 djcassid djcassid  77933 Feb  9 11:30 binch.tar.gz
+-rwxr-xr-x. 1 djcassid djcassid  41908 Sep  5  2012 clipart_cartoon_design06.gif
+-rwxr-xr-x. 1 djcassid djcassid  71687 Sep  5  2012 clipart_cartoon_design12.gif
+-rwxr-xr-x. 1 djcassid djcassid  25227 Sep  5  2012 clipart_funny_cartoon.jpg
+-rw-r--r--. 1 djcassid djcassid 137633 Feb  9 11:22 clipart.tar.gz
+lrwxrwxrwx. 1 djcassid djcassid     31 Feb  9 12:04 ice.jpg -> /home/danav/temp/c151/icing.jpg
+-rw-r--r--. 1 djcassid djcassid  49413 Feb  9 11:32 icing.jpg
+[djcassid@cs03 week3]$ display ice.jpg
+[djcassid@cs03 week3]$

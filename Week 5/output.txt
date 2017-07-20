@@ -1,0 +1,5 @@
+Enter the number of elements, maximum 50
+Enter the element number 0
+Enter the element number 1
+Enter the element number 2
+The sum of these numbers is 6

@@ -1,0 +1,227 @@
+Exercise 1
+----------
+
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password:
+Last login: Tue Feb 18 17:47:54 2014 from 149.161.69.12
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ mkdir ./c151/week5
+[djcassid@cs03 ~]$ cd ./c151/week5
+[djcassid@cs03 week5]$ cp /home/danav/public_html/teach/c151/sum_array.cc sum_array.cc
+[djcassid@cs03 week5]$ ls
+sum_array.cc
+[djcassid@cs03 week5]$ g++ sum_array.cc -g -o sumar
+[djcassid@cs03 week5]$ ./sumar
+Enter the number of elements, maximum 50
+3
+Enter the element number 0
+1
+Enter the element number 1
+2
+Enter the element number 2
+3
+The sum of these numbers is 6
+[djcassid@cs03 week5]$ vi ~/.bashrc
+[djcassid@cs03 week5]$ source ~/.bashrc
+[djcassid@cs03 week5]$ gdb sumar
+GNU gdb (GDB) Red Hat Enterprise Linux (7.2-60.el6_4.1)
+Copyright (C) 2010 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /home/djcassid/c151/week5/sumar...done.
+(gdb) run
+Starting program: /home/djcassid/c151/week5/sumar
+Enter the number of elements, maximum 50
+2
+Enter the element number 0
+1
+Enter the element number 1
+2
+The sum of these numbers is 3
+
+Program exited normally.
+Missing separate debuginfos, use: debuginfo-install glibc-2.12-1.132.el6.x86_64 libgcc-4.4.7-4.el6.x86_64 libstdc++-4.4.7-4.el6.x86_64
+(gdb) break compute_sum
+Breakpoint 1 at 0x400ab9: file sum_array.cc, line 60.
+(gdb) run
+Starting program: /home/djcassid/c151/week5/sumar
+Enter the number of elements, maximum 50
+2
+Enter the element number 0
+1
+Enter the element number 1
+2
+
+Breakpoint 1, compute_sum (size=2) at sum_array.cc:60
+60        float sum = 0;
+(gdb) bt
+#0  compute_sum (size=2) at sum_array.cc:60
+#1  0x0000000000400992 in main () at sum_array.cc:32
+(gdb) print size
+$1 = 2
+(gdb) print numbers[0]
+$2 = 1
+(gdb) step
+61        for (int i=0; i<size; i++)
+(gdb) step
+62          sum = sum + numbers[i];
+(gdb) print sum
+$3 = 0
+(gdb) step
+61        for (int i=0; i<size; i++)
+(gdb) step
+62          sum = sum + numbers[i];
+(gdb) print sum
+$4 = 1
+(gdb) cont
+Continuing.
+The sum of these numbers is 3
+
+Program exited normally.
+(gdb) break 52
+Breakpoint 2 at 0x400a57: file sum_array.cc, line 52.
+(gdb) run
+Starting program: /home/djcassid/c151/week5/sumar
+Enter the number of elements, maximum 50
+3
+
+Breakpoint 2, input_array (size=@0x7fffffffe33c) at sum_array.cc:52
+52          cout << "Enter the element number " << i << endl;
+(gdb) bt
+#0  input_array (size=@0x7fffffffe33c) at sum_array.cc:52
+#1  0x0000000000400988 in main () at sum_array.cc:28
+(gdb) print i
+$5 = 0
+(gdb) print numbers[i]
+$6 = 0
+(gdb) cont
+Continuing.
+Enter the element number 0
+1
+
+Breakpoint 2, input_array (size=@0x7fffffffe33c) at sum_array.cc:52
+52          cout << "Enter the element number " << i << endl;
+(gdb) bt
+#0  input_array (size=@0x7fffffffe33c) at sum_array.cc:52
+#1  0x0000000000400988 in main () at sum_array.cc:28
+(gdb) print i
+$7 = 1
+(gdb) print numbers[i]
+$8 = 0
+(gdb) clear
+Deleted breakpoint 2
+(gdb) cont
+Continuing.
+Enter the element number 1
+2
+Enter the element number 2
+3
+
+Breakpoint 1, compute_sum (size=3) at sum_array.cc:60
+60        float sum = 0;
+(gdb) cont
+Continuing.
+The sum of these numbers is 6
+
+Program exited normally.
+(gdb) quit
+
+
+Exercise 2
+----------
+
+[djcassid@cs03 week5]$ vi
+[djcassid@cs03 week5]$ cat input.txt
+3
+1
+2
+3
+
+[djcassid@cs03 week5]$ sumar < input.txt
+Enter the number of elements, maximum 50
+Enter the element number 0
+Enter the element number 1
+Enter the element number 2
+The sum of these numbers is 6
+[djcassid@cs03 week5]$ sumar < input.txt > output.txt
+[djcassid@cs03 week5]$ cat output.txt
+Enter the number of elements, maximum 50
+Enter the element number 0
+Enter the element number 1
+Enter the element number 2
+The sum of these numbers is 6
+
+
+Exercise 3
+----------
+
+[djcassid@cs03 week5]$ cp ~danav/temp/c151/phil.tar.gz ~/c151
+[djcassid@cs03 week5]$ cd ..
+[djcassid@cs03 c151]$ gzip -d phil.tar.gz
+[djcassid@cs03 c151]$ tar xf phil.tar
+[djcassid@cs03 c151]$ ls
+phils  phil.tar  week1  week2  week3  week4  week5
+[djcassid@cs03 c151]$ cd phils
+[djcassid@cs03 phils]$ ls
+main.cc  Makefile  solution2.cc  solution2.h
+[djcassid@cs03 phils]$ g++ main.cc -c
+[djcassid@cs03 phils]$ g++ solution2.cc -c
+[djcassid@cs03 phils]$ ls
+main.cc  main.o  Makefile  solution2.cc  solution2.h  solution2.o
+[djcassid@cs03 phils]$ g++ *.o -lpthread -o phils
+[djcassid@cs03 phils]$ phils
+Enter the number of iterations
+10
+Philosopher nr 0 has eaten 4 times and meditated 10 times.
+Philosopher nr 1 has eaten 7 times and meditated 10 times.
+Philosopher nr 2 has eaten 5 times and meditated 10 times.
+Philosopher nr 3 has eaten 5 times and meditated 10 times.
+Philosopher nr 4 has eaten 6 times and meditated 10 times.
+[djcassid@cs03 phils]$ ls
+main.cc  main.o  Makefile  phils  solution2.cc  solution2.h  solution2.o
+[djcassid@cs03 phils]$ make clean
+rm -rf *.o
+rm -f phils
+[djcassid@cs03 phils]$ ls
+main.cc  Makefile  solution2.cc  solution2.h
+[djcassid@cs03 phils]$ make
+g++ -O   -c -o solution2.o solution2.cc
+g++ -O   -c -o main.o main.cc
+g++  -o phils solution2.o main.o  -lm  -lpthread
+[djcassid@cs03 phils]$ ls
+main.cc  main.o  Makefile  phils  solution2.cc  solution2.h  solution2.o
+[djcassid@cs03 phils]$ phils
+Enter the number of iterations
+10
+Philosopher nr 0 has eaten 10 times and meditated 10 times.
+Philosopher nr 1 has eaten 10 times and meditated 10 times.
+Philosopher nr 2 has eaten 10 times and meditated 10 times.
+Philosopher nr 3 has eaten 10 times and meditated 10 times.
+Philosopher nr 4 has eaten 10 times and meditated 10 times.

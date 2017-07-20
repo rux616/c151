@@ -1,0 +1,253 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.01.21 17:25:34 =~=~=~=~=~=~=~=~=~=~=~=
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password: 
+Last login: Wed Jan 15 19:36:57 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+]0;djcassid@cs03:~[?1034h[djcassid@cs03 ~]$ less
+Missing filename ("less --help" for help)
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ help[K[K[K[Kless --help
+[?1049h[?1h=
+                   [1mSUMMARY[0m [1mOF[0m [1mLESS[0m [1mCOMMANDS[0m
+
+      Commands marked with * may be preceded by a number, [4mN[24m.
+      Notes in parentheses indicate the behavior if [4mN[24m is given.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           [1mMOVING[0m
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or [4mN[24m lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or [4mN[24m lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or [4mN[24m lines).
+  b  ^B  ESC-v      *  Backward one window (or [4mN[24m lines).
+  z                 *  Forward  one window (and set window to [4mN[24m).
+  w                 *  Backward one window (and set window to [4mN[24m).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to [4mN[24m).
+  u  ^U             *  Backward one half-window (and set half-window to [4mN[24m).
+  ESC-)  RightArrow *  Left  one half screen width (or [4mN[24m positions).
+  ESC-(  LeftArrow  *  Right one half screen width (or [4mN[24m positions).
+  F                    Forward forever; like "tail -f".
+  r  ^R  ^L            Repaint screen.
+  R                    Repaint screen, discarding buffered input.
+        ---------------------------------------------------
+        Default "window" is the screen height.
+        Default "half-window" is half of the screen height.
+ ---------------------------------------------------------------------------
+
+                          [1mSEARCHING[0m
+
+  /[4mpattern[24m          *  Search forward for ([4mN[24m-th) matching line.
+  ?[4mpattern[24m          *  Search backward for ([4mN[24m-th) matching line.
+  n                 *  Repeat previous search (for [4mN[24m-th occurrence).
+  N                 *  Repeat previous search in reverse direction.
+  ESC-n             *  Repeat previous search, spanning files.
+  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
+  ESC-u                Undo (toggle) search highlighting.
+  &[4mpattern[24m          *  Display only matching lines
+        ---------------------------------------------------
+        Search patterns may be modified by one or more of:
+        ^N or !  Search for NON-matching lines.
+        ^E or *  Search multiple files (pass thru END OF FILE).
+        ^F or @  Start search at FIRST file (for /) or last file (for ?).
+        ^K       Highlight matches, but don't move (KEEP position).
+[7mHELP -- Press RETURN for more, or q when done[27m[K[K[?1l>[?1049l]0;djcassid@cs03:~[djcassid@cs03 ~]$ quote[Ka
+quota: error while getting quota from 149.161.65.64:/var/spool/mail for djcassid (id 2123): Connection refused
+Disk quotas for user djcassid (uid 2123): none
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ du
+4	./.mozilla/extensions
+4	./.mozilla/plugins
+12	./.mozilla
+12	./mail
+8	./c151/week1
+12	./c151
+4	./.gnome2
+88	.
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ du --he;[
+Usage: du [OPTION]... [FILE]...
+  or:  du [OPTION]... --files0-from=F
+Summarize disk usage of each FILE, recursively for directories.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all             write counts for all files, not just directories
+      --apparent-size   print apparent sizes, rather than disk usage; although
+                          the apparent size is usually smaller, it may be
+                          larger due to holes in (`sparse') files, internal
+                          fragmentation, indirect blocks, and the like
+  -B, --block-size=SIZE  use SIZE-byte blocks
+  -b, --bytes           equivalent to `--apparent-size --block-size=1'
+  -c, --total           produce a grand total
+  -D, --dereference-args  dereference only symlinks that are listed on the
+                          command line
+      --files0-from=F   summarize disk usage of the NUL-terminated file
+                          names specified in file F;
+                          If F is - then read names from standard input
+  -H                    equivalent to --dereference-args (-D)
+  -h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+      --si              like -h, but use powers of 1000 not 1024
+  -k                    like --block-size=1K
+  -l, --count-links     count sizes many times if hard linked
+  -m                    like --block-size=1M
+  -L, --dereference     dereference all symbolic links
+  -P, --no-dereference  don't follow any symbolic links (this is the default)
+  -0, --null            end each output line with 0 byte rather than newline
+  -S, --separate-dirs   do not include size of subdirectories
+  -s, --summarize       display only a total for each argument
+  -x, --one-file-system    skip directories on different file systems
+  -X, --exclude-from=FILE  exclude files that match any pattern in FILE
+      --exclude=PATTERN    exclude files that match PATTERN
+      --max-depth=N     print the total for a directory (or file, with --all)
+                          only if it is N or fewer levels below the command
+                          line argument;  --max-depth=0 is the same as
+                          --summarize
+      --time            show time of the last modification of any file in the
+                          directory, or any of its subdirectories
+      --time=WORD       show time as WORD instead of modification time:
+                          atime, access, use, ctime or status
+      --time-style=STYLE  show times using style STYLE:
+                          full-iso, long-iso, iso, +FORMAT
+                          FORMAT is interpreted like `date'
+      --help     display this help and exit
+      --version  output version information and exit
+
+Display values are in units of the first available SIZE from --block-size,
+and the DU_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+
+SIZE may be (or may be an integer optionally followed by) one of following:
+KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+
+Report du bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'du invocation'
+-bash: [: missing `]'
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ du --he;[[K[Klp
+Usage: du [OPTION]... [FILE]...
+  or:  du [OPTION]... --files0-from=F
+Summarize disk usage of each FILE, recursively for directories.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all             write counts for all files, not just directories
+      --apparent-size   print apparent sizes, rather than disk usage; although
+                          the apparent size is usually smaller, it may be
+                          larger due to holes in (`sparse') files, internal
+                          fragmentation, indirect blocks, and the like
+  -B, --block-size=SIZE  use SIZE-byte blocks
+  -b, --bytes           equivalent to `--apparent-size --block-size=1'
+  -c, --total           produce a grand total
+  -D, --dereference-args  dereference only symlinks that are listed on the
+                          command line
+      --files0-from=F   summarize disk usage of the NUL-terminated file
+                          names specified in file F;
+                          If F is - then read names from standard input
+  -H                    equivalent to --dereference-args (-D)
+  -h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+      --si              like -h, but use powers of 1000 not 1024
+  -k                    like --block-size=1K
+  -l, --count-links     count sizes many times if hard linked
+  -m                    like --block-size=1M
+  -L, --dereference     dereference all symbolic links
+  -P, --no-dereference  don't follow any symbolic links (this is the default)
+  -0, --null            end each output line with 0 byte rather than newline
+  -S, --separate-dirs   do not include size of subdirectories
+  -s, --summarize       display only a total for each argument
+  -x, --one-file-system    skip directories on different file systems
+  -X, --exclude-from=FILE  exclude files that match any pattern in FILE
+      --exclude=PATTERN    exclude files that match PATTERN
+      --max-depth=N     print the total for a directory (or file, with --all)
+                          only if it is N or fewer levels below the command
+                          line argument;  --max-depth=0 is the same as
+                          --summarize
+      --time            show time of the last modification of any file in the
+                          directory, or any of its subdirectories
+      --time=WORD       show time as WORD instead of modification time:
+                          atime, access, use, ctime or status
+      --time-style=STYLE  show times using style STYLE:
+                          full-iso, long-iso, iso, +FORMAT
+                          FORMAT is interpreted like `date'
+      --help     display this help and exit
+      --version  output version information and exit
+
+Display values are in units of the first available SIZE from --block-size,
+and the DU_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+
+SIZE may be (or may be an integer optionally followed by) one of following:
+KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+
+Report du bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'du invocation'
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ df --help
+Usage: df [OPTION]... [FILE]...
+Show information about the file system on which each FILE resides,
+or all file systems by default.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all             include dummy file systems
+  -B, --block-size=SIZE  use SIZE-byte blocks
+      --direct          show statistics for a file instead of mount point
+      --total           produce a grand total
+  -h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+  -H, --si              likewise, but use powers of 1000 not 1024
+  -i, --inodes          list inode information instead of block usage
+  -k                    like --block-size=1K
+  -l, --local           limit listing to local file systems
+      --no-sync         do not invoke sync before getting usage info (default)
+  -P, --portability     use the POSIX output format
+      --sync            invoke sync before getting usage info
+  -t, --type=TYPE       limit listing to file systems of type TYPE
+  -T, --print-type      print file system type
+  -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE
+  -v                    (ignored)
+      --help     display this help and exit
+      --version  output version information and exit
+
+Display values are in units of the first available SIZE from --block-size,
+and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+
+SIZE may be (or may be an integer optionally followed by) one of following:
+KB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, Y.
+
+Report df bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'df invocation'
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ df
+Filesystem                     1K-blocks      Used  Available Use% Mounted on
+/dev/mapper/GX620-lv_root       51606140   7381468   41603232  16% /
+tmpfs                            1602356        76    1602280   1% /dev/shm
+/dev/sda1                         495844     82300     387944  18% /boot
+/dev/mapper/GX620-lv_tmp        51606140    184288   48800412   1% /tmp
+/dev/mapper/GX620-lv_var        51606140    790372   48194328   2% /var
+149.161.65.32:/home           1511899136 118254592 1316844544   9% /home
+149.161.65.64:/var/spool/mail  100791808   3139584   92532224   4% /var/spool/mail
+]0;djcassid@cs03:~[djcassid@cs03 ~]$ exit
+logout

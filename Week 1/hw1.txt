@@ -1,0 +1,714 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2014.01.24 11:30:53 =~=~=~=~=~=~=~=~=~=~=~=
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password: 
+Last login: Fri Jan 24 11:24:35 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ ls -al
+total 92
+drwx------.   6 djcassid djcassid  4096 Jan 24 11:29 .
+drwxr-xr-x. 311 root     root     24576 Jan 16 17:34 ..
+-rw-rw-r--.   1 djcassid djcassid     0 Jan 15 17:15 .addressbook
+-rw-------.   1 djcassid djcassid  1111 Jan 24 11:30 .bash_history
+-rw-r--r--.   1 djcassid djcassid    18 Jul  9  2013 .bash_logout
+-rw-r--r--.   1 djcassid djcassid   176 Jul  9  2013 .bash_profile
+-rw-r--r--.   1 djcassid djcassid   124 Jul  9  2013 .bashrc
+drwxrwxr-x.   3 djcassid djcassid  4096 Jan 15 17:14 c151
+-rw-r--r--.   1 djcassid djcassid   500 May  7  2013 .emacs
+drwxr-xr-x.   2 djcassid djcassid  4096 Jul 14  2010 .gnome2
+drwx------.   2 djcassid djcassid  4096 Jan 15 17:19 mail
+drwxr-xr-x.   4 djcassid djcassid  4096 Apr 24  2012 .mozilla
+-rw-------.   1 djcassid djcassid 24120 Jan 15 17:15 .pinerc
+-rw-rw-r--.   1 djcassid djcassid    51 Jan 24 11:29 .signature
+[djcassid@cs03 ~]$ ls /usr/binma/ma*
+/usr/bin/macptopbm      /usr/bin/makebootfat          /usr/bin/makeindex    /usr/bin/manhole
+/usr/bin/mag            /usr/bin/makedeltarpm         /usr/bin/makeinfo     /usr/bin/manpage-alert
+/usr/bin/magnifier      /usr/bin/makedepend           /usr/bin/makempx      /usr/bin/manpath
+/usr/bin/mailq          /usr/bin/make_driver_db_cups  /usr/bin/mako-render  /usr/bin/manweb
+/usr/bin/mailq.postfix  /usr/bin/make_driver_db_lpr   /usr/bin/man          /usr/bin/mapscrn
+/usr/bin/make           /usr/bin/makeg                /usr/bin/man2html     /usr/bin/mattrib
+[djcassid@cs03 ~]$ locate /usr/*math.h
+/usr/i686-pc-mingw32/sys-root/mingw/include/math.h
+/usr/include/Rmath.h
+/usr/include/math.h
+/usr/include/tgmath.h
+/usr/include/Qt/qmath.h
+/usr/include/QtCore/qmath.h
+/usr/include/R/Rmath.h
+/usr/include/c++/4.4.4/tgmath.h
+/usr/include/c++/4.4.4/tr1/math.h
+/usr/include/c++/4.4.4/tr1/tgmath.h
+/usr/include/python2.6/pymath.h
+/usr/include/tcl-private/generic/tommath.h
+/usr/lib/x86_64-redhat-linux5E/include/math.h
+/usr/lib/x86_64-redhat-linux5E/include/tgmath.h
+/usr/lib64/gcc/i686-pc-mingw32/4.4.6/include/tgmath.h
+/usr/lib64/python2.6/site-packages/numpy/core/include/numpy/npy_math.h
+/usr/share/virtualbox/src/vboxhost/vboxdrv/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxnetadp/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxnetflt/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxpci/include/iprt/asm-math.h
+[djcassid@cs03 ~]$ locate /usr/*math.h
+/usr/i686-pc-mingw32/sys-root/mingw/include/math.h
+/usr/include/Rmath.h
+/usr/include/math.h
+/usr/include/tgmath.h
+/usr/include/Qt/qmath.h
+/usr/include/QtCore/qmath.h
+/usr/include/R/Rmath.h
+/usr/include/c++/4.4.4/tgmath.h
+/usr/include/c++/4.4.4/tr1/math.h
+/usr/include/c++/4.4.4/tr1/tgmath.h
+/usr/include/python2.6/pymath.h
+/usr/include/tcl-private/generic/tommath.h
+/usr/lib/x86_64-redhat-linux5E/include/math.h
+/usr/lib/x86_64-redhat-linux5E/include/tgmath.h
+/usr/lib64/gcc/i686-pc-mingw32/4.4.6/include/tgmath.h
+/usr/lib64/python2.6/site-packages/numpy/core/include/numpy/npy_math.h
+/usr/share/virtualbox/src/vboxhost/vboxdrv/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxnetadp/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxnetflt/include/iprt/asm-math.h
+/usr/share/virtualbox/src/vboxhost/vboxpci/include/iprt/asm-math.h
+[djcassid@cs03 ~]$ lassessman less
+LESS(1)                                                                LESS(1)
+
+NAME
+       less - opposite of more
+
+SYNOPSIS
+       less -?
+       less --help
+       less -V
+       less --version
+       less [-[+]aBcCdeEfFgGiIJKLmMnNqQrRsSuUVwWX~]
+            [-b space] [-h lines] [-j line] [-k keyfile]
+            [-{oO} logfile] [-p pattern] [-P prompt] [-t tag]
+            [-T tagsfile] [-x tab,...] [-y lines] [-[z] lines]
+            [-# shift] [+[+]cmd] [--] [filename]...
+       (See the OPTIONS section for alternate option syntax with long option names.)
+
+DESCRIPTION
+       Less is a program similar to more (1), but which allows backward movement in the file as well as for-
+       ward movement.  Also, less does not have to read the entire input file before starting, so with large
+       input  files  it  starts  up faster than text editors like vi (1).  Less uses termcap (or terminfo on
+       some systems), so it can run on a variety of terminals.  There is even limited support  for  hardcopy
+       terminals.   (On a hardcopy terminal, lines which should be printed at the top of the screen are pre-
+       fixed with a caret.)
+
+       Commands are based on both more and vi.  Commands may be preceded by a decimal number,  called  N  in
+       the descriptions below.  The number is used by some commands, as indicated.
+
+COMMANDS
+       In  the following descriptions, ^X means control-X.  ESC stands for the ESCAPE key; for example ESC-v
+       means the two character sequence "ESCAPE", then "v".
+
+       h or H Help: display a summary of these commands.  If you forget all  the  other  commands,  remember
+              this one.
+
+       SPACE or ^V or f or ^F
+              Scroll  forward  N  lines,  default  one  window (see option -z below).  If N is more than the
+              screen size, only the final screenful is displayed.  Warning: some systems use ^V as a special
+              literalization character.
+
+       z      Like SPACE, but if N is specified, it becomes the new window size.
+
+       ESC-SPACE
+              Like SPACE, but scrolls a full screenful, even if it reaches end-of-file in the process.
+
+       RETURN or ^N or e or ^E or j or ^J
+              Scroll  forward  N lines, default 1.  The entire N lines are displayed, even if N is more than
+: ESCESC[[66~~              the screen size.
+
+       d or ^D
+              Scroll forward N lines, default one half of the screen size.  If N is  specified,  it  becomes
+              the new default for subsequent d and u commands.
+
+       b or ^B or ESC-v
+              Scroll  backward  N  lines,  default  one window (see option -z below).  If N is more than the
+              screen size, only the final screenful is displayed.
+
+       w      Like ESC-v, but if N is specified, it becomes the new window size.
+
+       y or ^Y or ^P or k or ^K
+              Scroll backward N lines, default 1.  The entire N lines are displayed, even if N is more  than
+              the screen size.  Warning: some systems use ^Y as a special job control character.
+
+       u or ^U
+              Scroll  backward  N lines, default one half of the screen size.  If N is specified, it becomes
+              the new default for subsequent d and u commands.
+
+       ESC-) or RIGHTARROW
+              Scroll horizontally right N characters, default half the screen width (see the -# option).  If
+              a  number N is specified, it becomes the default for future RIGHTARROW and LEFTARROW commands.
+              While the text is scrolled, it acts as though the -S option (chop lines) were in effect.
+
+       ESC-( or LEFTARROW
+              Scroll horizontally left N characters, default half the screen width (see the -# option).   If
+              a  number N is specified, it becomes the default for future RIGHTARROW and LEFTARROW commands.
+
+       r or ^R or ^L
+              Repaint the screen.
+
+       R      Repaint the screen, discarding any buffered input.  Useful if the file is changing while it is
+              being viewed.
+
+       F      Scroll  forward,  and keep trying to read when the end of file is reached.  Normally this com-
+              mand would be used when already at the end of the file.  It is a way to monitor the tail of  a
+              file  which  is  growing  while it is being viewed.  (The behavior is similar to the "tail -f"
+              command.)
+
+       g or < or ESC-<
+              Go to line N in the file, default 1 (beginning of file).  (Warning: this may be slow if  N  is
+              large.)
+
+       G or > or ESC->
+              Go  to  line  N  in the file, default the end of the file.  (Warning: this may be slow if N is
+              large, or if N is not specified and standard input, rather than a file, is being read.)
+:[djcassid@cs03 ~]$ cd /c151/week1
+[djcassid@cs03 week1]$ mkdir hw1
+[djcassid@cs03 week1]$ cdcd
+[djcassid@cs03 ~]$ pico .signature
+  UW PICO 5.07                                               New Buffer                                                 ^G Get Help         ^O WriteOut         ^R Read File        ^Y Prev Pg          ^K Cut Text         ^C Cur Pos          ^X Exit             ^J Justify          ^W Where is         ^V Next Pg          ^U UnCut Text       ^T To Spell                                                                                                                                [ New file ]File: .signatureFile: .signature                                        ModifiedDanCassidyStudent,IUSB                                                                                                                        ComputerScienceProgram                                                                                                                        File Name to write :                                                                                                    T  To Files                                                                                        C Cancel           TAB Complete                                                                                       .signature                                                                                                                                                                                                                 [ Writing... ]                                                                                                                        [ Wrote 3 lines ]    File: .signature                                            ^G Get Help         ^O WriteOut         ^R Read File        ^Y Prev Pg          ^K Cut Text         ^C Cur Pos          ^X Exit             ^J Justify          ^W Where is         ^V Next Pg          ^U UnCut Text       ^T To Spell        [djcassid@cs03 ~]$ df
+Filesystem                     1K-blocks      Used  Available Use% Mounted on
+/dev/mapper/GX620-lv_root       51606140   7400628   41584072  16% /
+tmpfs                            1602356        76    1602280   1% /dev/shm
+/dev/sda1                         495844     82300     387944  18% /boot
+/dev/mapper/GX620-lv_tmp        51606140    184280   48800420   1% /tmp
+/dev/mapper/GX620-lv_var        51606140    791856   48192844   2% /var
+149.161.65.32:/home           1511899136 118453248 1316645888   9% /home
+149.161.65.64:/var/spool/mail  100791808   3154432   92517376   4% /var/spool/mail
+[djcassid@cs03 ~]$ cd /usr/include
+[djcassid@cs03 include]$ find -name "cmath"
+./c++/4.4.4/tr1_impl/cmath
+./c++/4.4.4/tr1/cmath
+./c++/4.4.4/cmath
+./c++/3.4.6/cmath
+./boost/compatibility/cpp_c_headers/cmath
+./boost/tr1/tr1/cmath
+[djcassid@cs03 include]$ diff ./c++/4.4.4/cmath ./c++/3.4.6/cmath
+3,4c3
+< // Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+< // 2006, 2007, 2008, 2009
+---
+> // Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003
+10c9
+< // Free Software Foundation; either version 3, or (at your option)
+---
+> // Free Software Foundation; either version 2, or (at your option)
+18,25c17,29
+< // Under Section 7 of GPL version 3, you are granted additional
+< // permissions described in the GCC Runtime Library Exception, version
+< // 3.1, as published by the Free Software Foundation.
+< 
+< // You should have received a copy of the GNU General Public License and
+< // a copy of the GCC Runtime Library Exception along with this program;
+< // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+< // <http://www.gnu.org/licenses/>.
+---
+> // You should have received a copy of the GNU General Public License along
+> // with this library; see the file COPYING.  If not, write to the Free
+> // Software Foundation, 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+> // USA.
+> 
+> // As a special exception, you may use this file as part of a free software
+> // library without restriction.  Specifically, if other files instantiate
+> // templates or use macros or inline functions from this file, or you compile
+> // this file and link it with other files to produce an executable, this
+> // file does not by itself cause the resulting executable to be covered by
+> // the GNU General Public License.  This exception does not however
+> // invalidate any other reasons why the executable file might be covered by
+> // the GNU General Public License.
+27c31,35
+< /** @file include/cmath
+---
+> //
+> // ISO C++ 14882: 26.5  C library
+> //
+> 
+> /** @file cmath
+33,34c41
+<  *  contained in the namespace @c std (except for names which are defined
+<  *  as macros in C).
+---
+>  *  contained in the namespace @c std.
+37,39c44,45
+< //
+< // ISO C++ 14882: 26.5  C library
+< //
+---
+> #ifndef _GLIBCXX_CMATH
+> #define _GLIBCXX_CMATH 1
+45,46d50
+< #include <ext/type_traits.h>
+< #include <math.h>
+48,49c52
+< #ifndef _GLIBCXX_CMATH
+< #define _GLIBCXX_CMATH 1
+---
+> #include <math.h>
+77d79
+< _GLIBCXX_BEGIN_NAMESPACE(std)
+78a81,82
+> namespace std
+> {
+81,91c85
+<   template<typename _Tp>
+<     _Tp __cmath_power(_Tp, unsigned int);
+< 
+<   template<typename _Tp>
+<     inline _Tp
+<     __pow_helper(_Tp __x, int __n)
+<     {
+<       return __n < 0
+<         ? _Tp(1)/__cmath_power(__x, -__n)
+<         : __cmath_power(__x, __n);
+<     }
+---
+>   template<typename _Tp> _Tp __cmath_power(_Tp, unsigned int);
+116,117c110
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+119c112,114
+<     { return __builtin_acos(__x); }
+---
+>     {
+>       return __builtin_acos(__x);
+>     }
+132,133c127
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+148,149c142
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+164,168c157,158
+<     inline
+<     typename __gnu_cxx::__promote_2<
+<     typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value
+<     && __is_arithmetic<_Up>::__value,
+<     _Tp>::__type, _Up>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type
+>                                         && __is_integer<_Up>::_M_type>::_M_type
+170,173c160
+<     {
+<       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+<       return atan2(__type(__y), __type(__x));
+<     }
+---
+>     { return __builtin_atan2(__y, __x); }
+186,187c173
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+202,203c188
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+218,219c203
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+234,235c218
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+250,251c233
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+266,267c248
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+292,293c273
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+308,309c288
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>   inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+324,325c303
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+340,341c318
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+354a332,340
+>   template<typename _Tp>
+>     inline _Tp
+>     __pow_helper(_Tp __x, int __n)
+>     {
+>       return __n < 0
+>         ? _Tp(1)/__cmath_power(__x, -__n)
+>         : __cmath_power(__x, __n);
+>     }
+> 
+365,367d350
+< #ifndef __GXX_EXPERIMENTAL_CXX0X__
+<   // _GLIBCXX_RESOLVE_LIB_DEFECTS
+<   // DR 550. What should the return type of pow(float,int) be?
+370c353
+<   { return __builtin_powi(__x, __i); }
+---
+>   { return __pow_helper(__x, __i); }
+374c357
+<   { return __builtin_powif(__x, __n); }
+---
+>   { return __pow_helper(__x, __n); }
+378,391c361
+<   { return __builtin_powil(__x, __n); }
+< #endif
+< 
+<   template<typename _Tp, typename _Up>
+<     inline
+<     typename __gnu_cxx::__promote_2<
+<     typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value
+<     && __is_arithmetic<_Up>::__value,
+<     _Tp>::__type, _Up>::__type
+<     pow(_Tp __x, _Up __y)
+<     {
+<       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+<       return pow(__type(__x), __type(__y));
+<     }
+---
+>   { return __pow_helper(__x, __n); }
+404,405c374
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+420,421c389
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+436,437c404
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+452,453c419
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+468,469c434
+<     inline typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+<    double>::__type
+---
+>     inline typename __enable_if<double, __is_integer<_Tp>::_M_type>::_M_type
+472,473c437
+< 
+< _GLIBCXX_END_NAMESPACE
+---
+> }
+476a441,460
+> // These are possible macros imported from C99-land. For strict
+> // conformance, remove possible C99-injected names from the global
+> // namespace, and sequester them in the __gnu_cxx extension namespace.
+> namespace __gnu_cxx
+> {
+>   template<typename _Tp>
+>     inline int
+>     __capture_fpclassify(_Tp __f) { return fpclassify(__f); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isfinite(_Tp __f) { return isfinite(__f); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isinf(_Tp __f) { return isinf(__f); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isnan(_Tp __f) { return isnan(__f); }
+478c462,500
+< // These are possible macros imported from C99-land.
+---
+>   template<typename _Tp>
+>     inline int
+>     __capture_isnormal(_Tp __f) { return isnormal(__f); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_signbit(_Tp __f) { return signbit(__f); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isgreater(_Tp __f1, _Tp __f2)
+>     { return isgreater(__f1, __f2); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isgreaterequal(_Tp __f1, _Tp __f2)
+>     { return isgreaterequal(__f1, __f2); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isless(_Tp __f1, _Tp __f2) { return isless(__f1, __f2); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_islessequal(_Tp __f1, _Tp __f2)
+>     { return islessequal(__f1, __f2); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_islessgreater(_Tp __f1, _Tp __f2)
+>     { return islessgreater(__f1, __f2); }
+> 
+>   template<typename _Tp>
+>     inline int
+>     __capture_isunordered(_Tp __f1, _Tp __f2)
+>     { return isunordered(__f1, __f2); }
+> }
+> 
+> // Only undefine the C99 FP macros, if actually captured for namespace movement
+490a513,514
+> #endif /* _GLIBCXX_USE_C99_FP_MACROS_DYNAMIC */
+> #endif
+492,493c516,519
+< _GLIBCXX_BEGIN_NAMESPACE(std)
+< 
+---
+> #if _GLIBCXX_USE_C99_MATH
+> #if !_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC
+> namespace __gnu_cxx
+> {
+495,502c521,522
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     fpclassify(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_fpclassify(FP_NAN, FP_INFINITE, FP_NORMAL,
+<   FP_SUBNORMAL, FP_ZERO, __type(__f));
+<     }
+---
+>     inline int
+>     fpclassify(_Tp __f) { return __capture_fpclassify(__f); }
+505,511c525,526
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isfinite(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isfinite(__type(__f));
+<     }
+---
+>     inline int
+>     isfinite(_Tp __f) { return __capture_isfinite(__f); }
+514,520c529,530
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isinf(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isinf(__type(__f));
+<     }
+---
+>     inline int
+>     isinf(_Tp __f) { return __capture_isinf(__f); }
+523,529c533,534
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isnan(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isnan(__type(__f));
+<     }
+---
+>     inline int
+>     isnan(_Tp __f) { return __capture_isnan(__f); }
+532,538c537,538
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isnormal(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isnormal(__type(__f));
+<     }
+---
+>     inline int
+>     isnormal(_Tp __f) { return __capture_isnormal(__f); }
+541,547c541,542
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     signbit(_Tp __f)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_signbit(__type(__f));
+<     }
+---
+>     inline int
+>     signbit(_Tp __f) { return __capture_signbit(__f); }
+550,556c545,546
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isgreater(_Tp __f1, _Tp __f2)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isgreater(__type(__f1), __type(__f2));
+<     }
+---
+>     inline int
+>     isgreater(_Tp __f1, _Tp __f2) { return __capture_isgreater(__f1, __f2); }
+559,560c549
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+---
+>     inline int
+562,565c551
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isgreaterequal(__type(__f1), __type(__f2));
+<     }
+---
+>     { return __capture_isgreaterequal(__f1, __f2); }
+568,574c554,555
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+<     isless(_Tp __f1, _Tp __f2)
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isless(__type(__f1), __type(__f2));
+<     }
+---
+>     inline int
+>     isless(_Tp __f1, _Tp __f2) { return __capture_isless(__f1, __f2); }
+577,578c558
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+---
+>     inline int
+580,583c560
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_islessequal(__type(__f1), __type(__f2));
+<     }
+---
+>     { return __capture_islessequal(__f1, __f2); }
+586,587c563
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+---
+>     inline int
+589,592c565
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_islessgreater(__type(__f1), __type(__f2));
+<     }
+---
+>     { return __capture_islessgreater(__f1, __f2); }
+595,596c568
+<     inline typename __gnu_cxx::__enable_if<__is_arithmetic<_Tp>::__value,
+<    int>::__type
+---
+>     inline int
+598,603c570,571
+<     {
+<       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
+<       return __builtin_isunordered(__type(__f1), __type(__f2));
+<     }
+< 
+< _GLIBCXX_END_NAMESPACE
+---
+>     { return __capture_isunordered(__f1, __f2); }
+> }
+604a573,587
+> namespace std
+> {
+>   using __gnu_cxx::fpclassify;
+>   using __gnu_cxx::isfinite;
+>   using __gnu_cxx::isinf;
+>   using __gnu_cxx::isnan;
+>   using __gnu_cxx::isnormal;
+>   using __gnu_cxx::signbit;
+>   using __gnu_cxx::isgreater;
+>   using __gnu_cxx::isgreaterequal;
+>   using __gnu_cxx::isless;
+>   using __gnu_cxx::islessequal;
+>   using __gnu_cxx::islessgreater;
+>   using __gnu_cxx::isunordered;
+> }
+612,630d594
+< #ifdef __GXX_EXPERIMENTAL_CXX0X__
+< #  if defined(_GLIBCXX_INCLUDE_AS_TR1)
+< #    error C++0x header cannot be included from TR1 header
+< #  endif
+< #  if defined(_GLIBCXX_INCLUDE_AS_CXX0X)
+< #    include <tr1_impl/cmath>
+< #  else
+< #    define _GLIBCXX_INCLUDE_AS_CXX0X
+< #    define _GLIBCXX_BEGIN_NAMESPACE_TR1
+< #    define _GLIBCXX_END_NAMESPACE_TR1
+< #    define _GLIBCXX_TR1
+< #    include <tr1_impl/cmath>
+< #    undef _GLIBCXX_TR1
+< #    undef _GLIBCXX_END_NAMESPACE_TR1
+< #    undef _GLIBCXX_BEGIN_NAMESPACE_TR1
+< #    undef _GLIBCXX_INCLUDE_AS_CXX0X
+< #  endif
+< #endif
+< 
+[djcassid@cs03 include]$ grep "pthread_join" *.h
+pthread.h:extern int pthread_join (pthread_t __th, void **__thread_return);
+[djcassid@cs03 include]$ cd 
+[djcassid@cs03 ~]$ cat .signature
+Dan Cassidy
+Student, IUSB
+Computer Science Program
+[djcassid@cs03 ~]$ sort .signature
+Computer Science Program
+Dan Cassidy
+Student, IUSB
+[djcassid@cs03 ~]$ echo International standard for time display
+International standard for time display
+[djcassid@cs03 ~]$ date +%Y-%m-%dT%T%z
+2014-01-24T11:54:51-0500
+[djcassid@cs03 ~]$ fie /usr/include/ma*
+/usr/include/malloc.h: ASCII C program text
+/usr/include/math.h:   ASCII C program text
+[djcassid@cs03 ~]$ exit
+logout

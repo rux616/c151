@@ -1,0 +1,26 @@
+# Dan Cassidy
+
+executable = planet
+objects    = earth.o main.o moon.o sun.o
+
+default: planet
+
+planet: $(objects)
+	g++ $(objects) -o $(executable)
+
+earth.o: earth.cc earth.h sun.h
+	g++ earth.cc -c -o earth.o
+
+main.o: main.cc moon.h
+	g++ main.cc -c -o main.o
+
+moon.o: moon.cc moon.h earth.h sun.h
+	g++ moon.cc -c -o moon.o
+
+sun.o: sun.cc sun.h
+	g++ sun.cc -c -o sun.o
+
+clean:
+	rm $(objects)
+	rm $(executable)
+

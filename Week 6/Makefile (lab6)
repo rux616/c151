@@ -1,0 +1,13 @@
+# Dan Cassidy
+
+default: sumar
+
+sumar: sum_array.cc
+	g++ sum_array.cc -o sumar
+
+debug:
+	g++ sum_array.cc -g -o sumar
+
+clean:
+	rm sumar
+

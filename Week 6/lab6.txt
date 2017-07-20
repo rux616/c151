@@ -1,0 +1,135 @@
+Ex. 1
+-----
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password:
+Last login: Thu Feb 20 22:15:20 2014 from 70.227.166.78
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ ls
+a.out  c151  docs  eqin  mail  my_eq.cc~
+[djcassid@cs03 ~]$ cd c151
+[djcassid@cs03 c151]$ ls
+phils  phil.tar  week1  week2  week3  week4  week5
+[djcassid@cs03 c151]$ mkdir week6
+[djcassid@cs03 c151]$ mkdir sum
+[djcassid@cs03 c151]$ cd week5
+[djcassid@cs03 week5]$ ls
+input.txt  output.txt  planets  sumar  sum_array  sum_array.cc
+[djcassid@cs03 week5]$ cp sum_array.cc ../sum/sum_array.cc
+[djcassid@cs03 week5]$ cd ../sum
+[djcassid@cs03 sum]$ ls
+sum_array.cc
+[djcassid@cs03 sum]$ vi Makefile
+[djcassid@cs03 sum]$ ls
+Makefile  sum_array.cc
+[djcassid@cs03 sum]$ cat Makefile
+# Dan Cassidy
+
+default: sumar
+
+sumar: sum_array.cc
+        g++ sum_array.cc -o sumar
+
+[djcassid@cs03 sum]$ make
+g++ sum_array.cc -o sumar
+[djcassid@cs03 sum]$ sumar
+Enter the number of elements, maximum 50
+5
+Enter the element number 0
+1
+Enter the element number 1
+2
+Enter the element number 2
+3
+Enter the element number 3
+4
+Enter the element number 4
+5
+The sum of these numbers is 15
+[djcassid@cs03 sum]$ make
+make: Nothing to be done for `default'.
+[djcassid@cs03 sum]$
+
+Explanation for outcome of second run of 'make':
+Since we did not pass a target via the command line, make used the default target, which directs to the sumar target.  The sumar target uses sum_array.cc as a dependency, and that has not changed since the last time we compiled sumar.
+
+
+[djcassid@cs03 sum]$ vi Makefile
+[djcassid@cs03 sum]$ cat Makefile
+# Dan Cassidy
+
+default: sumar
+
+sumar: sum_array.cc
+        g++ sum_array.cc -o sumar
+
+debug:
+        g++ sum_array.cc -g -o sumar
+
+[djcassid@cs03 sum]$ make debug
+g++ sum_array.cc -g -o sumar
+[djcassid@cs03 sum]$
+
+The difference between the outcome of 'make debug' vs 'make':
+When using 'make debug', sumar will be compiled regardless of its dependencies, and it will also have debug information added to it due to the -g option used.
+
+
+[djcassid@cs03 sum]$ vi Makefile
+[djcassid@cs03 sum]$ cat Makefile
+# Dan Cassidy
+
+default: sumar
+
+sumar: sum_array.cc
+        g++ sum_array.cc -o sumar
+
+debug:
+        g++ sum_array.cc -g -o sumar
+
+clean:
+        rm sumar
+
+[djcassid@cs03 sum]$ ls
+Makefile  sumar  sum_array.cc
+[djcassid@cs03 sum]$ make clean
+rm sumar
+[djcassid@cs03 sum]$ ls
+Makefile  sum_array.cc
+[djcassid@cs03 sum]$ make
+g++ sum_array.cc -o sumar
+[djcassid@cs03 sum]$ ls
+Makefile  sumar  sum_array.cc
+[djcassid@cs03 sum]$
+
+
+
+Ex. 2
+-----
+a. testlist
+b. variable name: objects
+   used in: target testlist]
+c. interface.o
+   dependencies: interface.cc, List.h
+   They are both files, neither of them are targets.
+d. Modifying ListNode.h would cause make to run the following targets: ListNode.o, ListIterator.o, and List.o

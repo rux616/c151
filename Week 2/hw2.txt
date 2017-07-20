@@ -1,0 +1,274 @@
+login as: djcassid
+djcassid@cs03.cs.iusb.edu's password:
+Last login: Sun Feb  2 12:08:50 2014 from c-71-229-86-115.hsd1.in.comcast.net
+
+
+                          Welcome to cs03.cs.iusb.edu!
+
+All workstations are patched and rebooted on a tentative maintenance schedule
+taking place on the Friday morning of every week.  Manage your time wisely and
+make arrangments for this activity.  Performance IS impacted during this time.
+
+                             !!!  DISCLAIMERS  !!!
+
+Hosts cs01 through cs10 are designated solely for SSH-2 remote access, and will
+be rebooted for maintenance and emergency purposes ONLY, by the SysAdmin!
+
+Remotely log-in to any OTHER CS Lab Workstation AT YOUR OWN RISK!
+
+                                      ---
+
+                         ALWAYS BACK UP YOUR OWN DATA!
+
+Neither Indiana University nor the IUSB Department of Computer Science are
+responsible for the state or storage of your files and data.  If this is unclear
+to you, ask your friendly neighborhood SysAdmin (in Northside 203) to clarify.
+
+[djcassid@cs03 ~]$ quota
+quota: error while getting quota from 149.161.65.64:/var/spool/mail for djcassid (id 2123): Connection refused
+Disk quotas for user djcassid (uid 2123):
+     Filesystem  blocks   quota   limit   grace   files   quota   limit   grace
+149.161.65.32:/home/
+                   1156  1800000 2000000              60  180000  200000
+[djcassid@cs03 ~]$ du ./* -s
+960     ./c151
+0       ./docs
+12      ./mail
+[djcassid@cs03 ~]$ df
+Filesystem                     1K-blocks      Used  Available Use% Mounted on
+/dev/mapper/GX620-lv_root       51606140   7375296   41609404  16% /
+tmpfs                            1602356        72    1602284   1% /dev/shm
+/dev/sda1                         495844     82300     387944  18% /boot
+/dev/mapper/GX620-lv_tmp        51606140    184224   48800476   1% /tmp
+/dev/mapper/GX620-lv_var        51606140    795320   48189380   2% /var
+149.161.65.32:/home           1511899136 108913664 1326185472   8% /home
+149.161.65.64:/var/spool/mail  100791808   3186176   92485632   4% /var/spool/mail
+[djcassid@cs03 ~]$ which grep
+/bin/grep
+[djcassid@cs03 ~]$ date
+Sun Feb  2 12:50:51 EST 2014
+[djcassid@cs03 ~]$ ps -Al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S     0     1     0  0  80   0 -  5883 poll_s ?        00:00:01 init
+1 S     0     2     0  0  80   0 -     0 kthrea ?        00:00:00 kthreadd
+1 S     0     3     2  0 -40   - -     0 migrat ?        00:00:00 migration/0
+1 S     0     4     2  0  80   0 -     0 ksofti ?        00:00:00 ksoftirqd/0
+1 S     0     5     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/0
+5 S     0     6     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/0
+1 S     0     7     2  0 -40   - -     0 migrat ?        00:00:00 migration/1
+1 S     0     8     2  0 -40   - -     0 cpu_st ?        00:00:00 migration/1
+1 S     0     9     2  0  80   0 -     0 ksofti ?        00:00:00 ksoftirqd/1
+5 S     0    10     2  0 -40   - -     0 watchd ?        00:00:00 watchdog/1
+1 S     0    11     2  0  80   0 -     0 worker ?        00:00:06 events/0
+1 S     0    12     2  0  80   0 -     0 worker ?        00:00:06 events/1
+1 S     0    13     2  0  80   0 -     0 worker ?        00:00:00 cgroup
+1 S     0    14     2  0  80   0 -     0 worker ?        00:00:00 khelper
+1 S     0    15     2  0  80   0 -     0 worker ?        00:00:00 netns
+1 S     0    16     2  0  80   0 -     0 async_ ?        00:00:00 async/mgr
+1 S     0    17     2  0  80   0 -     0 worker ?        00:00:00 pm
+1 S     0    18     2  0  80   0 -     0 bdi_sy ?        00:00:00 sync_supers
+1 S     0    19     2  0  80   0 -     0 bdi_fo ?        00:00:00 bdi-default
+1 S     0    20     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/0
+1 S     0    21     2  0  80   0 -     0 worker ?        00:00:00 kintegrityd/1
+1 S     0    22     2  0  80   0 -     0 worker ?        00:00:01 kblockd/0
+1 S     0    23     2  0  80   0 -     0 worker ?        00:00:00 kblockd/1
+1 S     0    24     2  0  80   0 -     0 worker ?        00:00:00 kacpid
+1 S     0    25     2  0  80   0 -     0 worker ?        00:00:00 kacpi_notify
+1 S     0    26     2  0  80   0 -     0 worker ?        00:00:00 kacpi_hotplug
+1 S     0    27     2  0  80   0 -     0 worker ?        00:00:00 ata_aux
+1 S     0    28     2  0  80   0 -     0 worker ?        00:00:14 ata_sff/0
+1 S     0    29     2  0  80   0 -     0 worker ?        00:00:12 ata_sff/1
+1 S     0    30     2  0  80   0 -     0 worker ?        00:00:00 ksuspend_usbd
+5 S     0    31     2  0  80   0 -     0 hub_th ?        00:00:00 khubd
+1 S     0    32     2  0  80   0 -     0 serio_ ?        00:00:00 kseriod
+1 S     0    33     2  0  80   0 -     0 worker ?        00:00:00 md/0
+1 S     0    34     2  0  80   0 -     0 worker ?        00:00:00 md/1
+1 S     0    35     2  0  80   0 -     0 worker ?        00:00:00 md_misc/0
+1 S     0    36     2  0  80   0 -     0 worker ?        00:00:00 md_misc/1
+1 S     0    37     2  0  80   0 -     0 worker ?        00:00:00 linkwatch
+1 S     0    38     2  0  80   0 -     0 watchd ?        00:00:00 khungtaskd
+1 S     0    39     2  0  80   0 -     0 kswapd ?        00:00:00 kswapd0
+1 S     0    40     2  0  85   5 -     0 ksm_sc ?        00:00:00 ksmd
+1 S     0    41     2  0  99  19 -     0 khugep ?        00:00:00 khugepaged
+1 S     0    42     2  0  80   0 -     0 worker ?        00:00:00 aio/0
+1 S     0    43     2  0  80   0 -     0 worker ?        00:00:00 aio/1
+1 S     0    44     2  0  80   0 -     0 worker ?        00:00:00 crypto/0
+1 S     0    45     2  0  80   0 -     0 worker ?        00:00:00 crypto/1
+1 S     0    50     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/0
+1 S     0    51     2  0  80   0 -     0 worker ?        00:00:00 kthrotld/1
+1 S     0    53     2  0  80   0 -     0 worker ?        00:00:00 kpsmoused
+1 S     0    54     2  0  80   0 -     0 worker ?        00:00:00 usbhid_resumer
+1 S     0    85     2  0  80   0 -     0 worker ?        00:00:00 kstriped
+1 S     0   117     2  0  80   0 -     0 worker ?        00:00:00 i915
+1 S     0   118     2  0  75  -5 -     0 slow_w ?        00:00:38 kslowd000
+1 S     0   119     2  0  75  -5 -     0 slow_w ?        00:00:38 kslowd001
+1 S     0   174     2  0  80   0 -     0 scsi_e ?        00:00:48 scsi_eh_0
+1 S     0   175     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_1
+1 S     0   178     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_2
+1 S     0   179     2  0  80   0 -     0 scsi_e ?        00:00:00 scsi_eh_3
+1 S     0   284     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   286     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   303     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-0-8
+1 S     0   304     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwri
+5 S     0   397     1  0  76  -4 -  2812 poll_s ?        00:00:06 udevd
+1 S     0   779     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   780     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   781     2  0  80   0 -     0 worker ?        00:00:00 kdmflush
+1 S     0   852     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/sda1-8
+1 S     0   853     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwri
+1 S     0   854     2  0  80   0 -     0 kjourn ?        00:00:00 jbd2/dm-4-8
+1 S     0   855     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwri
+1 S     0   856     2  0  80   0 -     0 kjourn ?        00:00:02 jbd2/dm-2-8
+1 S     0   857     2  0  80   0 -     0 worker ?        00:00:00 ext4-dio-unwri
+1 S     0   904     2  0  80   0 -     0 kaudit ?        00:00:00 kauditd
+1 S     0   926     2  0  80   0 -     0 bdi_wr ?        00:00:01 flush-253:2
+5 S     0  1239     1  0  76  -4 -  6910 ep_pol ?        00:00:00 auditd
+5 S     0  1257     1  0  80   0 -  1540 poll_s ?        00:00:00 portreserve
+5 S     0  1264     1  0  80   0 - 62272 poll_s ?        00:00:00 rsyslogd
+5 S    32  1312     1  0  80   0 -  4744 poll_s ?        00:00:00 rpcbind
+1 S     0  1324     1  0  80   0 -  1144 poll_s ?        00:00:00 mdadm
+5 S     0  1334     1  0  80   0 -  3396 poll_s ?        00:00:09 lldpad
+1 S     0  1349     2  0  80   0 -     0 worker ?        00:00:00 iprt/0
+1 S     0  1350     2  0  80   0 -     0 worker ?        00:00:00 iprt/1
+1 S     0  1367     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/0
+1 S     0  1368     2  0  80   0 -     0 worker ?        00:00:00 scsi_tgtd/1
+1 S     0  1369     2  0  80   0 -     0 worker ?        00:00:00 fc_exch_workqu
+1 S     0  1370     2  0  80   0 -     0 worker ?        00:00:00 fc_rport_eq
+1 S     0  1373     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/0
+1 S     0  1374     2  0  80   0 -     0 worker ?        00:00:00 fcoe_work/1
+1 S     0  1375     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/0
+1 S     0  1376     2  0  60 -20 -     0 fcoe_p ?        00:00:00 fcoethread/1
+1 S     0  1377     2  0  80   0 -     0 worker ?        00:00:00 cnic_wq
+1 S     0  1378     2  0  80   0 -     0 worker ?        00:00:00 bnx2fc
+1 S     0  1379     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_l2_thre
+1 S     0  1380     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/
+1 S     0  1381     2  0  60 -20 -     0 bnx2fc ?        00:00:00 bnx2fc_thread/
+5 S     0  1384     1  0  80   0 -  2091 poll_s ?        00:00:03 fcoemon
+5 S    81  1396     1  0  80   0 - 10726 poll_s ?        00:00:00 dbus-daemon
+5 S     0  1407     1  0  80   0 - 20692 poll_s ?        00:00:00 NetworkManager
+4 S     0  1412     1  0  80   0 - 14516 poll_s ?        00:00:00 modem-manager
+5 S    29  1426     1  0  80   0 -  5837 poll_s ?        00:00:00 rpc.statd
+1 S     0  1450     1  0  80   0 - 11243 poll_s ?        00:00:00 wpa_supplicant
+4 S     0  1503     1  0  80   0 - 47333 ep_pol ?        00:00:00 cupsd
+5 S     0  1510     2  0  80   0 -     0 worker ?        00:00:00 rpciod/0
+5 S     0  1511     2  0  80   0 -     0 worker ?        00:00:00 rpciod/1
+1 S     0  1521     1  0  80   0 -  1020 poll_s ?        00:00:00 acpid
+1 S     0  1527     2  0  80   0 -     0 worker ?        00:00:00 nfsiod
+1 S     0  1528     2  0  80   0 -     0 svc_re ?        00:00:00 nfsv4.0-svc
+5 S    68  1537     1  0  80   0 - 10772 poll_s ?        00:00:01 hald
+0 S     0  1539  1537  0  80   0 -  5082 poll_s ?        00:00:00 hald-runner
+0 S     0  1587  1539  0  80   0 -  5612 poll_s ?        00:00:00 hald-addon-inp
+0 S     0  1588  1539  0  80   0 -  5611 poll_s ?        00:00:56 hald-addon-sto
+4 S    68  1591  1539  0  80   0 -  4484 unix_s ?        00:00:00 hald-addon-acp
+1 S     0  1602     1  0  80   0 - 50405 ep_pol ?        00:00:06 sssd
+4 S     0  1603  1602  0  80   0 - 57820 ep_pol ?        00:00:04 sssd_be
+4 S     0  1604  1602  0  80   0 - 50832 ep_pol ?        00:00:02 sssd_nss
+4 S     0  1605  1602  0  80   0 - 48416 ep_pol ?        00:00:01 sssd_pam
+1 S     0  1627     1  0  80   0 - 22818 poll_s ?        00:00:00 pcscd
+5 S     0  1644     1  0  80   0 - 114149 rt_sig ?       00:00:03 automount
+1 S     0  1677     1  0  80   0 -  1694 poll_s ?        00:00:00 mcelog
+5 S     0  1689     1  0  80   0 - 16652 poll_s ?        00:00:00 sshd
+1 S     0  1697     1  0  80   0 -  5545 poll_s ?        00:00:00 xinetd
+5 S    38  1705     1  0  80   0 -  8723 poll_s ?        00:00:00 ntpd
+4 S     0  1781     1  0  80   0 - 21363 ep_pol ?        00:00:00 master
+4 S    89  1790  1781  0  80   0 - 21427 ep_pol ?        00:00:00 qmgr
+1 S     0  1805     1  0  80   0 - 27579 poll_s ?        00:00:00 abrtd
+0 S     0  1813     1  0  80   0 - 27052 inotif ?        00:00:00 abrt-dump-oops
+1 S     0  1827     1  0  80   0 - 27083 wait   ?        00:00:04 ksmtuned
+1 S     0  1836     1  0  80   0 - 29323 hrtime ?        00:00:05 crond
+5 S     0  1847     1  0  80   0 -  5385 hrtime ?        00:00:00 atd
+1 S     0  1857     1  0  80   0 - 25231 hrtime ?        00:00:00 rhnsd
+1 S     0  1876     1  0  80   0 - 24644 poll_s ?        00:00:05 miniserv.pl
+4 S     0  1879     1  0  80   0 - 33484 poll_s ?        00:00:00 gdm-binary
+4 S     0  1884     1  0  80   0 -  1016 n_tty_ tty2     00:00:00 mingetty
+4 S     0  1886     1  0  80   0 -  1016 n_tty_ tty3     00:00:00 mingetty
+4 S     0  1888     1  0  80   0 -  1016 n_tty_ tty4     00:00:00 mingetty
+5 S     0  1892   397  0  78  -2 -  3143 poll_s ?        00:00:08 udevd
+5 S     0  1893   397  0  78  -2 -  3141 poll_s ?        00:00:00 udevd
+4 S     0  1894     1  0  80   0 -  1016 n_tty_ tty5     00:00:00 mingetty
+4 S     0  1896     1  0  80   0 -  1016 n_tty_ tty6     00:00:00 mingetty
+4 S     0  1918  1879  0  80   0 - 42217 poll_s ?        00:00:00 gdm-simple-sla
+4 S     0  1921  1918  0  80   0 - 34340 poll_s tty1     00:00:16 Xorg
+4 S     0  1935     1  0  80   0 - 259087 poll_s ?       00:00:00 console-kit-da
+1 S    42  2005     1  0  80   0 -  5010 poll_s ?        00:00:00 dbus-launch
+1 S    42  2006     1  0  80   0 -  8988 poll_s ?        00:00:00 dbus-daemon
+4 S    42  2008  1918  0  80   0 - 67293 poll_s ?        00:00:00 gnome-session
+4 S     0  2011     1  0  80   0 - 12469 poll_s ?        00:00:00 devkit-power-d
+0 S    42  2015     1  0  80   0 - 33307 poll_s ?        00:00:00 gconfd-2
+0 S    42  2032  2008  0  80   0 - 30099 poll_s ?        00:00:00 at-spi-registr
+1 S    42  2033     1  0  80   0 - 91493 poll_s ?        00:02:52 gnome-settings
+0 S    42  2035     1  0  80   0 - 89626 poll_s ?        00:00:00 bonobo-activat
+0 S    42  2042     1  0  80   0 - 33792 poll_s ?        00:00:00 gvfsd
+0 S    42  2043  2008  0  80   0 - 75927 poll_s ?        00:00:01 metacity
+0 S    42  2044  2008  0  80   0 - 68461 poll_s ?        00:00:02 gnome-power-ma
+0 S    42  2045  2008  0  80   0 - 62106 poll_s ?        00:00:00 polkit-gnome-a
+0 S    42  2048  2008  0  80   0 - 101044 poll_s ?       00:00:04 gdm-simple-gre
+4 S     0  2052     1  0  80   0 - 14209 poll_s ?        00:00:00 polkitd
+1 S    42  2059     1  0  69 -11 - 106936 poll_s ?       00:00:00 pulseaudio
+4 S   499  2061     1  0  81   1 - 42114 poll_s ?        00:00:01 rtkit-daemon
+4 S     0  2068  1918  0  80   0 - 45426 poll_s ?        00:00:00 gdm-session-wo
+4 S    89  8419  1781  0  80   0 - 21383 ep_pol ?        00:00:00 pickup
+1 S     0  8734     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:0
+4 S     0  8753  1689  0  80   0 - 29586 unix_s ?        00:00:00 sshd
+5 S  2123  8756  8753  0  80   0 - 29586 poll_s ?        00:00:00 sshd
+0 S  2123  8757  8756  0  80   0 - 29807 wait   pts/0    00:00:00 bash
+1 S     0  8787     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-253:4
+1 S     0  8889     2  0  80   0 -     0 bdi_wr ?        00:00:00 flush-8:0
+0 S     0  8900  1827  0  80   0 - 25226 hrtime ?        00:00:00 sleep
+0 R  2123  8904  8757  0  80   0 - 27034 -      pts/0    00:00:00 ps
+[djcassid@cs03 ~]$ top
+top - 12:52:45 up 2 days,  2:21,  1 user,  load average: 0.01, 0.02, 0.00
+Tasks: 167 total,   1 running, 166 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.0%us,  0.2%sy,  0.0%ni, 99.8%id,  0.0%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   3204712k total,  1138424k used,  2066288k free,   201876k buffers
+Swap:  8388600k total,        0k used,  8388600k free,   565932k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
+ 8916 djcassid  20   0 25928 1348  996 R  0.3  0.0   0:00.09 top
+    1 root      20   0 23532 1572 1244 S  0.0  0.0   0:01.93 init
+    2 root      20   0     0    0    0 S  0.0  0.0   0:00.54 kthreadd
+    3 root      RT   0     0    0    0 S  0.0  0.0   0:00.60 migration/0
+    4 root      20   0     0    0    0 S  0.0  0.0   0:00.67 ksoftirqd/0
+    5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/0
+    6 root      RT   0     0    0    0 S  0.0  0.0   0:00.14 watchdog/0
+    7 root      RT   0     0    0    0 S  0.0  0.0   0:00.38 migration/1
+    8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 migration/1
+    9 root      20   0     0    0    0 S  0.0  0.0   0:00.46 ksoftirqd/1
+   10 root      RT   0     0    0    0 S  0.0  0.0   0:00.14 watchdog/1
+   11 root      20   0     0    0    0 S  0.0  0.0   0:06.33 events/0
+   12 root      20   0     0    0    0 S  0.0  0.0   0:06.58 events/1
+   13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 cgroup
+   14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 khelper
+   15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 netns
+   16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 async/mgr
+[djcassid@cs03 ~]$ pico &
+[1] 8917
+[djcassid@cs03 ~]$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  2123  8757  8756  0  80   0 - 29807 wait   pts/0    00:00:00 bash
+0 T  2123  8917  8757  0  80   0 - 42235 signal pts/0    00:00:00 pico
+0 R  2123  8926  8757  0  80   0 - 27034 -      pts/0    00:00:00 ps
+
+[1]+  Stopped                 pico
+[djcassid@cs03 ~]$ kill -9 8917
+[djcassid@cs03 ~]$ ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  2123  8757  8756  0  80   0 - 29807 wait   pts/0    00:00:00 bash
+0 R  2123  8938  8757  0  80   0 - 27034 -      pts/0    00:00:00 ps
+[1]+  Killed                  pico
+[djcassid@cs03 ~]$ pico &
+[1] 8941
+[djcassid@cs03 ~]$ fg
+pico
+[djcassid@cs03 ~]$ ls /proc/1602
+ls: cannot read symbolic link /proc/1602/cwd: Permission denied
+ls: cannot read symbolic link /proc/1602/root: Permission denied
+ls: cannot read symbolic link /proc/1602/exe: Permission denied
+attr        coredump_filter  io         mountstats     pagemap      stack
+autogroup   cpuset           limits     net            personality  stat
+auxv        cwd              loginuid   ns             root         statm
+cgroup      environ          maps       numa_maps      sched        status
+clear_refs  exe              mem        oom_adj        schedstat    syscall
+cmdline     fd               mountinfo  oom_score      sessionid    task
+comm        fdinfo           mounts     oom_score_adj  smaps        wchan
+[djcassid@cs03 ~]$
